@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CameraTrigger : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collision other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             //Camera.Main
         }

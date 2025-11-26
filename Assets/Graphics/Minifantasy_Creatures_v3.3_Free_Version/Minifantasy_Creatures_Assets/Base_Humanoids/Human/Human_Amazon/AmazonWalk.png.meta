@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: c70c82dcc6b19df0fb17506049055e5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6948773313030704380
+    second: AmazonWalk_0
+  - first:
+      213: 422206652862542635
+    second: AmazonWalk_1
+  - first:
+      213: -5488816972872337739
+    second: AmazonWalk_2
+  - first:
+      213: 4149043931566502939
+    second: AmazonWalk_3
+  - first:
+      213: 6245161019318941402
+    second: AmazonWalk_4
+  - first:
+      213: 5445055465379198001
+    second: AmazonWalk_5
+  - first:
+      213: -4055820076137186411
+    second: AmazonWalk_6
+  - first:
+      213: -1346927284121212205
+    second: AmazonWalk_7
+  - first:
+      213: 5409668251932716841
+    second: AmazonWalk_8
+  - first:
+      213: 8701395502402672816
+    second: AmazonWalk_9
+  - first:
+      213: -6742464188644143744
+    second: AmazonWalk_10
+  - first:
+      213: 7874705298496888929
+    second: AmazonWalk_11
+  - first:
+      213: -5260948127330551010
+    second: AmazonWalk_12
+  - first:
+      213: -6974197658580518255
+    second: AmazonWalk_13
+  - first:
+      213: -2626303620989615134
+    second: AmazonWalk_14
+  - first:
+      213: -6637246739582228394
+    second: AmazonWalk_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AmazonWalk_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403371cec7ff09f90800000000000000
+      internalID: -6948773313030704380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 108
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23bdadb6bafbd500800000000000000
+      internalID: 422206652862542635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 108
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b63fce4b0ec3d3b0800000000000000
+      internalID: -5488816972872337739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 108
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14f282297d549930800000000000000
+      internalID: 4149043931566502939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 76
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad63f99dbd44ba650800000000000000
+      internalID: 6245161019318941402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 76
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134f93cb819b09b40800000000000000
+      internalID: 5445055465379198001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bf1f02125d6b7c0800000000000000
+      internalID: -4055820076137186411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da6cab75c0ce4de0800000000000000
+      internalID: -1346927284121212205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f682d0d90031b40800000000000000
+      internalID: 5409668251932716841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 44
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b894e28b1191c870800000000000000
+      internalID: 8701395502402672816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dc2152b84fd62a0800000000000000
+      internalID: -6742464188644143744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 44
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1602bcb3fb2984d60800000000000000
+      internalID: 7874705298496888929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bb4b84d8b5df6b0800000000000000
+      internalID: -5260948127330551010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 12
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a72fe2e2ca63f90800000000000000
+      internalID: -6974197658580518255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3879e75ce7d8bd0800000000000000
+      internalID: -2626303620989615134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonWalk_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658e4988143c3e3a0800000000000000
+      internalID: -6637246739582228394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmazonWalk_0: -6948773313030704380
+      AmazonWalk_1: 422206652862542635
+      AmazonWalk_10: -6742464188644143744
+      AmazonWalk_11: 7874705298496888929
+      AmazonWalk_12: -5260948127330551010
+      AmazonWalk_13: -6974197658580518255
+      AmazonWalk_14: -2626303620989615134
+      AmazonWalk_15: -6637246739582228394
+      AmazonWalk_2: -5488816972872337739
+      AmazonWalk_3: 4149043931566502939
+      AmazonWalk_4: 6245161019318941402
+      AmazonWalk_5: 5445055465379198001
+      AmazonWalk_6: -4055820076137186411
+      AmazonWalk_7: -1346927284121212205
+      AmazonWalk_8: 5409668251932716841
+      AmazonWalk_9: 8701395502402672816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

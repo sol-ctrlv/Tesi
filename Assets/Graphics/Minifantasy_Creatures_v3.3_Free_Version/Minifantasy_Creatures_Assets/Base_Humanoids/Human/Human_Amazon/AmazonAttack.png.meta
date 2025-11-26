@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 298cccf47705e9bca87d3a05af5b4fac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6097195310385371427
+    second: AmazonAttack_0
+  - first:
+      213: 2425182341313111264
+    second: AmazonAttack_1
+  - first:
+      213: -5538496624460916165
+    second: AmazonAttack_2
+  - first:
+      213: 3660373389034617546
+    second: AmazonAttack_3
+  - first:
+      213: -4642795404631273806
+    second: AmazonAttack_4
+  - first:
+      213: -3553729142424814342
+    second: AmazonAttack_5
+  - first:
+      213: 4882529333646389893
+    second: AmazonAttack_6
+  - first:
+      213: 7716811073154506325
+    second: AmazonAttack_7
+  - first:
+      213: -8530151349788123440
+    second: AmazonAttack_8
+  - first:
+      213: 7639011130509281144
+    second: AmazonAttack_9
+  - first:
+      213: 5665664218579215271
+    second: AmazonAttack_10
+  - first:
+      213: -3382668169538262797
+    second: AmazonAttack_11
+  - first:
+      213: 1395686210781152616
+    second: AmazonAttack_12
+  - first:
+      213: 9164677730627847448
+    second: AmazonAttack_13
+  - first:
+      213: -3303785415016998482
+    second: AmazonAttack_14
+  - first:
+      213: 5422944310212826084
+    second: AmazonAttack_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AmazonAttack_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32992b994d69d9450800000000000000
+      internalID: 6097195310385371427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 108
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4a4818d7af7a120800000000000000
+      internalID: 2425182341313111264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 105
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a9e4d0aae4323b0800000000000000
+      internalID: -5538496624460916165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 105
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca73be24324cc230800000000000000
+      internalID: 3660373389034617546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be03269d2a719fb0800000000000000
+      internalID: -4642795404631273806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 76
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcb0d56c2e9eaec0800000000000000
+      internalID: -3553729142424814342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 73
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582fa696f8a32c340800000000000000
+      internalID: 4882529333646389893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 73
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55edc2e19ce971b60800000000000000
+      internalID: 7716811073154506325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de5f83ca80de9980800000000000000
+      internalID: -8530151349788123440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877c2456628330a60800000000000000
+      internalID: 7639011130509281144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 44
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a32e0db69b70ae40800000000000000
+      internalID: 5665664218579215271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8a6a1d8395e01d0800000000000000
+      internalID: -3382668169538262797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865858bc6397e5310800000000000000
+      internalID: 1395686210781152616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 12
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8158107e6d97f2f70800000000000000
+      internalID: 9164677730627847448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 12
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea99bc35ba89622d0800000000000000
+      internalID: -3303785415016998482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonAttack_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e316fe3e1b224b40800000000000000
+      internalID: 5422944310212826084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmazonAttack_0: 6097195310385371427
+      AmazonAttack_1: 2425182341313111264
+      AmazonAttack_10: 5665664218579215271
+      AmazonAttack_11: -3382668169538262797
+      AmazonAttack_12: 1395686210781152616
+      AmazonAttack_13: 9164677730627847448
+      AmazonAttack_14: -3303785415016998482
+      AmazonAttack_15: 5422944310212826084
+      AmazonAttack_2: -5538496624460916165
+      AmazonAttack_3: 3660373389034617546
+      AmazonAttack_4: -4642795404631273806
+      AmazonAttack_5: -3553729142424814342
+      AmazonAttack_6: 4882529333646389893
+      AmazonAttack_7: 7716811073154506325
+      AmazonAttack_8: -8530151349788123440
+      AmazonAttack_9: 7639011130509281144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: da07fdbf3b03fdc5ba3328a6e31505be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2333323476860332826
+    second: HumanChargedAttack_0
+  - first:
+      213: 3767707175793088306
+    second: HumanChargedAttack_1
+  - first:
+      213: 6768902478145916278
+    second: HumanChargedAttack_2
+  - first:
+      213: 2817950615050432193
+    second: HumanChargedAttack_3
+  - first:
+      213: -6010597359350562318
+    second: HumanChargedAttack_4
+  - first:
+      213: 7418576087375430628
+    second: HumanChargedAttack_5
+  - first:
+      213: -7757881949283749216
+    second: HumanChargedAttack_6
+  - first:
+      213: 242407876719921769
+    second: HumanChargedAttack_7
+  - first:
+      213: -4853482251220191052
+    second: HumanChargedAttack_8
+  - first:
+      213: -5549832225906412647
+    second: HumanChargedAttack_9
+  - first:
+      213: 805610937173800728
+    second: HumanChargedAttack_10
+  - first:
+      213: 5470356132587653353
+    second: HumanChargedAttack_11
+  - first:
+      213: -7707208943656974318
+    second: HumanChargedAttack_12
+  - first:
+      213: -5306570721400768206
+    second: HumanChargedAttack_13
+  - first:
+      213: -6027864979364951055
+    second: HumanChargedAttack_14
+  - first:
+      213: -2001848207672261458
+    second: HumanChargedAttack_15
+  - first:
+      213: -1019439049870508248
+    second: HumanChargedAttack_16
+  - first:
+      213: 2810794855858660685
+    second: HumanChargedAttack_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HumanChargedAttack_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e419a709ae5e9fd0800000000000000
+      internalID: -2333323476860332826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 76
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23756d6d6b5994430800000000000000
+      internalID: 3767707175793088306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 76
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d0621d0f8ffed50800000000000000
+      internalID: 6768902478145916278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceacac772f5b1720800000000000000
+      internalID: 2817950615050432193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 76
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f142041c81169ca0800000000000000
+      internalID: -6010597359350562318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 76
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3483b65a314f660800000000000000
+      internalID: 7418576087375430628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2f68b5877765490800000000000000
+      internalID: -7757881949283749216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ac5a6fda43d5300800000000000000
+      internalID: 242407876719921769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b87b5c7b97f4acb0800000000000000
+      internalID: -4853482251220191052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99335dbaef80bf2b0800000000000000
+      internalID: -5549832225906412647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_10
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817f96901ea1e2b00800000000000000
+      internalID: 805610937173800728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 44
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e844cd5beb9aeb40800000000000000
+      internalID: 5470356132587653353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218cc9fdc4e7a0590800000000000000
+      internalID: -7707208943656974318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_13
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 9
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2393b675b064b56b0800000000000000
+      internalID: -5306570721400768206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 9
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb4feefcb8b85ca0800000000000000
+      internalID: -6027864979364951055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 12
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4417f49a10834e0800000000000000
+      internalID: -2001848207672261458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 12
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f7e4ad5993ad1f0800000000000000
+      internalID: -1019439049870508248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanChargedAttack_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 12
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4563f77703f10720800000000000000
+      internalID: 2810794855858660685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HumanChargedAttack_0: -2333323476860332826
+      HumanChargedAttack_1: 3767707175793088306
+      HumanChargedAttack_10: 805610937173800728
+      HumanChargedAttack_11: 5470356132587653353
+      HumanChargedAttack_12: -7707208943656974318
+      HumanChargedAttack_13: -5306570721400768206
+      HumanChargedAttack_14: -6027864979364951055
+      HumanChargedAttack_15: -2001848207672261458
+      HumanChargedAttack_16: -1019439049870508248
+      HumanChargedAttack_17: 2810794855858660685
+      HumanChargedAttack_2: 6768902478145916278
+      HumanChargedAttack_3: 2817950615050432193
+      HumanChargedAttack_4: -6010597359350562318
+      HumanChargedAttack_5: 7418576087375430628
+      HumanChargedAttack_6: -7757881949283749216
+      HumanChargedAttack_7: 242407876719921769
+      HumanChargedAttack_8: -4853482251220191052
+      HumanChargedAttack_9: -5549832225906412647
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: a27cd630a4e2800a8b244d8f10bdd5ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6463991323347210029
+    second: HalflingIdle_0
+  - first:
+      213: 2765847926394424090
+    second: HalflingIdle_1
+  - first:
+      213: -8998174776921914481
+    second: HalflingIdle_2
+  - first:
+      213: -4059801686318835583
+    second: HalflingIdle_3
+  - first:
+      213: 6524515219572139314
+    second: HalflingIdle_4
+  - first:
+      213: 1790391651473094647
+    second: HalflingIdle_5
+  - first:
+      213: 691678629213184408
+    second: HalflingIdle_6
+  - first:
+      213: -5134512204618414568
+    second: HalflingIdle_7
+  - first:
+      213: -5851365585188642787
+    second: HalflingIdle_8
+  - first:
+      213: 137805541173256230
+    second: HalflingIdle_9
+  - first:
+      213: -4335405580936409356
+    second: HalflingIdle_10
+  - first:
+      213: 515939393231193629
+    second: HalflingIdle_11
+  - first:
+      213: -6731128012238929382
+    second: HalflingIdle_12
+  - first:
+      213: -532407745329315276
+    second: HalflingIdle_13
+  - first:
+      213: -2608525647646166640
+    second: HalflingIdle_14
+  - first:
+      213: 1379449210999994847
+    second: HalflingIdle_15
+  - first:
+      213: 7331229715072755348
+    second: HalflingIdle_16
+  - first:
+      213: 2234384309555788744
+    second: HalflingIdle_17
+  - first:
+      213: 3543773905055941039
+    second: HalflingIdle_18
+  - first:
+      213: -620736380892804988
+    second: HalflingIdle_19
+  - first:
+      213: -7101769486749225200
+    second: HalflingIdle_20
+  - first:
+      213: 143841166238233091
+    second: HalflingIdle_21
+  - first:
+      213: -8048979759069616613
+    second: HalflingIdle_22
+  - first:
+      213: 8118642807538521211
+    second: HalflingIdle_23
+  - first:
+      213: -2506266737391632356
+    second: HalflingIdle_24
+  - first:
+      213: -664903909107193767
+    second: HalflingIdle_25
+  - first:
+      213: 5822652055625751887
+    second: HalflingIdle_26
+  - first:
+      213: -8621997033720994077
+    second: HalflingIdle_27
+  - first:
+      213: 8212701273875881807
+    second: HalflingIdle_28
+  - first:
+      213: -7581061194058147041
+    second: HalflingIdle_29
+  - first:
+      213: 5501973844662817037
+    second: HalflingIdle_30
+  - first:
+      213: -3298037894419566723
+    second: HalflingIdle_31
+  - first:
+      213: 2544243839071014112
+    second: HalflingIdle_32
+  - first:
+      213: -1009696268991039219
+    second: HalflingIdle_33
+  - first:
+      213: -7783431642781338703
+    second: HalflingIdle_34
+  - first:
+      213: -7350734121830111594
+    second: HalflingIdle_35
+  - first:
+      213: 2287098660115816351
+    second: HalflingIdle_36
+  - first:
+      213: -7161031322545696029
+    second: HalflingIdle_37
+  - first:
+      213: -2029742452612190981
+    second: HalflingIdle_38
+  - first:
+      213: -7108947747604256114
+    second: HalflingIdle_39
+  - first:
+      213: -6217350735692119033
+    second: HalflingIdle_40
+  - first:
+      213: -608557893486534082
+    second: HalflingIdle_41
+  - first:
+      213: -7034252552421695678
+    second: HalflingIdle_42
+  - first:
+      213: 2243138438723763995
+    second: HalflingIdle_43
+  - first:
+      213: -1547683919667734118
+    second: HalflingIdle_44
+  - first:
+      213: -4879975717743481651
+    second: HalflingIdle_45
+  - first:
+      213: -3395382083044408756
+    second: HalflingIdle_46
+  - first:
+      213: -8225131060264421759
+    second: HalflingIdle_47
+  - first:
+      213: 1891272966442567702
+    second: HalflingIdle_48
+  - first:
+      213: -252743708537238823
+    second: HalflingIdle_49
+  - first:
+      213: 3367234489113526371
+    second: HalflingIdle_50
+  - first:
+      213: -959860967112894998
+    second: HalflingIdle_51
+  - first:
+      213: 3951519792526098384
+    second: HalflingIdle_52
+  - first:
+      213: -4041782602117662150
+    second: HalflingIdle_53
+  - first:
+      213: 8350562415559755498
+    second: HalflingIdle_54
+  - first:
+      213: 726254268943747779
+    second: HalflingIdle_55
+  - first:
+      213: 3915097900288799352
+    second: HalflingIdle_56
+  - first:
+      213: 7932254460250835629
+    second: HalflingIdle_57
+  - first:
+      213: -22557782005601457
+    second: HalflingIdle_58
+  - first:
+      213: 560450286442345591
+    second: HalflingIdle_59
+  - first:
+      213: -993547583745699137
+    second: HalflingIdle_60
+  - first:
+      213: 7634185374250619757
+    second: HalflingIdle_61
+  - first:
+      213: 1898848282157607345
+    second: HalflingIdle_62
+  - first:
+      213: -8266900893548517747
+    second: HalflingIdle_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalflingIdle_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0beac932a4b46a0800000000000000
+      internalID: -6463991323347210029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b8d73f804426620800000000000000
+      internalID: 2765847926394424090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8380baf6bf002380800000000000000
+      internalID: -8998174776921914481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1881f6440efa8a7c0800000000000000
+      internalID: -4059801686318835583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2352a3a160cbb8a50800000000000000
+      internalID: 6524515219572139314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7f0ea98bfb8d810800000000000000
+      internalID: 1790391651473094647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8912bf07c06599900800000000000000
+      internalID: 691678629213184408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816cfcc8a5c8eb8b0800000000000000
+      internalID: -5134512204618414568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10a2eb8006cbcea0800000000000000
+      internalID: -5851365585188642787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62066b9d86599e100800000000000000
+      internalID: 137805541173256230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe0a07189b85d3c0800000000000000
+      internalID: -4335405580936409356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d160d23052cf82700800000000000000
+      internalID: 515939393231193629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1241d46cba3692a0800000000000000
+      internalID: -6731128012238929382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432caf7f9f18c98f0800000000000000
+      internalID: -532407745329315276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_14
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091fd887eb7accbd0800000000000000
+      internalID: -2608525647646166640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_15
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9f85fafb9c42310800000000000000
+      internalID: 1379449210999994847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49623b55592cdb560800000000000000
+      internalID: 7331229715072755348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb77c6f0b0220f10800000000000000
+      internalID: 2234384309555788744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1882747930e2130800000000000000
+      internalID: 3543773905055941039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48809b5ec83b267f0800000000000000
+      internalID: -620736380892804988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01faa915742717d90800000000000000
+      internalID: -7101769486749225200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30235b157c60ff100800000000000000
+      internalID: 143841166238233091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16a850fd874c4090800000000000000
+      internalID: -8048979759069616613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_23
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b741d997e963ba070800000000000000
+      internalID: 8118642807538521211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10056d5ea3f73dd0800000000000000
+      internalID: -2506266737391632356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958a5efda69c5c6f0800000000000000
+      internalID: -664903909107193767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d5542e1373ec050800000000000000
+      internalID: 5822652055625751887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_27
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6a69e0163885880800000000000000
+      internalID: -8621997033720994077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_28
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f15cbbb4069f170800000000000000
+      internalID: 8212701273875881807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_29
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b5aab9209aac690800000000000000
+      internalID: -7581061194058147041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_30
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d011e9e9f00fa5c40800000000000000
+      internalID: 5501973844662817037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_31
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f285f32040b32d0800000000000000
+      internalID: -3298037894419566723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_32
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eccdc9aa48fe4320800000000000000
+      internalID: 2544243839071014112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0970cbc796dcf1f0800000000000000
+      internalID: -1009696268991039219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3bb76c822bbf390800000000000000
+      internalID: -7783431642781338703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_35
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69629f51342fcf990800000000000000
+      internalID: -7350734121830111594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_36
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f99722d186dbf10800000000000000
+      internalID: 2287098660115816351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_37
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2d732f3f7ee9c90800000000000000
+      internalID: -7161031322545696029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_38
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc258e4ef7e4d3e0800000000000000
+      internalID: -2029742452612190981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_39
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a2c3930b1f75d90800000000000000
+      internalID: -7108947747604256114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_40
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704ce03627887b9a0800000000000000
+      internalID: -6217350735692119033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_41
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a975f1d7fd87f0800000000000000
+      internalID: -608557893486534082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_42
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f15889290516e90800000000000000
+      internalID: -7034252552421695678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_43
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f772e768a312f10800000000000000
+      internalID: 2243138438723763995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_44
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99de9fcca5858ae0800000000000000
+      internalID: -1547683919667734118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_45
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc2e5f90f7d64cb0800000000000000
+      internalID: -4879975717743481651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_46
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4289672cfd21e0d0800000000000000
+      internalID: -3395382083044408756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_47
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18638e911e67add80800000000000000
+      internalID: -8225131060264421759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_48
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618cb1a1eb62f3a10800000000000000
+      internalID: 1891272966442567702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_49
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da4c69afe21e7cf0800000000000000
+      internalID: -252743708537238823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_50
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3604e0f6de1dabe20800000000000000
+      internalID: 3367234489113526371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae519753983eda2f0800000000000000
+      internalID: -959860967112894998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df7174b05e96d630800000000000000
+      internalID: 3951519792526098384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_53
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a3c6d3324b8e7c0800000000000000
+      internalID: -4041782602117662150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_54
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6ca26164823e370800000000000000
+      internalID: 8350562415559755498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_55
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cac005e86c241a00800000000000000
+      internalID: 726254268943747779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_56
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87277971cc8355630800000000000000
+      internalID: 3915097900288799352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_57
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa424b9767051e60800000000000000
+      internalID: 7932254460250835629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ba2a811dbdfaff0800000000000000
+      internalID: -22557782005601457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_59
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77479ade09e17c700800000000000000
+      internalID: 560450286442345591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_60
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2d3639cb53632f0800000000000000
+      internalID: -993547583745699137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_61
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63d0b5762312f960800000000000000
+      internalID: 7634185374250619757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_62
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b96d5cb3701a5a10800000000000000
+      internalID: 1898848282157607345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingIdle_63
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d866eaeef61164d80800000000000000
+      internalID: -8266900893548517747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalflingIdle_0: -6463991323347210029
+      HalflingIdle_1: 2765847926394424090
+      HalflingIdle_10: -4335405580936409356
+      HalflingIdle_11: 515939393231193629
+      HalflingIdle_12: -6731128012238929382
+      HalflingIdle_13: -532407745329315276
+      HalflingIdle_14: -2608525647646166640
+      HalflingIdle_15: 1379449210999994847
+      HalflingIdle_16: 7331229715072755348
+      HalflingIdle_17: 2234384309555788744
+      HalflingIdle_18: 3543773905055941039
+      HalflingIdle_19: -620736380892804988
+      HalflingIdle_2: -8998174776921914481
+      HalflingIdle_20: -7101769486749225200
+      HalflingIdle_21: 143841166238233091
+      HalflingIdle_22: -8048979759069616613
+      HalflingIdle_23: 8118642807538521211
+      HalflingIdle_24: -2506266737391632356
+      HalflingIdle_25: -664903909107193767
+      HalflingIdle_26: 5822652055625751887
+      HalflingIdle_27: -8621997033720994077
+      HalflingIdle_28: 8212701273875881807
+      HalflingIdle_29: -7581061194058147041
+      HalflingIdle_3: -4059801686318835583
+      HalflingIdle_30: 5501973844662817037
+      HalflingIdle_31: -3298037894419566723
+      HalflingIdle_32: 2544243839071014112
+      HalflingIdle_33: -1009696268991039219
+      HalflingIdle_34: -7783431642781338703
+      HalflingIdle_35: -7350734121830111594
+      HalflingIdle_36: 2287098660115816351
+      HalflingIdle_37: -7161031322545696029
+      HalflingIdle_38: -2029742452612190981
+      HalflingIdle_39: -7108947747604256114
+      HalflingIdle_4: 6524515219572139314
+      HalflingIdle_40: -6217350735692119033
+      HalflingIdle_41: -608557893486534082
+      HalflingIdle_42: -7034252552421695678
+      HalflingIdle_43: 2243138438723763995
+      HalflingIdle_44: -1547683919667734118
+      HalflingIdle_45: -4879975717743481651
+      HalflingIdle_46: -3395382083044408756
+      HalflingIdle_47: -8225131060264421759
+      HalflingIdle_48: 1891272966442567702
+      HalflingIdle_49: -252743708537238823
+      HalflingIdle_5: 1790391651473094647
+      HalflingIdle_50: 3367234489113526371
+      HalflingIdle_51: -959860967112894998
+      HalflingIdle_52: 3951519792526098384
+      HalflingIdle_53: -4041782602117662150
+      HalflingIdle_54: 8350562415559755498
+      HalflingIdle_55: 726254268943747779
+      HalflingIdle_56: 3915097900288799352
+      HalflingIdle_57: 7932254460250835629
+      HalflingIdle_58: -22557782005601457
+      HalflingIdle_59: 560450286442345591
+      HalflingIdle_6: 691678629213184408
+      HalflingIdle_60: -993547583745699137
+      HalflingIdle_61: 7634185374250619757
+      HalflingIdle_62: 1898848282157607345
+      HalflingIdle_63: -8266900893548517747
+      HalflingIdle_7: -5134512204618414568
+      HalflingIdle_8: -5851365585188642787
+      HalflingIdle_9: 137805541173256230
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

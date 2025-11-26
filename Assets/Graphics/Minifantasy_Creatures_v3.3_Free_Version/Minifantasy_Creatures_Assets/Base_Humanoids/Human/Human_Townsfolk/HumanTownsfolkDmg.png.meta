@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 5683c4288d464b2d99c52be5d33449c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6826928327642718434
+    second: HumanTownsfolkDmg_0
+  - first:
+      213: 8290230582108577161
+    second: HumanTownsfolkDmg_1
+  - first:
+      213: -7120693726470442283
+    second: HumanTownsfolkDmg_2
+  - first:
+      213: 6669679865193579514
+    second: HumanTownsfolkDmg_3
+  - first:
+      213: -1085467711047647829
+    second: HumanTownsfolkDmg_4
+  - first:
+      213: -8587136509588351791
+    second: HumanTownsfolkDmg_5
+  - first:
+      213: 4830493361784076982
+    second: HumanTownsfolkDmg_6
+  - first:
+      213: -2063154300413615953
+    second: HumanTownsfolkDmg_7
+  - first:
+      213: 1419302689670820378
+    second: HumanTownsfolkDmg_8
+  - first:
+      213: 1298499228966274441
+    second: HumanTownsfolkDmg_9
+  - first:
+      213: 8001010338731253114
+    second: HumanTownsfolkDmg_10
+  - first:
+      213: 1196648541546620876
+    second: HumanTownsfolkDmg_11
+  - first:
+      213: 5432372964146716305
+    second: HumanTownsfolkDmg_12
+  - first:
+      213: -4086862427995827082
+    second: HumanTownsfolkDmg_13
+  - first:
+      213: -5060138146547109577
+    second: HumanTownsfolkDmg_14
+  - first:
+      213: 8339790247527609122
+    second: HumanTownsfolkDmg_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fddcb4bd0e141a0800000000000000
+      internalID: -6826928327642718434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 108
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d59a87ac0dc0370800000000000000
+      internalID: 8290230582108577161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 108
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2706768c63e2d90800000000000000
+      internalID: -7120693726470442283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 108
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3407aff767f8c50800000000000000
+      internalID: 6669679865193579514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad39db2ed4afe0f0800000000000000
+      internalID: -1085467711047647829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 76
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4d23457dc54d880800000000000000
+      internalID: -8587136509588351791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bab5079e1c590340800000000000000
+      internalID: 4830493361784076982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0e60748143e53e0800000000000000
+      internalID: -2063154300413615953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12f596c64062b310800000000000000
+      internalID: 1419302689670820378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 44
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98547a34b22350210800000000000000
+      internalID: 1298499228966274441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ddd4c038c490f60800000000000000
+      internalID: 8001010338731253114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 44
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc720e722895b9010800000000000000
+      internalID: 1196648541546620876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e966fcd6aa36b40800000000000000
+      internalID: 5432372964146716305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 12
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6741b6d564c8847c0800000000000000
+      internalID: -4086862427995827082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731f7ac5a27c6c9b0800000000000000
+      internalID: -5060138146547109577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTownsfolkDmg_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22376254b03ecb370800000000000000
+      internalID: 8339790247527609122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HumanTownsfolkDmg_0: -6826928327642718434
+      HumanTownsfolkDmg_1: 8290230582108577161
+      HumanTownsfolkDmg_10: 8001010338731253114
+      HumanTownsfolkDmg_11: 1196648541546620876
+      HumanTownsfolkDmg_12: 5432372964146716305
+      HumanTownsfolkDmg_13: -4086862427995827082
+      HumanTownsfolkDmg_14: -5060138146547109577
+      HumanTownsfolkDmg_15: 8339790247527609122
+      HumanTownsfolkDmg_2: -7120693726470442283
+      HumanTownsfolkDmg_3: 6669679865193579514
+      HumanTownsfolkDmg_4: -1085467711047647829
+      HumanTownsfolkDmg_5: -8587136509588351791
+      HumanTownsfolkDmg_6: 4830493361784076982
+      HumanTownsfolkDmg_7: -2063154300413615953
+      HumanTownsfolkDmg_8: 1419302689670820378
+      HumanTownsfolkDmg_9: 1298499228966274441
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

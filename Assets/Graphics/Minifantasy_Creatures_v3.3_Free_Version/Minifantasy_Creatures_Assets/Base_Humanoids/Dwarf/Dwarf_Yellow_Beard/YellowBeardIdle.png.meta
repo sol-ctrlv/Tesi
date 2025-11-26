@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: 0a91c6448638b6be19f8b41c92c0c65e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7068485198307749546
+    second: YellowBeardIdle_0
+  - first:
+      213: -4944265505148047311
+    second: YellowBeardIdle_1
+  - first:
+      213: 2005329762948673077
+    second: YellowBeardIdle_2
+  - first:
+      213: 2585204102977371194
+    second: YellowBeardIdle_3
+  - first:
+      213: -6123007264671804300
+    second: YellowBeardIdle_4
+  - first:
+      213: -2676252396994252166
+    second: YellowBeardIdle_5
+  - first:
+      213: -1597139007596056073
+    second: YellowBeardIdle_6
+  - first:
+      213: 4701420652006689696
+    second: YellowBeardIdle_7
+  - first:
+      213: -711776942930096329
+    second: YellowBeardIdle_8
+  - first:
+      213: 8941987448651761710
+    second: YellowBeardIdle_9
+  - first:
+      213: -758433860498925152
+    second: YellowBeardIdle_10
+  - first:
+      213: 7023782181724918462
+    second: YellowBeardIdle_11
+  - first:
+      213: 8483203885035425026
+    second: YellowBeardIdle_12
+  - first:
+      213: -6450288757619816252
+    second: YellowBeardIdle_13
+  - first:
+      213: -3030714960837472454
+    second: YellowBeardIdle_14
+  - first:
+      213: 4846601698662689213
+    second: YellowBeardIdle_15
+  - first:
+      213: 3438339022656860404
+    second: YellowBeardIdle_16
+  - first:
+      213: 334142739073730294
+    second: YellowBeardIdle_17
+  - first:
+      213: -7819809795883778824
+    second: YellowBeardIdle_18
+  - first:
+      213: 8078892595328374414
+    second: YellowBeardIdle_19
+  - first:
+      213: -8852583794982664625
+    second: YellowBeardIdle_20
+  - first:
+      213: -7777116462173348549
+    second: YellowBeardIdle_21
+  - first:
+      213: 1780054281291624850
+    second: YellowBeardIdle_22
+  - first:
+      213: -6873597092757868704
+    second: YellowBeardIdle_23
+  - first:
+      213: -1269559940049599549
+    second: YellowBeardIdle_24
+  - first:
+      213: -6331323539049994097
+    second: YellowBeardIdle_25
+  - first:
+      213: -4955946663215336586
+    second: YellowBeardIdle_26
+  - first:
+      213: -5725032502190303557
+    second: YellowBeardIdle_27
+  - first:
+      213: 8862030327731408190
+    second: YellowBeardIdle_28
+  - first:
+      213: -1684472824969023398
+    second: YellowBeardIdle_29
+  - first:
+      213: -108517706053305399
+    second: YellowBeardIdle_30
+  - first:
+      213: -7519808980304262693
+    second: YellowBeardIdle_31
+  - first:
+      213: 7478252251535655368
+    second: YellowBeardIdle_32
+  - first:
+      213: 2821903540455449859
+    second: YellowBeardIdle_33
+  - first:
+      213: 2839324703734285714
+    second: YellowBeardIdle_34
+  - first:
+      213: -3686280992399194535
+    second: YellowBeardIdle_35
+  - first:
+      213: 4073837614219997550
+    second: YellowBeardIdle_36
+  - first:
+      213: -82431752106371755
+    second: YellowBeardIdle_37
+  - first:
+      213: -3566980287873423854
+    second: YellowBeardIdle_38
+  - first:
+      213: -1784669245214853938
+    second: YellowBeardIdle_39
+  - first:
+      213: 435362243847082352
+    second: YellowBeardIdle_40
+  - first:
+      213: 6789436861424388817
+    second: YellowBeardIdle_41
+  - first:
+      213: 6796426347567312497
+    second: YellowBeardIdle_42
+  - first:
+      213: -8272925401824067093
+    second: YellowBeardIdle_43
+  - first:
+      213: 2463315055407196121
+    second: YellowBeardIdle_44
+  - first:
+      213: -5333439165817109031
+    second: YellowBeardIdle_45
+  - first:
+      213: 6410666619026133878
+    second: YellowBeardIdle_46
+  - first:
+      213: 4323852655858999808
+    second: YellowBeardIdle_47
+  - first:
+      213: -218119559710098674
+    second: YellowBeardIdle_48
+  - first:
+      213: 4181132105722304643
+    second: YellowBeardIdle_49
+  - first:
+      213: 4830668855102892597
+    second: YellowBeardIdle_50
+  - first:
+      213: -4596632443217032275
+    second: YellowBeardIdle_51
+  - first:
+      213: 6389042748960960457
+    second: YellowBeardIdle_52
+  - first:
+      213: -8039210652784911058
+    second: YellowBeardIdle_53
+  - first:
+      213: 1418619927671524224
+    second: YellowBeardIdle_54
+  - first:
+      213: 5775733052979006541
+    second: YellowBeardIdle_55
+  - first:
+      213: 4175682225805494714
+    second: YellowBeardIdle_56
+  - first:
+      213: -5449634958721294242
+    second: YellowBeardIdle_57
+  - first:
+      213: -4755767267529887233
+    second: YellowBeardIdle_58
+  - first:
+      213: -4815991479917549888
+    second: YellowBeardIdle_59
+  - first:
+      213: -1318090666237858777
+    second: YellowBeardIdle_60
+  - first:
+      213: 3108011519886941697
+    second: YellowBeardIdle_61
+  - first:
+      213: 1472795201538933295
+    second: YellowBeardIdle_62
+  - first:
+      213: 4738852386487271840
+    second: YellowBeardIdle_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YellowBeardIdle_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65192ce9922b7ed90800000000000000
+      internalID: -7068485198307749546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130fe6a08b0726bb0800000000000000
+      internalID: -4944265505148047311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ee2127bcc54db10800000000000000
+      internalID: 2005329762948673077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c39d54f6d70e320800000000000000
+      internalID: 2585204102977371194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474d9187555b60ba0800000000000000
+      internalID: -6123007264671804300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72bed3df9a0cdad0800000000000000
+      internalID: -2676252396994252166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1315bd882d5d9e0800000000000000
+      internalID: -1597139007596056073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab4b8e7c2dce3140800000000000000
+      internalID: 4701420652006689696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f865d34a24f16f0800000000000000
+      internalID: -711776942930096329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28c3e63532581c70800000000000000
+      internalID: 8941987448651761710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a955571c608975f0800000000000000
+      internalID: -758433860498925152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb29e614eac797160800000000000000
+      internalID: 7023782181724918462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_12
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d00ccccf46ab570800000000000000
+      internalID: 8483203885035425026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8006fcc88fb76a0800000000000000
+      internalID: -6450288757619816252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f02dfecccb0f5d0800000000000000
+      internalID: -3030714960837472454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db928980196924340800000000000000
+      internalID: 4846601698662689213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f073debf1f67bf20800000000000000
+      internalID: 3438339022656860404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f604c20d0d13a400800000000000000
+      internalID: 334142739073730294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc3a39fb647a7390800000000000000
+      internalID: -7819809795883778824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86d41bf20efd1070800000000000000
+      internalID: 8078892595328374414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46cda301fd452580800000000000000
+      internalID: -8852583794982664625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_21
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d905758c1221490800000000000000
+      internalID: -7777116462173348549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291fc4d00f504b810800000000000000
+      internalID: 1780054281291624850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_23
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f620dacd31c90a0800000000000000
+      internalID: -6873597092757868704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_24
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3074006fd916ee0800000000000000
+      internalID: -1269559940049599549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_25
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f882bd839ce9228a0800000000000000
+      internalID: -6331323539049994097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_26
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673744d74c0f83bb0800000000000000
+      internalID: -4955946663215336586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_27
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6916395499c80b0800000000000000
+      internalID: -5725032502190303557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_28
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d4b2941a14cfa70800000000000000
+      internalID: 8862030327731408190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_29
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a503ce1f3ec8f98e0800000000000000
+      internalID: -1684472824969023398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_30
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb3ad6a8b77e7ef0800000000000000
+      internalID: -108517706053305399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_31
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd90c26f29544a790800000000000000
+      internalID: -7519808980304262693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c14c812dc618c760800000000000000
+      internalID: 7478252251535655368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_33
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305a347a15a692720800000000000000
+      internalID: 2821903540455449859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_34
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295c21056ce476720800000000000000
+      internalID: 2839324703734285714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_35
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95685c9d7f2b7dcc0800000000000000
+      internalID: -3686280992399194535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_36
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61353cd9bd298830800000000000000
+      internalID: 4073837614219997550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5559c7912c42bdef0800000000000000
+      internalID: -82431752106371755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_38
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216eb7ca35a8f7ec0800000000000000
+      internalID: -3566980287873423854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_39
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4776de6c49b37e0800000000000000
+      internalID: -1784669245214853938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_40
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0715f1577a7ba0600800000000000000
+      internalID: 435362243847082352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_41
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dac42e7adce83e50800000000000000
+      internalID: 6789436861424388817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_42
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17eeadc01c1c15e50800000000000000
+      internalID: 6796426347567312497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_43
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be188facd2aa03d80800000000000000
+      internalID: -8272925401824067093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_44
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7ea6fddf37f2220800000000000000
+      internalID: 2463315055407196121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_45
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5c0522651dbf5b0800000000000000
+      internalID: -5333439165817109031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_46
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673d188235347f850800000000000000
+      internalID: 6410666619026133878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_47
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002ea9de419610c30800000000000000
+      internalID: 4323852655858999808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_48
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b3ae48a6519fcf0800000000000000
+      internalID: -218119559710098674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_49
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3881f806f7d560a30800000000000000
+      internalID: 4181132105722304643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_50
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a63ffcabbf90340800000000000000
+      internalID: 4830668855102892597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_51
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab430b952b7530c0800000000000000
+      internalID: -4596632443217032275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_52
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf6a9297807aa850800000000000000
+      internalID: 6389042748960960457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_53
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d183e318cfe6090800000000000000
+      internalID: -8039210652784911058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_54
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bc62cde43ffa310800000000000000
+      internalID: 1418619927671524224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_55
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ccb4c4c96872050800000000000000
+      internalID: 5775733052979006541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_56
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab98c045cd003f930800000000000000
+      internalID: 4175682225805494714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_57
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50edd1e0e10f54b0800000000000000
+      internalID: -5449634958721294242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_58
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff173780ede100eb0800000000000000
+      internalID: -4755767267529887233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_59
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6e436e3492a2db0800000000000000
+      internalID: -4815991479917549888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_60
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c6229c58335bde0800000000000000
+      internalID: -1318090666237858777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_61
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10edea8a200e12b20800000000000000
+      internalID: 3108011519886941697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_62
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22c0aebe6b607410800000000000000
+      internalID: 1472795201538933295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBeardIdle_63
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a106935329c3c140800000000000000
+      internalID: 4738852386487271840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      YellowBeardIdle_0: -7068485198307749546
+      YellowBeardIdle_1: -4944265505148047311
+      YellowBeardIdle_10: -758433860498925152
+      YellowBeardIdle_11: 7023782181724918462
+      YellowBeardIdle_12: 8483203885035425026
+      YellowBeardIdle_13: -6450288757619816252
+      YellowBeardIdle_14: -3030714960837472454
+      YellowBeardIdle_15: 4846601698662689213
+      YellowBeardIdle_16: 3438339022656860404
+      YellowBeardIdle_17: 334142739073730294
+      YellowBeardIdle_18: -7819809795883778824
+      YellowBeardIdle_19: 8078892595328374414
+      YellowBeardIdle_2: 2005329762948673077
+      YellowBeardIdle_20: -8852583794982664625
+      YellowBeardIdle_21: -7777116462173348549
+      YellowBeardIdle_22: 1780054281291624850
+      YellowBeardIdle_23: -6873597092757868704
+      YellowBeardIdle_24: -1269559940049599549
+      YellowBeardIdle_25: -6331323539049994097
+      YellowBeardIdle_26: -4955946663215336586
+      YellowBeardIdle_27: -5725032502190303557
+      YellowBeardIdle_28: 8862030327731408190
+      YellowBeardIdle_29: -1684472824969023398
+      YellowBeardIdle_3: 2585204102977371194
+      YellowBeardIdle_30: -108517706053305399
+      YellowBeardIdle_31: -7519808980304262693
+      YellowBeardIdle_32: 7478252251535655368
+      YellowBeardIdle_33: 2821903540455449859
+      YellowBeardIdle_34: 2839324703734285714
+      YellowBeardIdle_35: -3686280992399194535
+      YellowBeardIdle_36: 4073837614219997550
+      YellowBeardIdle_37: -82431752106371755
+      YellowBeardIdle_38: -3566980287873423854
+      YellowBeardIdle_39: -1784669245214853938
+      YellowBeardIdle_4: -6123007264671804300
+      YellowBeardIdle_40: 435362243847082352
+      YellowBeardIdle_41: 6789436861424388817
+      YellowBeardIdle_42: 6796426347567312497
+      YellowBeardIdle_43: -8272925401824067093
+      YellowBeardIdle_44: 2463315055407196121
+      YellowBeardIdle_45: -5333439165817109031
+      YellowBeardIdle_46: 6410666619026133878
+      YellowBeardIdle_47: 4323852655858999808
+      YellowBeardIdle_48: -218119559710098674
+      YellowBeardIdle_49: 4181132105722304643
+      YellowBeardIdle_5: -2676252396994252166
+      YellowBeardIdle_50: 4830668855102892597
+      YellowBeardIdle_51: -4596632443217032275
+      YellowBeardIdle_52: 6389042748960960457
+      YellowBeardIdle_53: -8039210652784911058
+      YellowBeardIdle_54: 1418619927671524224
+      YellowBeardIdle_55: 5775733052979006541
+      YellowBeardIdle_56: 4175682225805494714
+      YellowBeardIdle_57: -5449634958721294242
+      YellowBeardIdle_58: -4755767267529887233
+      YellowBeardIdle_59: -4815991479917549888
+      YellowBeardIdle_6: -1597139007596056073
+      YellowBeardIdle_60: -1318090666237858777
+      YellowBeardIdle_61: 3108011519886941697
+      YellowBeardIdle_62: 1472795201538933295
+      YellowBeardIdle_63: 4738852386487271840
+      YellowBeardIdle_7: 4701420652006689696
+      YellowBeardIdle_8: -711776942930096329
+      YellowBeardIdle_9: 8941987448651761710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

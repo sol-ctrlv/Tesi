@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: d38a9e1cba30e2678bb328be52f6a0e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2251728095095456298
+    second: YellowBearDmg_0
+  - first:
+      213: -3431204329887048433
+    second: YellowBearDmg_1
+  - first:
+      213: 4791463641822150291
+    second: YellowBearDmg_2
+  - first:
+      213: -5748755041099068283
+    second: YellowBearDmg_3
+  - first:
+      213: 184595567362233774
+    second: YellowBearDmg_4
+  - first:
+      213: 6630423001595166249
+    second: YellowBearDmg_5
+  - first:
+      213: 588006628075381251
+    second: YellowBearDmg_6
+  - first:
+      213: 1258937051017252929
+    second: YellowBearDmg_7
+  - first:
+      213: -3179869935347652297
+    second: YellowBearDmg_8
+  - first:
+      213: 7111513673390092739
+    second: YellowBearDmg_9
+  - first:
+      213: 2245429740262022201
+    second: YellowBearDmg_10
+  - first:
+      213: -917759460223990896
+    second: YellowBearDmg_11
+  - first:
+      213: -3289146185468067932
+    second: YellowBearDmg_12
+  - first:
+      213: 7886328074070618067
+    second: YellowBearDmg_13
+  - first:
+      213: 626461012868028448
+    second: YellowBearDmg_14
+  - first:
+      213: -3507894996552148668
+    second: YellowBearDmg_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YellowBearDmg_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a228ee6b5cebf3f10800000000000000
+      internalID: 2251728095095456298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 108
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ddc4d57d9e160d0800000000000000
+      internalID: -3431204329887048433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e3205cbc2be7240800000000000000
+      internalID: 4791463641822150291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ccd829fb15830b0800000000000000
+      internalID: -5748755041099068283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5dcb3c0b0df8200800000000000000
+      internalID: 184595567362233774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 76
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eb8a8279ef30c50800000000000000
+      internalID: 6630423001595166249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3022200b9e4092800800000000000000
+      internalID: 588006628075381251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1401678e394a87110800000000000000
+      internalID: 1258937051017252929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739a8a73425ded3d0800000000000000
+      internalID: -3179869935347652297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 44
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1ffbde10c21b260800000000000000
+      internalID: 7111513673390092739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c5a64b37e592f10800000000000000
+      internalID: 2245429740262022201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093481822a67343f0800000000000000
+      internalID: -917759460223990896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af38d098fa9a52d0800000000000000
+      internalID: -3289146185468067932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 12
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df6b2d899dd17d60800000000000000
+      internalID: 7886328074070618067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02851a9d8f2a1b800800000000000000
+      internalID: 626461012868028448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBearDmg_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44993251614715fc0800000000000000
+      internalID: -3507894996552148668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      YellowBearDmg_0: 2251728095095456298
+      YellowBearDmg_1: -3431204329887048433
+      YellowBearDmg_10: 2245429740262022201
+      YellowBearDmg_11: -917759460223990896
+      YellowBearDmg_12: -3289146185468067932
+      YellowBearDmg_13: 7886328074070618067
+      YellowBearDmg_14: 626461012868028448
+      YellowBearDmg_15: -3507894996552148668
+      YellowBearDmg_2: 4791463641822150291
+      YellowBearDmg_3: -5748755041099068283
+      YellowBearDmg_4: 184595567362233774
+      YellowBearDmg_5: 6630423001595166249
+      YellowBearDmg_6: 588006628075381251
+      YellowBearDmg_7: 1258937051017252929
+      YellowBearDmg_8: -3179869935347652297
+      YellowBearDmg_9: 7111513673390092739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

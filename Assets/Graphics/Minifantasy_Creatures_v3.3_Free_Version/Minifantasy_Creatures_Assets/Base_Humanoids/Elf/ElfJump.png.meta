@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 2e4386a85fd092c48acc52b907d2dd37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1911280307399066483
+    second: ElfJump_0
+  - first:
+      213: -6793701632784497279
+    second: ElfJump_1
+  - first:
+      213: -1451359802912484594
+    second: ElfJump_2
+  - first:
+      213: -1260107172416960756
+    second: ElfJump_3
+  - first:
+      213: 6807629020531002516
+    second: ElfJump_4
+  - first:
+      213: 4445478473528384684
+    second: ElfJump_5
+  - first:
+      213: -8704065073214617234
+    second: ElfJump_6
+  - first:
+      213: 3518070159685451362
+    second: ElfJump_7
+  - first:
+      213: -7950354709216777317
+    second: ElfJump_8
+  - first:
+      213: 6087888095708964643
+    second: ElfJump_9
+  - first:
+      213: 808303471448988570
+    second: ElfJump_10
+  - first:
+      213: 4364679146008646970
+    second: ElfJump_11
+  - first:
+      213: 6935368070072057036
+    second: ElfJump_12
+  - first:
+      213: -6991231550592830292
+    second: ElfJump_13
+  - first:
+      213: 1724787781134495694
+    second: ElfJump_14
+  - first:
+      213: -3494961024324755907
+    second: ElfJump_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElfJump_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c7743dfa4c975e0800000000000000
+      internalID: -1911280307399066483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 111
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18583eb0c5ce7b1a0800000000000000
+      internalID: -6793701632784497279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 110
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03de1ae2fbbbdbe0800000000000000
+      internalID: -1451359802912484594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 108
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c074a29f333338ee0800000000000000
+      internalID: -1260107172416960756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 76
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c046b968e897e50800000000000000
+      internalID: 6807629020531002516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 79
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac1e475e1381bd30800000000000000
+      internalID: 4445478473528384684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 78
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6988299ee2f43780800000000000000
+      internalID: -8704065073214617234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ef3f2bb22b2d030800000000000000
+      internalID: 3518070159685451362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ba7c6c38aaaa190800000000000000
+      internalID: -7950354709216777317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327ef01d7f58c7450800000000000000
+      internalID: 6087888095708964643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 46
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b9e6689bba73b00800000000000000
+      internalID: 808303471448988570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a359668ee84729c30800000000000000
+      internalID: 4364679146008646970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc3b3bb3806f3060800000000000000
+      internalID: 6935368070072057036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 15
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4396422f72afe90800000000000000
+      internalID: -6991231550592830292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 14
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfa47f395dafe710800000000000000
+      internalID: 1724787781134495694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElfJump_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e994927776f7fc0800000000000000
+      internalID: -3494961024324755907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ElfJump_0: -1911280307399066483
+      ElfJump_1: -6793701632784497279
+      ElfJump_10: 808303471448988570
+      ElfJump_11: 4364679146008646970
+      ElfJump_12: 6935368070072057036
+      ElfJump_13: -6991231550592830292
+      ElfJump_14: 1724787781134495694
+      ElfJump_15: -3494961024324755907
+      ElfJump_2: -1451359802912484594
+      ElfJump_3: -1260107172416960756
+      ElfJump_4: 6807629020531002516
+      ElfJump_5: 4445478473528384684
+      ElfJump_6: -8704065073214617234
+      ElfJump_7: 3518070159685451362
+      ElfJump_8: -7950354709216777317
+      ElfJump_9: 6087888095708964643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

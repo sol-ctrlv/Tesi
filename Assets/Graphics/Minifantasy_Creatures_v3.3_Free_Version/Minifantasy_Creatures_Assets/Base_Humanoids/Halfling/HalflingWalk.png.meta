@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: b9b4bcfddd8f7b1d0bd7ad5a30459c88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3552918316815199333
+    second: HalflingWalk_0
+  - first:
+      213: -6452105691366281674
+    second: HalflingWalk_1
+  - first:
+      213: 4571604137542269201
+    second: HalflingWalk_2
+  - first:
+      213: -4677991316563730715
+    second: HalflingWalk_3
+  - first:
+      213: -4284479004884804746
+    second: HalflingWalk_4
+  - first:
+      213: 4946700036536683024
+    second: HalflingWalk_5
+  - first:
+      213: -5930600662290589773
+    second: HalflingWalk_6
+  - first:
+      213: 9091539031287537373
+    second: HalflingWalk_7
+  - first:
+      213: -6842250670551135675
+    second: HalflingWalk_8
+  - first:
+      213: -8168566364449533267
+    second: HalflingWalk_9
+  - first:
+      213: -3706773121379868455
+    second: HalflingWalk_10
+  - first:
+      213: 8725651776901318890
+    second: HalflingWalk_11
+  - first:
+      213: 3802768091839922479
+    second: HalflingWalk_12
+  - first:
+      213: 463941417613663205
+    second: HalflingWalk_13
+  - first:
+      213: -2975478645514769315
+    second: HalflingWalk_14
+  - first:
+      213: 4999125525399126347
+    second: HalflingWalk_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalflingWalk_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cafbd82608e4130800000000000000
+      internalID: 3552918316815199333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 108
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e26d4fe048576a0800000000000000
+      internalID: -6452105691366281674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119b9efddb9917f30800000000000000
+      internalID: 4571604137542269201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 108
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee5bd1ceaf641fb0800000000000000
+      internalID: -4677991316563730715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bd8329b097a84c0800000000000000
+      internalID: -4284479004884804746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 76
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a4e28797536a440800000000000000
+      internalID: 4946700036536683024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7197b8e1642bda0800000000000000
+      internalID: -5930600662290589773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde1e757492ab2e70800000000000000
+      internalID: 9091539031287537373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a0f9554417b01a0800000000000000
+      internalID: -6842250670551135675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_9
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da218c2ab2c63ae80800000000000000
+      internalID: -8168566364449533267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 44
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0ef254c75ee8cc0800000000000000
+      internalID: -3706773121379868455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 44
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae885f38f0eb71970800000000000000
+      internalID: 8725651776901318890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f210f4d7e6526c430800000000000000
+      internalID: 3802768091839922479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 12
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb1471e240407600800000000000000
+      internalID: 463941417613663205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ce459cfe9f4b6d0800000000000000
+      internalID: -2975478645514769315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingWalk_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41c009cd26706540800000000000000
+      internalID: 4999125525399126347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalflingWalk_0: 3552918316815199333
+      HalflingWalk_1: -6452105691366281674
+      HalflingWalk_10: -3706773121379868455
+      HalflingWalk_11: 8725651776901318890
+      HalflingWalk_12: 3802768091839922479
+      HalflingWalk_13: 463941417613663205
+      HalflingWalk_14: -2975478645514769315
+      HalflingWalk_15: 4999125525399126347
+      HalflingWalk_2: 4571604137542269201
+      HalflingWalk_3: -4677991316563730715
+      HalflingWalk_4: -4284479004884804746
+      HalflingWalk_5: 4946700036536683024
+      HalflingWalk_6: -5930600662290589773
+      HalflingWalk_7: 9091539031287537373
+      HalflingWalk_8: -6842250670551135675
+      HalflingWalk_9: -8168566364449533267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

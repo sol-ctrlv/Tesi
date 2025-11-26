@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: d160bdb0075521f96966114b752a2867
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 763495071017127408
+    second: HalflingAttack_0
+  - first:
+      213: -6559598998584512842
+    second: HalflingAttack_1
+  - first:
+      213: 3446790317727727672
+    second: HalflingAttack_2
+  - first:
+      213: -5686490296449291933
+    second: HalflingAttack_3
+  - first:
+      213: 4462214101466606219
+    second: HalflingAttack_4
+  - first:
+      213: -6913688515705428817
+    second: HalflingAttack_5
+  - first:
+      213: -7447048991111067173
+    second: HalflingAttack_6
+  - first:
+      213: 4206467497509118448
+    second: HalflingAttack_7
+  - first:
+      213: 4625633874004592320
+    second: HalflingAttack_8
+  - first:
+      213: -787095274026815521
+    second: HalflingAttack_9
+  - first:
+      213: 3601743136420748774
+    second: HalflingAttack_10
+  - first:
+      213: -4213419826589950836
+    second: HalflingAttack_11
+  - first:
+      213: -7657038916676832783
+    second: HalflingAttack_12
+  - first:
+      213: -5840007600952256320
+    second: HalflingAttack_13
+  - first:
+      213: -6990090887873265585
+    second: HalflingAttack_14
+  - first:
+      213: 2130559407388385073
+    second: HalflingAttack_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalflingAttack_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdccbfc8ba789a00800000000000000
+      internalID: 763495071017127408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 108
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6beac5c077f97f4a0800000000000000
+      internalID: -6559598998584512842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830ca67388575df20800000000000000
+      internalID: 3446790317727727672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 104
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3692f6524378511b0800000000000000
+      internalID: -5686490296449291933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ae7ad5518fced30800000000000000
+      internalID: 4462214101466606219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 76
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa42eaddce4ad00a0800000000000000
+      internalID: -6913688515705428817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 72
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9c4e31664c6a890800000000000000
+      internalID: -7447048991111067173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1e144f6ef506a30800000000000000
+      internalID: 4206467497509118448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6ce01308d813040800000000000000
+      internalID: 4625633874004592320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 43
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf2e3bb40da315f0800000000000000
+      internalID: -787095274026815521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 44
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed5f8abc46fbf130800000000000000
+      internalID: 3601743136420748774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c948acdfce685c0800000000000000
+      internalID: -4213419826589950836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1b22c8cabbcb590800000000000000
+      internalID: -7657038916676832783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 11
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8d8a3570024fea0800000000000000
+      internalID: -5840007600952256320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 12
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f408e906f553efe90800000000000000
+      internalID: -6990090887873265585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalflingAttack_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f504a2e74419d10800000000000000
+      internalID: 2130559407388385073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalflingAttack_0: 763495071017127408
+      HalflingAttack_1: -6559598998584512842
+      HalflingAttack_10: 3601743136420748774
+      HalflingAttack_11: -4213419826589950836
+      HalflingAttack_12: -7657038916676832783
+      HalflingAttack_13: -5840007600952256320
+      HalflingAttack_14: -6990090887873265585
+      HalflingAttack_15: 2130559407388385073
+      HalflingAttack_2: 3446790317727727672
+      HalflingAttack_3: -5686490296449291933
+      HalflingAttack_4: 4462214101466606219
+      HalflingAttack_5: -6913688515705428817
+      HalflingAttack_6: -7447048991111067173
+      HalflingAttack_7: 4206467497509118448
+      HalflingAttack_8: 4625633874004592320
+      HalflingAttack_9: -787095274026815521
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: c6ebc3ae41a30d7d4b8fc1a51c461964
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8074629274853984238
+    second: DwarfJump_0
+  - first:
+      213: 5356664294803420840
+    second: DwarfJump_1
+  - first:
+      213: 8025099828574636842
+    second: DwarfJump_2
+  - first:
+      213: 2390338429661098781
+    second: DwarfJump_3
+  - first:
+      213: -7457944655884075917
+    second: DwarfJump_4
+  - first:
+      213: -8903204295943753707
+    second: DwarfJump_5
+  - first:
+      213: -8782483629170014976
+    second: DwarfJump_6
+  - first:
+      213: -532241534033521029
+    second: DwarfJump_7
+  - first:
+      213: 4002328466844349695
+    second: DwarfJump_8
+  - first:
+      213: 7136593828372586390
+    second: DwarfJump_9
+  - first:
+      213: -739893797508994000
+    second: DwarfJump_10
+  - first:
+      213: -302234276227588703
+    second: DwarfJump_11
+  - first:
+      213: -6128625302727233413
+    second: DwarfJump_12
+  - first:
+      213: -3973278998349151246
+    second: DwarfJump_13
+  - first:
+      213: -8319459564176207534
+    second: DwarfJump_14
+  - first:
+      213: -5477058498156540328
+    second: DwarfJump_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DwarfJump_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee744a45b88de0070800000000000000
+      internalID: 8074629274853984238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 111
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6b6c89bc1b65a40800000000000000
+      internalID: 5356664294803420840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 110
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b4d3976c1ee5f60800000000000000
+      internalID: 8025099828574636842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d133ae023203c2120800000000000000
+      internalID: 2390338429661098781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 76
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cb18f69de008890800000000000000
+      internalID: -7457944655884075917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 79
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5107a813dd6717480800000000000000
+      internalID: -8903204295943753707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 78
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00543adbba95e1680800000000000000
+      internalID: -8782483629170014976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76193d05291d98f0800000000000000
+      internalID: -532241534033521029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f0bc09802b8730800000000000000
+      internalID: 4002328466844349695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 47
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f946e86464a0360800000000000000
+      internalID: 7136593828372586390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 46
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c26f3e28e5bb5f0800000000000000
+      internalID: -739893797508994000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1add18ee68f3ecbf0800000000000000
+      internalID: -302234276227588703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70f87d02cfb2faa0800000000000000
+      internalID: -6128625302727233413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 15
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f301e56dc31cd8c0800000000000000
+      internalID: -3973278998349151246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 14
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2511d02da975b8c80800000000000000
+      internalID: -8319459564176207534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DwarfJump_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e485b80549df3b0800000000000000
+      internalID: -5477058498156540328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DwarfJump_0: 8074629274853984238
+      DwarfJump_1: 5356664294803420840
+      DwarfJump_10: -739893797508994000
+      DwarfJump_11: -302234276227588703
+      DwarfJump_12: -6128625302727233413
+      DwarfJump_13: -3973278998349151246
+      DwarfJump_14: -8319459564176207534
+      DwarfJump_15: -5477058498156540328
+      DwarfJump_2: 8025099828574636842
+      DwarfJump_3: 2390338429661098781
+      DwarfJump_4: -7457944655884075917
+      DwarfJump_5: -8903204295943753707
+      DwarfJump_6: -8782483629170014976
+      DwarfJump_7: -532241534033521029
+      DwarfJump_8: 4002328466844349695
+      DwarfJump_9: 7136593828372586390
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Room
-  Position: {x: 368, y: 560}
+  Position: {x: 384, y: 560}
   Name: Room
   IndividualRoomTemplates: []
   RoomTemplateSets: []
@@ -144,8 +144,8 @@ MonoBehaviour:
   - {fileID: 582882817941744692}
   - {fileID: -7797967367064582387}
   EditorData:
-    PanOffset: {x: 41.151535, y: -75.39574}
-    Zoom: 0.91330427
+    PanOffset: {x: -106.48988, y: -325.94537}
+    Zoom: 1.2156081
   RoomType: Assets.ProceduralLevelGenerator.Scripts.Generators.Common.LevelGraph.Room
   ConnectionType: Assets.ProceduralLevelGenerator.Scripts.Generators.Common.LevelGraph.Connection
 --- !u!114 &114014894578984330
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Position: {x: 528, y: 608}
+  Position: {x: 512, y: 608}
   Name: Spawn
   IndividualRoomTemplates:
   - {fileID: 9204587858199253963, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}

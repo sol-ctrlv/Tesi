@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad9df26b55c5a53e8c307274766c8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraTrigger
+  BoundingShape2D: {fileID: 3279772244082962769}
   wallRoomGrid: {fileID: 689286691093550364}
 --- !u!1 &4938271001061371832
 GameObject:

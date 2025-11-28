@@ -2528,7 +2528,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4450847, y: -1.4584427}
+  m_Offset: {x: 0.5, y: -1.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2538,7 +2538,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.039345, y: 6.41401}
+  m_Size: {x: 9, y: 7}
   m_EdgeRadius: 0
 --- !u!114 &5805800441199162111
 MonoBehaviour:
@@ -2566,6 +2566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraTrigger
   BoundingShape2D: {fileID: 1335122441602453025}
+  wallRoomGrid: {fileID: 420467177758840932}
 --- !u!1001 &214967946665062792
 PrefabInstance:
   m_ObjectHideFlags: 0

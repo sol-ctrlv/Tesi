@@ -148,12 +148,12 @@ TextureImporter:
       name: AmazonWalk_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 108
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11
+        y: 109
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: AmazonWalk_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 108
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 109
+        width: 8
+        height: 10
+      alignment: 9
+      pivot: {x: 0.56, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: AmazonWalk_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 108
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 109
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 0.56, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: AmazonWalk_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 108
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 109
+        width: 8
+        height: 10
+      alignment: 9
+      pivot: {x: 0.56, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,275 +232,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_4
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 76
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad63f99dbd44ba650800000000000000
-      internalID: 6245161019318941402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_5
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 76
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 134f93cb819b09b40800000000000000
-      internalID: 5445055465379198001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_6
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 76
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59bf1f02125d6b7c0800000000000000
-      internalID: -4055820076137186411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_7
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 76
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3da6cab75c0ce4de0800000000000000
-      internalID: -1346927284121212205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_8
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 44
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92f682d0d90031b40800000000000000
-      internalID: 5409668251932716841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_9
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 44
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b894e28b1191c870800000000000000
-      internalID: 8701395502402672816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_10
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 44
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08dc2152b84fd62a0800000000000000
-      internalID: -6742464188644143744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_11
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 44
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1602bcb3fb2984d60800000000000000
-      internalID: 7874705298496888929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_12
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1bb4b84d8b5df6b0800000000000000
-      internalID: -5260948127330551010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_13
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 12
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19a72fe2e2ca63f90800000000000000
-      internalID: -6974197658580518255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_14
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e3879e75ce7d8bd0800000000000000
-      internalID: -2626303620989615134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonWalk_15
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 12
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 658e4988143c3e3a0800000000000000
-      internalID: -6637246739582228394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a65202ec5e71c354b96e0249db756559
     internalID: 0
     vertices: []
     indices: 
@@ -508,7 +244,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":2.0,"y":2.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AmazonWalk_0: -6948773313030704380
       AmazonWalk_1: 422206652862542635

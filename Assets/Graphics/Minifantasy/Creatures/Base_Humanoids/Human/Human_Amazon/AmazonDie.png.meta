@@ -127,12 +127,12 @@ TextureImporter:
       name: AmazonDie_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11
+        y: 13
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: AmazonDie_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 13
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: AmazonDie_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 74
+        y: 13
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: AmazonDie_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 13
+        width: 8
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: AmazonDie_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 12
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 13
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: AmazonDie_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 12
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 168
+        y: 13
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: AmazonDie_6
       rect:
         serializedVersion: 2
-        x: 200
-        y: 11
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 201
+        y: 12
+        width: 9
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: AmazonDie_7
       rect:
         serializedVersion: 2
-        x: 232
-        y: 11
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 12
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: AmazonDie_8
       rect:
         serializedVersion: 2
-        x: 264
-        y: 11
-        width: 101
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 265
+        y: 12
+        width: 7
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,11 +321,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: AmazonDie_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 12
+        width: 6
+        height: 3
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d32e5ed1917e241a35090f4a2acac7
+      internalID: 1922483169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmazonDie_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 12
+        width: 4
+        height: 2
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f9fa56aa25e3a4aaee712be85d2268
+      internalID: -1923176657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de62750ce657d0a47a61f52b12f0964e
     internalID: 0
     vertices: []
     indices: 
@@ -333,10 +377,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":2.0,"y":2.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AmazonDie_0: 3161302959570172527
       AmazonDie_1: 6101832746191586373
+      AmazonDie_10: -1923176657
       AmazonDie_2: -7346362336657360181
       AmazonDie_3: 1985319947873356070
       AmazonDie_4: 7402412483737372794
@@ -344,6 +391,7 @@ TextureImporter:
       AmazonDie_6: 7386466049396963050
       AmazonDie_7: 3075901835054788609
       AmazonDie_8: 5414905639004481775
+      AmazonDie_9: 1922483169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -148,12 +148,12 @@ TextureImporter:
       name: AmazonAttack_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 108
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11
+        y: 109
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: AmazonAttack_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 108
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 45
+        y: 109
+        width: 13
+        height: 9
+      alignment: 9
+      pivot: {x: 0.33688736, y: 0.0120824175}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: AmazonAttack_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 105
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 78
+        y: 106
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.33665657, y: 0.24525197}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: AmazonAttack_3
       rect:
         serializedVersion: 2
-        x: 109
-        y: 105
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 110
+        y: 106
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5187063, y: 0.26187834}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,275 +232,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_4
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 76
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2be03269d2a719fb0800000000000000
-      internalID: -4642795404631273806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_5
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 76
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afcb0d56c2e9eaec0800000000000000
-      internalID: -3553729142424814342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_6
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 73
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 582fa696f8a32c340800000000000000
-      internalID: 4882529333646389893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_7
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 73
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 55edc2e19ce971b60800000000000000
-      internalID: 7716811073154506325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_8
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 44
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0de5f83ca80de9980800000000000000
-      internalID: -8530151349788123440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_9
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 44
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 877c2456628330a60800000000000000
-      internalID: 7639011130509281144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_10
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 44
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a32e0db69b70ae40800000000000000
-      internalID: 5665664218579215271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_11
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 44
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f8a6a1d8395e01d0800000000000000
-      internalID: -3382668169538262797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_12
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 12
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 865858bc6397e5310800000000000000
-      internalID: 1395686210781152616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_13
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 12
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8158107e6d97f2f70800000000000000
-      internalID: 9164677730627847448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_14
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 12
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea99bc35ba89622d0800000000000000
-      internalID: -3303785415016998482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmazonAttack_15
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 12
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e316fe3e1b224b40800000000000000
-      internalID: 5422944310212826084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3b6bda5faf99ecd40a861293664bb5c3
     internalID: 0
     vertices: []
     indices: 
@@ -508,7 +244,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":2.0,"y":2.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       AmazonAttack_0: 6097195310385371427
       AmazonAttack_1: 2425182341313111264

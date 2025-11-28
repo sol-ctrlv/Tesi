@@ -8,8 +8,16 @@ using UnityEditor;
 
 public class CameraTrigger : MonoBehaviour
 {
-    BoxCollider2D BoundingShape2D;
+    [SerializeField] BoxCollider2D BoundingShape2D;
     [SerializeField] Tilemap wallRoomGrid;
+
+    private void Awake()
+    {
+        if (!BoundingShape2D)
+        {
+            BoundingShape2D = GetComponent<BoxCollider2D>();
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,6 +44,10 @@ public class CameraTrigger : MonoBehaviour
         transform.position = wallRoomGrid.transform.position;
         BoundingShape2D.size = new Vector2(wallRoomGrid.size.x, wallRoomGrid.size.y);
         BoundingShape2D.offset = wallRoomGrid.localBounds.center;
+
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(gameObject);
+#endif
     }
 }
 

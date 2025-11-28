@@ -18,7 +18,7 @@ public class EnemyCharacter : Actor
 
     public void Init()
     {
-        Init(2f);
+        Init(MaxHP);
 
         //var fireTimer = attack.gameObject.GetComponent<FireTimer>();
         //fireTimer.Init(1);

@@ -165,7 +165,7 @@ Transform:
   m_GameObject: {fileID: 5154694883025553004}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.314, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -217,13 +217,13 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: 421734e3ac65b044f9ec09de643cac91, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 5801251333333569131, guid: 250f914b36eb073418eb012532c8f727, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8, y: 1}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -239,7 +239,7 @@ Animator:
   m_GameObject: {fileID: 5154694883025553004}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b23a9f422f4ba0d4ab0a1371d6da7f30, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 6466240481592759829}
   - component: {fileID: 3091908515347440627}
   m_Layer: 0
-  m_Name: MaskedOrc
+  m_Name: SlimeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,17 +324,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.047457546, y: -0.07619336}
+  m_Offset: {x: 0.002758801, y: -0.07172352}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.25, y: 6.5}
-    newSize: {x: 0.8, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 0.625}
+    newSize: {x: 1.25, y: 0.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.48629004, y: 0.65883476}
+  m_Size: {x: 0.7544824, y: 0.5068592}
   m_EdgeRadius: 0
 --- !u!50 &6963218544976182210
 Rigidbody2D:
@@ -379,7 +379,7 @@ MonoBehaviour:
   CurrentHP: 0
   isAlive: 1
   gunHolder: {fileID: 8578421730782046999}
-  sprite: {fileID: 0}
+  sprite: {fileID: 8905385580062982264}
   enemyMovement: {fileID: 6466240481592759829}
 --- !u!114 &6466240481592759829
 MonoBehaviour:
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c65fa9cd23e128468a656386b8d2e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  actorRenderer: {fileID: 0}
+  actorRenderer: {fileID: 8905385580062982264}
   targetDetection: {fileID: 2472508647139706682}
   movementSpeed: 10
   stopOnPlayerInRange: 0

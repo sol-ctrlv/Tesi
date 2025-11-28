@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class Player : Actor
 {
-    static public Vector2 position => instance.gameObject.transform.position;
-    static private Player instance; //ew
+    static public Vector2 position => Instance ? Instance.gameObject.transform.position : Vector3.zero;
+    static public Player Instance { get; private set; }
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
+        Init(MaxHP);
     }
 
+    [ContextMenu("Test Damage")]
+    private void TestDamage()
+    {
+        Damage(1f);
+    }
 }

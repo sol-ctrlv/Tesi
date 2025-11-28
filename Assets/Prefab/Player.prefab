@@ -211,7 +211,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a972a3f183d23854885a6a1b2a1b97ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  MaxHP: 100
+  MaxHP: 3
   CurrentHP: 0
   isAlive: 1
 --- !u!114 &8186700852144279473
@@ -299,11 +299,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0593db98d1e0aa047a54ebd0ce5b63a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  rb2D: {fileID: 3986202553696381932}
+  spriteRender: {fileID: 3986202553696381934}
   playerInput: {fileID: 1771316235279876530}
   animator: {fileID: 9218607632674708119}
   resetAttackTime: 0.5
   targetDetection: {fileID: 9081909021198511953}
   damage: 1
+  recoilForce: 10
 --- !u!114 &5930249760935491261
 MonoBehaviour:
   m_ObjectHideFlags: 0

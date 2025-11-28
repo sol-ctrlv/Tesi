@@ -196,12 +196,12 @@ TextureImporter:
       name: SlimeGreenIdle_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 108
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 109
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: SlimeGreenIdle_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 108
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 109
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: SlimeGreenIdle_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 108
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 109
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: SlimeGreenIdle_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 108
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 109
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: SlimeGreenIdle_4
       rect:
         serializedVersion: 2
-        x: 139
-        y: 108
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 109
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,12 +306,12 @@ TextureImporter:
       name: SlimeGreenIdle_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 108
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 172
+        y: 109
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: SlimeGreenIdle_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 108
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 109
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -350,12 +350,12 @@ TextureImporter:
       name: SlimeGreenIdle_7
       rect:
         serializedVersion: 2
-        x: 234
-        y: 108
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 109
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,12 +372,12 @@ TextureImporter:
       name: SlimeGreenIdle_8
       rect:
         serializedVersion: 2
-        x: 11
-        y: 76
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 77
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -394,12 +394,12 @@ TextureImporter:
       name: SlimeGreenIdle_9
       rect:
         serializedVersion: 2
-        x: 42
-        y: 76
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 77
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -416,12 +416,12 @@ TextureImporter:
       name: SlimeGreenIdle_10
       rect:
         serializedVersion: 2
-        x: 75
-        y: 76
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 77
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -438,12 +438,12 @@ TextureImporter:
       name: SlimeGreenIdle_11
       rect:
         serializedVersion: 2
-        x: 106
-        y: 76
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 77
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -460,12 +460,12 @@ TextureImporter:
       name: SlimeGreenIdle_12
       rect:
         serializedVersion: 2
-        x: 139
-        y: 76
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 77
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -482,12 +482,12 @@ TextureImporter:
       name: SlimeGreenIdle_13
       rect:
         serializedVersion: 2
-        x: 171
-        y: 76
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 172
+        y: 77
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -504,12 +504,12 @@ TextureImporter:
       name: SlimeGreenIdle_14
       rect:
         serializedVersion: 2
-        x: 203
-        y: 76
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 77
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: SlimeGreenIdle_15
       rect:
         serializedVersion: 2
-        x: 234
-        y: 76
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 77
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -548,12 +548,12 @@ TextureImporter:
       name: SlimeGreenIdle_16
       rect:
         serializedVersion: 2
-        x: 11
-        y: 44
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 45
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -570,12 +570,12 @@ TextureImporter:
       name: SlimeGreenIdle_17
       rect:
         serializedVersion: 2
-        x: 42
-        y: 44
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 45
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -592,12 +592,12 @@ TextureImporter:
       name: SlimeGreenIdle_18
       rect:
         serializedVersion: 2
-        x: 75
-        y: 44
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 45
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -614,12 +614,12 @@ TextureImporter:
       name: SlimeGreenIdle_19
       rect:
         serializedVersion: 2
-        x: 106
-        y: 44
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 45
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -636,12 +636,12 @@ TextureImporter:
       name: SlimeGreenIdle_20
       rect:
         serializedVersion: 2
-        x: 139
-        y: 44
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 45
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -658,12 +658,12 @@ TextureImporter:
       name: SlimeGreenIdle_21
       rect:
         serializedVersion: 2
-        x: 171
-        y: 44
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 172
+        y: 45
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -680,12 +680,12 @@ TextureImporter:
       name: SlimeGreenIdle_22
       rect:
         serializedVersion: 2
-        x: 203
-        y: 44
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 45
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -702,12 +702,12 @@ TextureImporter:
       name: SlimeGreenIdle_23
       rect:
         serializedVersion: 2
-        x: 234
-        y: 44
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 45
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -724,12 +724,12 @@ TextureImporter:
       name: SlimeGreenIdle_24
       rect:
         serializedVersion: 2
-        x: 11
-        y: 12
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -746,12 +746,12 @@ TextureImporter:
       name: SlimeGreenIdle_25
       rect:
         serializedVersion: 2
-        x: 42
-        y: 12
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 13
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -768,12 +768,12 @@ TextureImporter:
       name: SlimeGreenIdle_26
       rect:
         serializedVersion: 2
-        x: 75
-        y: 12
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -790,12 +790,12 @@ TextureImporter:
       name: SlimeGreenIdle_27
       rect:
         serializedVersion: 2
-        x: 106
-        y: 12
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 13
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -812,12 +812,12 @@ TextureImporter:
       name: SlimeGreenIdle_28
       rect:
         serializedVersion: 2
-        x: 139
-        y: 12
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -834,12 +834,12 @@ TextureImporter:
       name: SlimeGreenIdle_29
       rect:
         serializedVersion: 2
-        x: 171
-        y: 12
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 172
+        y: 13
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -856,12 +856,12 @@ TextureImporter:
       name: SlimeGreenIdle_30
       rect:
         serializedVersion: 2
-        x: 203
-        y: 12
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -878,12 +878,12 @@ TextureImporter:
       name: SlimeGreenIdle_31
       rect:
         serializedVersion: 2
-        x: 234
-        y: 12
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 13
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -900,7 +900,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc222e253fc4ccc4a9bceae8f1ca846a
     internalID: 0
     vertices: []
     indices: 
@@ -908,7 +908,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       SlimeGreenIdle_0: 5801251333333569131
       SlimeGreenIdle_1: 335638778462207662

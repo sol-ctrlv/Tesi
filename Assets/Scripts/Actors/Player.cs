@@ -9,6 +9,8 @@ public class Player : Actor
     {
         Instance = this;
         Init(MaxHP);
+
+        CameraManager.SetCameraPosition(transform.position);
     }
 
     [ContextMenu("Test Damage")]

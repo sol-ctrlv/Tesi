@@ -445,7 +445,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8, y: 7}
+  m_Size: {x: 6, y: 5}
   m_EdgeRadius: 0
 --- !u!114 &5684250351476214833
 MonoBehaviour:
@@ -474,6 +474,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraTrigger
   BoundingShape2D: {fileID: 2718101757928798689}
   wallRoomGrid: {fileID: 3754967751660859830}
+  enemiesInRoom:
+  - {fileID: 443735813998141013}
+  cameraLensOnEnter: 6
 --- !u!1 &3863958851899841057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1176,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1213,7 +1216,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1223,7 +1226,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1333,7 +1336,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1343,7 +1346,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1373,7 +1376,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1393,7 +1396,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1413,7 +1416,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1433,7 +1436,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1486,11 +1489,11 @@ Tilemap:
   - m_RefCount: 30
     m_Data: {fileID: 11400000, guid: d6aca483cb931ef4896de6dc31c1b808, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 2
-    m_Data: {fileID: -731252084, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: 172904427, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 21
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 30
     m_Data: {fileID: -72156938504300551, guid: 98bea589435eed146873545444de062c, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -1506,10 +1509,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 1836111930, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: -153017434, guid: 98bea589435eed146873545444de062c, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
@@ -2056,6 +2059,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8801422500993537369}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy
@@ -2105,6 +2116,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+--- !u!114 &443735813998141013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 6291567844156779267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!4 &4031409690285674692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}

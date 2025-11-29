@@ -1,6 +1,6 @@
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,6 +10,13 @@ public class CameraTrigger : MonoBehaviour
 {
     [SerializeField] BoxCollider2D BoundingShape2D;
     [SerializeField] Tilemap wallRoomGrid;
+    [SerializeField] EnemyCharacter[] enemiesInRoom;
+
+    [SerializeField] float cameraLensOnEnter = 6f;
+
+    int enemiesToKill = 0;
+
+    bool activated = false;
 
     private void Awake()
     {
@@ -17,14 +24,56 @@ public class CameraTrigger : MonoBehaviour
         {
             BoundingShape2D = GetComponent<BoxCollider2D>();
         }
+
+        enemiesToKill = 0;
+
+        for (int i = 0; i < enemiesInRoom.Length; i++)
+        {
+            if (enemiesInRoom[i].gameObject.activeSelf)
+                enemiesToKill++;
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            CinemachineCore.GetVirtualCamera(0).GetComponent<CinemachineConfiner2D>().BoundingShape2D = BoundingShape2D;
+            CameraManager.SetTargetPosition(BoundingShape2D.transform.position + (Vector3)BoundingShape2D.offset);
+            CameraManager.SetLensOrtoSize(cameraLensOnEnter);
+
+            if (!activated && enemiesToKill > 0)
+            {
+                activated = true;
+
+                DoorManager.SetDoorCollidable(true);
+
+                for (int i = 0; i < enemiesInRoom.Length; i++)
+                {
+                    if (enemiesInRoom[i] == null)
+                        continue;
+
+                    enemiesInRoom[i].SetAIEnabled(true);
+                    enemiesInRoom[i].OnDie += CheckAllEnemiesDead;
+                }
+            }
         }
+    }
+
+    private void CheckAllEnemiesDead(EnemyCharacter enemy)
+    {
+        enemy.OnDie -= CheckAllEnemiesDead;
+        enemiesToKill--;
+
+        if (enemiesToKill < 1)
+        {
+            DoorManager.SetDoorCollidable(false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        //must kill all enemies to leave room
     }
 
     public void SetTriggerSettings()
@@ -40,9 +89,16 @@ public class CameraTrigger : MonoBehaviour
             }
         }
 
+        enemiesInRoom = transform.root.GetComponentsInChildren<EnemyCharacter>();
+
+        for (int i = 0; i < enemiesInRoom.Length; i++)
+        {
+            enemiesInRoom[i].SetAIEnabled(false);
+        }
+
         BoundingShape2D = GetComponent<BoxCollider2D>();
         transform.position = wallRoomGrid.transform.position;
-        BoundingShape2D.size = new Vector2(wallRoomGrid.size.x, wallRoomGrid.size.y);
+        BoundingShape2D.size = new Vector2(wallRoomGrid.size.x, wallRoomGrid.size.y) - Vector2.one * 2f;
         BoundingShape2D.offset = wallRoomGrid.localBounds.center;
 
 #if UNITY_EDITOR

@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 6963218544976182215}
   - component: {fileID: 6963218544976182211}
   - component: {fileID: 6963218544976182210}
-  - component: {fileID: 4987047180400415775}
+  - component: {fileID: 5870535304603399510}
   - component: {fileID: 6466240481592759829}
   - component: {fileID: 3091908515347440627}
   m_Layer: 0
@@ -363,7 +363,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4987047180400415775
+--- !u!114 &5870535304603399510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6963218544976182214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1abec8f385822f4b8b7365a3767120a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyCharacter
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
   MaxHP: 2
   CurrentHP: 0
   isAlive: 1

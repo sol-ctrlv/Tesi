@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyCharacter : Actor
 {
-    public Action OnDie;
+    public Action<EnemyCharacter> OnDie;
 
     [SerializeField] Transform gunHolder;
     [SerializeField] SpriteRenderer sprite;
@@ -26,7 +26,13 @@ public class EnemyCharacter : Actor
 
     protected override void Die()
     {
-        OnDie?.Invoke();
+        OnDie?.Invoke(this);
         base.Die();
+    }
+
+    public void SetAIEnabled(bool value)
+    {
+        enemyMovement.enabled = value;
+        //enabled = value;
     }
 }

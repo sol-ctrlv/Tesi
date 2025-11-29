@@ -1784,7 +1784,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14, y: 12}
+  m_Size: {x: 12, y: 10}
   m_EdgeRadius: 0
 --- !u!114 &2642559882672081420
 MonoBehaviour:
@@ -1813,6 +1813,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraTrigger
   BoundingShape2D: {fileID: 1480473044000296704}
   wallRoomGrid: {fileID: 976372304054266272}
+  enemiesInRoom:
+  - {fileID: 4527140404910655835}
+  - {fileID: 1864327323719141532}
+  - {fileID: 7570985712358632337}
+  - {fileID: 2162016039742133970}
+  - {fileID: 8614563677765880782}
+  - {fileID: 5992405686549768445}
+  cameraLensOnEnter: 7
 --- !u!1 &7643585038878993586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1937,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1949,7 +1957,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1959,7 +1967,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1999,7 +2007,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2019,7 +2027,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2039,7 +2047,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2069,7 +2077,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2099,7 +2107,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2139,7 +2147,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2159,7 +2167,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2169,7 +2177,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2189,7 +2197,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2209,7 +2217,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2269,7 +2277,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2289,7 +2297,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2299,7 +2307,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2329,7 +2337,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2379,7 +2387,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2429,7 +2437,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2479,7 +2487,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2499,7 +2507,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2549,7 +2557,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2579,7 +2587,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2599,7 +2607,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2629,7 +2637,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2639,7 +2647,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2649,7 +2657,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2669,7 +2677,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2679,7 +2687,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2759,7 +2767,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2829,7 +2837,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2909,7 +2917,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2939,7 +2947,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2959,7 +2967,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2979,7 +2987,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3009,7 +3017,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3049,7 +3057,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3110,40 +3118,40 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
-    m_Data: {fileID: 25550397, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: 1836111930, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 5
-    m_Data: {fileID: -538401170, guid: 98bea589435eed146873545444de062c, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 8
-    m_Data: {fileID: -153017434, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 6
-    m_Data: {fileID: 172904427, guid: 98bea589435eed146873545444de062c, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 83
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 120
     m_Data: {fileID: -72156938504300551, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: -657545235, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 6
-    m_Data: {fileID: -731252084, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -646747644, guid: 98bea589435eed146873545444de062c, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 7769453424612927293, guid: 98bea589435eed146873545444de062c, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1727235087, guid: 98bea589435eed146873545444de062c, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 120
     m_Data:
@@ -3321,6 +3329,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy (5)
@@ -3370,6 +3386,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+--- !u!114 &5992405686549768445 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 166943216691715499}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!4 &7130125816262141548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
@@ -3383,6 +3410,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy (4)
@@ -3437,6 +3472,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
   m_PrefabInstance: {fileID: 2807221155246751384}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8614563677765880782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 2807221155246751384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!1001 &4065026038725861063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3445,6 +3491,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy (2)
@@ -3499,6 +3553,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
   m_PrefabInstance: {fileID: 4065026038725861063}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7570985712358632337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 4065026038725861063}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!1001 &5235222444072238538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3507,6 +3572,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy (1)
@@ -3556,6 +3629,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+--- !u!114 &1864327323719141532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 5235222444072238538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!4 &2883831313505469965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
@@ -3569,6 +3653,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy (3)
@@ -3618,6 +3710,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+--- !u!114 &2162016039742133970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 5726699538501116804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
 --- !u!4 &3448350748033095747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
@@ -3631,6 +3734,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 76353079881729556}
     m_Modifications:
+    - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Name
       value: SlimeEnemy
@@ -3685,3 +3796,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6963218544976182215, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
   m_PrefabInstance: {fileID: 8046796704026131469}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4527140404910655835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 8046796704026131469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy

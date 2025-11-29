@@ -1,18 +1,18 @@
 
-using UnityEngine;
-
-[System.Serializable]
 public class Timer
 {
-    [SerializeField] private float counter, timer;
-    [SerializeField] private bool shouldTick, shouldLoop;
+    private float counter, timer;
+    private bool shouldTick, shouldLoop;
+    public bool isEnd;
+    public bool ShouldTick { get => shouldTick; }
 
-    public Timer(float inTimer, bool shouldLoop = false)
+    public Timer(float inTimer, bool shouldLoop = false, bool shouldTick = true)
     {
         timer = inTimer;
         counter = inTimer;
-        shouldTick = true;
+        this.shouldTick = shouldTick;
         this.shouldLoop = shouldLoop;
+        isEnd = false;
     }
 
     public bool Tick(float deltaTime)
@@ -30,6 +30,7 @@ public class Timer
             }
             else
             {
+                isEnd = true;
                 shouldTick = false;
             }
 
@@ -43,15 +44,19 @@ public class Timer
     {
         counter = timer;
         shouldTick = true;
-    }
-
-    public void RandomResetTimer()
-    {
-        shouldTick = true;
+        isEnd = false;
     }
 
     public void Set(float newTimer)
     {
         timer = newTimer;
     }
+
+    public void SetShouldTick(bool shouldTick)
+    {
+        this.shouldTick = shouldTick;
+    }
+
+    public float GetCounter() => counter;
+    public float GetTimer() => timer;
 }

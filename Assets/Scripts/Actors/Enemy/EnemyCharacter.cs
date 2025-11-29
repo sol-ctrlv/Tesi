@@ -9,7 +9,7 @@ public class EnemyCharacter : Actor
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] EnemyMovement enemyMovement;
 
-    private BasicAttackBehaviour attack;
+    [SerializeField] BasicAttackBehaviour attack;
 
     private void Awake()
     {
@@ -20,8 +20,9 @@ public class EnemyCharacter : Actor
     {
         Init(MaxHP);
 
-        //var fireTimer = attack.gameObject.GetComponent<FireTimer>();
-        //fireTimer.Init(1);
+        attack.Init();
+        var fireTimer = attack.gameObject.GetComponent<FireTimer>();
+        fireTimer.Init(1);
     }
 
     protected override void Die()
@@ -33,6 +34,7 @@ public class EnemyCharacter : Actor
     public void SetAIEnabled(bool value)
     {
         enemyMovement.enabled = value;
+        attack.gameObject.SetActive(value);
         //enabled = value;
     }
 }

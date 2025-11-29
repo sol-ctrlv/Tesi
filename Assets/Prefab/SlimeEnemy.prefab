@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8578421730782046999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1896007972287322327}
   m_Father: {fileID: 6963218544976182215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5127915400013175831
@@ -41,9 +42,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2521025469402457557}
   - component: {fileID: 2472508647139706682}
-  - component: {fileID: 125874722449126155}
+  - component: {fileID: 8810234217966344457}
   - component: {fileID: 4459686916933893312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TargetDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,8 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TargetDetection
   TargetTag: Player
   TargetsInRange: []
---- !u!61 &125874722449126155
-BoxCollider2D:
+--- !u!58 &8810234217966344457
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114,17 +115,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 5, y: 5}
-  m_EdgeRadius: 0
+  m_Radius: 3
 --- !u!114 &4459686916933893312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +256,7 @@ GameObject:
   - component: {fileID: 5870535304603399510}
   - component: {fileID: 6466240481592759829}
   - component: {fileID: 3091908515347440627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SlimeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -285,8 +276,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8578421730782046999}
   - {fileID: 2521025469402457557}
+  - {fileID: 8578421730782046999}
   - {fileID: 1952118502645869637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -381,6 +372,7 @@ MonoBehaviour:
   gunHolder: {fileID: 8578421730782046999}
   sprite: {fileID: 8905385580062982264}
   enemyMovement: {fileID: 6466240481592759829}
+  attack: {fileID: 5842594897164722873}
 --- !u!114 &6466240481592759829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,3 +402,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RenderCollisionBox
   boxColor: {r: 0.6698113, g: 0, b: 0.26025632, a: 0.34}
+--- !u!1001 &2436396990257345618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8578421730782046999}
+    m_Modifications:
+    - target: {fileID: 1576612853857648084, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365985409192350939, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: actorMovement
+      value: 
+      objectReference: {fileID: 6466240481592759829}
+    - target: {fileID: 5365985409192350939, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: targetDetection
+      value: 
+      objectReference: {fileID: 2472508647139706682}
+    - target: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_Name
+      value: Melee
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132026748026869483, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: myAnimator
+      value: 
+      objectReference: {fileID: 3906846080811776968}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+--- !u!4 &1896007972287322327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+  m_PrefabInstance: {fileID: 2436396990257345618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5842594897164722873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8132026748026869483, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+  m_PrefabInstance: {fileID: 2436396990257345618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour

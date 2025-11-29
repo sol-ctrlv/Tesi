@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd280517d170a44283b2071d1aae1a1, type: 3}
+  m_Name: MeleeAttack
+  m_EditorClassIdentifier: Assembly-CSharp::AttackSO
+  AttackSprite: {fileID: 21300046, guid: 512a3a5212bdfc048b89d9ef214b8cee, type: 3}
+  AttackPrefab: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+  HiddenAttack: 1
+  ProjectileSprite: {fileID: 21300046, guid: 512a3a5212bdfc048b89d9ef214b8cee, type: 3}
+  Damage: 1
+  ProjectileSpeed: 1
+  ProjectileLifetime: 0.1
+  SpawnOffset: 1

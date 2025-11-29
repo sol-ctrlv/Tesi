@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicAttackBehaviour : MonoBehaviour
 {
-    public Stats ScalingStat => data.Scaling;
+    [SerializeField] private Animator myAnimator;
     [SerializeField] private AttackSO data;
     private TargetSelector targetSelector;
     private ProjectilesPool projectilePool;
@@ -11,16 +10,15 @@ public class BasicAttackBehaviour : MonoBehaviour
 
     float damageMultiplier = 1f;
 
-    public void Init(AttackSO atkSO)
+    public void Init()
     {
         if (isInit) return;
 
         targetSelector = GetComponent<TargetSelector>();
         projectilePool = GetComponent<ProjectilesPool>();
 
-        data = atkSO;
         targetSelector.Init();
-        projectilePool.Init(atkSO,transform.parent.gameObject); //gunHolder
+        projectilePool.Init(data, transform.parent.gameObject); //gunHolder
 
         isInit = true;
     }
@@ -28,6 +26,7 @@ public class BasicAttackBehaviour : MonoBehaviour
     public void Fire()
     {
         Vector2 shootDirection = targetSelector.GetShootDirection();
+        myAnimator.SetTrigger("Attack");
 
         if (shootDirection == Vector2.zero)
         {

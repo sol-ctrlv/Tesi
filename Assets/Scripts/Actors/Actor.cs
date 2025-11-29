@@ -11,6 +11,7 @@ public class Actor : MonoBehaviour, IDamageable
     public void Damage(float amount)
     {
         CurrentHP -= amount;
+        OnDamage?.Invoke(amount, CurrentHP, MaxHP);
 
         if (CurrentHP <= 0 && isAlive)
         {
@@ -19,7 +20,6 @@ public class Actor : MonoBehaviour, IDamageable
             return;
         }
 
-        OnDamage?.Invoke(amount, CurrentHP, MaxHP);
     }
 
     protected virtual void Die()

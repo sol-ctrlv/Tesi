@@ -41,13 +41,12 @@ public class BaseProjectileBehaviour : MonoBehaviour
     {
         Actor otherActor = collision.gameObject.GetComponent<Actor>();
 
-        if (otherActor != null) {
+        if (otherActor != null)
+        {
 
             otherActor.Damage(Damage);
 
             ResetProjectile();
-
-            ParticleSystemSpawner.EmitOnPosition(otherActor.transform.position, ParticleSystemSpawner.ParticleType.Death, hitParticleColor, 50);
         }
     }
 

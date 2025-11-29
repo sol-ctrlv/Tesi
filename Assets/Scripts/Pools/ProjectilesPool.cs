@@ -4,10 +4,12 @@ using UnityEngine;
 public class ProjectilesPool : ObjectsPool
 {
     private Sprite projectileSprite;
+    bool hiddenAttack;
 
     public void Init(AttackSO data, GameObject owner)
     {
         projectileSprite = data.ProjectileSprite;
+        hiddenAttack = data.HiddenAttack;
         Init(owner);
     }
 
@@ -20,7 +22,10 @@ public class ProjectilesPool : ObjectsPool
     protected override void DecorateObject(GameObject proj)
     {
         proj.transform.SetParent(ProjectilesContainer.GetTransform(), true);
-        proj.GetComponent<SpriteRenderer>().sprite = projectileSprite;
+
+        SpriteRenderer spriteRenderer = proj.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = projectileSprite;
+        spriteRenderer.enabled = !hiddenAttack;
 
         PolygonCollider2D poly = proj.GetComponent<PolygonCollider2D>();
         poly.pathCount = projectileSprite.GetPhysicsShapeCount();

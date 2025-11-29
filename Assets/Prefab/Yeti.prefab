@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 62511941826885491, guid: 93901f028beaf8c4084debe280d52821, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -176,6 +176,7 @@ MonoBehaviour:
   gunHolder: {fileID: 0}
   sprite: {fileID: 6898504299149215073}
   enemyMovement: {fileID: 1836115320047838428}
+  attack: {fileID: 0}
 --- !u!114 &1836115320047838428
 MonoBehaviour:
   m_ObjectHideFlags: 0

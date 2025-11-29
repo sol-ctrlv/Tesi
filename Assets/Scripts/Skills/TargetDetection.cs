@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class TargetDetection : MonoBehaviour
 {
-    CircleCollider2D DetectRadius;
     public string TargetTag;
     public List<GameObject> TargetsInRange;
-    public void Init(float radius)
-    {
-        DetectRadius = GetComponent<CircleCollider2D>();
-        DetectRadius.radius = radius;
-        TargetsInRange = new List<GameObject>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

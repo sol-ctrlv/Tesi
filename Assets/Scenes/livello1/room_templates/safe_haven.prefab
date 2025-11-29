@@ -1519,7 +1519,7 @@ GameObject:
   - component: {fileID: 433065355025476377}
   - component: {fileID: 813806279169501894}
   m_Layer: 0
-  m_Name: safe_haven+
+  m_Name: safe_haven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

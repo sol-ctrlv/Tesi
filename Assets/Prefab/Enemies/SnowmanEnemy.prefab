@@ -12,13 +12,17 @@ PrefabInstance:
       propertyPath: targetDetection
       value: 
       objectReference: {fileID: 6868307895536060724}
+    - target: {fileID: 1576612853857648084, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
+      propertyPath: cooldown
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4287474210145578117, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18032
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4287474210145578117, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06682
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4287474210145578117, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60,22 +64,45 @@ PrefabInstance:
       propertyPath: myAnimator
       value: 
       objectReference: {fileID: 5419760992261354950}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576612853857648084, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5630443426374531018, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 9042993816527943386}
   m_SourcePrefab: {fileID: 100100000, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
 --- !u!114 &188091654039732896 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8132026748026869483, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
   m_PrefabInstance: {fileID: 8234549761112069195}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4352066129110262657}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
+--- !u!1 &4352066129110262657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5630443426374531018, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
+  m_PrefabInstance: {fileID: 8234549761112069195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9042993816527943386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352066129110262657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a8f7af2e24fd44891d521ec07fef53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowmanFireTimer
+  cooldown: 2.5
+  animator: {fileID: 5419760992261354950}
 --- !u!4 &5316170000195451086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4287474210145578117, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}
@@ -105,6 +132,10 @@ PrefabInstance:
       propertyPath: attack
       value: 
       objectReference: {fileID: 188091654039732896}
+    - target: {fileID: 6466240481592759829, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: movementSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963218544976182211, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Size.y
       value: 1.01261
@@ -165,20 +196,42 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3664170705775330652, guid: 652a51bd2cf7c9145bf1319ff5a28f93, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3511707471044395702, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8064970911853446040, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8578421730782046999, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5316170000195451086}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5154694883025553004, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5617166957527477174}
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
 --- !u!4 &724394797622191385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8578421730782046999, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
   m_PrefabInstance: {fileID: 9007546871704981006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4217651324477180002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5154694883025553004, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+  m_PrefabInstance: {fileID: 9007546871704981006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5617166957527477174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217651324477180002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e8d3394aadf6a4ca80eed848b296e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowmanAnimToActor
+  snowmanFireTimer: {fileID: 9042993816527943386}
 --- !u!95 &5419760992261354950 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3906846080811776968, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}

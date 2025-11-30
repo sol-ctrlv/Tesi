@@ -14,10 +14,16 @@ public class RenderCollisionBox : MonoBehaviour
         // coordinates for the matrix transformation.
         Gizmos.matrix = transform.localToWorldMatrix;
 
-        var col = GetComponent<BoxCollider2D>();
-        if (col)
+        var boxCol = GetComponent<BoxCollider2D>();
+        var circleCol = GetComponent<CircleCollider2D>();
+
+        if (boxCol)
         {
-            Gizmos.DrawCube(col.offset, col.size);
+            Gizmos.DrawCube(boxCol.offset, boxCol.size);
+        }
+        else if (circleCol)
+        {
+            Gizmos.DrawSphere(circleCol.offset, circleCol.radius);
         }
         else
             Gizmos.DrawCube(Vector3.zero, Vector3.one);

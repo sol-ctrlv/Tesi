@@ -7,6 +7,7 @@ public class Actor : MonoBehaviour, IDamageable
 
     [SerializeField] protected float MaxHP = 100, CurrentHP;
     [SerializeField] bool isAlive = true;
+    [SerializeField] protected Animator animator;
 
     public void Damage(float amount)
     {

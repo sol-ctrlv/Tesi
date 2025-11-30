@@ -183,3 +183,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   myCollider: {fileID: 7901462907520038264}
+  spriteRenderer: {fileID: 1873002964866776201}

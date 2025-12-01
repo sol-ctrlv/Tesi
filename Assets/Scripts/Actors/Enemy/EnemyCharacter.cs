@@ -8,13 +8,27 @@ public class EnemyCharacter : Actor
     [SerializeField] Transform gunHolder;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] EnemyMovement enemyMovement;
-
     [SerializeField] BasicAttackBehaviour attack;
+    [SerializeField] BoxCollider2D myCollider;
 
     private void Awake()
     {
         Init();
+        OnDamage += HealAfterDamage;
     }
+
+    private void OnDestroy()
+    {
+        OnDamage -= HealAfterDamage;
+    }
+
+    void HealAfterDamage(float a, float b, float c)
+    {
+        animator.SetBool("Damaged", true);
+        animator.SetBool("Damaged", false);
+    }
+
+    //IEnumerator 
 
     public void Init()
     {
@@ -22,19 +36,26 @@ public class EnemyCharacter : Actor
 
         attack.Init();
         var fireTimer = attack.gameObject.GetComponent<FireTimer>();
-        fireTimer.Init(1);
+        fireTimer.Init();
     }
 
     protected override void Die()
     {
         OnDie?.Invoke(this);
-        base.Die();
+        enemyMovement.enabled = false;
+        enemyMovement.rb2d.linearVelocity = Vector2.zero;
+        animator.SetBool("Dead", true);
+        Destroy(attack.gameObject);
+        myCollider.enabled = false;
+        //base.Die();
     }
 
     public void SetAIEnabled(bool value)
     {
         enemyMovement.enabled = value;
         attack.gameObject.SetActive(value);
+        animator.SetBool("Moving", value);
         //enabled = value;
+
     }
 }

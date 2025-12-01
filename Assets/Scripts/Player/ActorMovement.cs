@@ -4,7 +4,7 @@ public class ActorMovement : MonoBehaviour
 {
     [SerializeField] protected SpriteRenderer actorRenderer;
     Animator animator;
-    protected Rigidbody2D rb2d;
+    public Rigidbody2D rb2d;
     protected Vector2 movDir;
     private void Awake()
     {

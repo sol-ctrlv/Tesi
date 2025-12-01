@@ -305,12 +305,12 @@ TextureImporter:
       name: YetiIdle_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: YetiIdle_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: YetiIdle_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: YetiIdle_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: YetiIdle_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 139
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: YetiIdle_5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 171
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: YetiIdle_6
       rect:
         serializedVersion: 2
-        x: 202
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: YetiIdle_7
       rect:
         serializedVersion: 2
-        x: 234
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 235
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: YetiIdle_8
       rect:
         serializedVersion: 2
-        x: 266
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: YetiIdle_9
       rect:
         serializedVersion: 2
-        x: 298
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 299
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,12 +525,12 @@ TextureImporter:
       name: YetiIdle_10
       rect:
         serializedVersion: 2
-        x: 330
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 331
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: YetiIdle_11
       rect:
         serializedVersion: 2
-        x: 362
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 363
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -569,12 +569,12 @@ TextureImporter:
       name: YetiIdle_12
       rect:
         serializedVersion: 2
-        x: 394
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 395
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -591,12 +591,12 @@ TextureImporter:
       name: YetiIdle_13
       rect:
         serializedVersion: 2
-        x: 426
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 427
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -613,12 +613,12 @@ TextureImporter:
       name: YetiIdle_14
       rect:
         serializedVersion: 2
-        x: 458
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 459
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: YetiIdle_15
       rect:
         serializedVersion: 2
-        x: 490
-        y: 108
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 491
+        y: 109
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -653,1067 +653,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: YetiIdle_16
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ee6543421efcc5f0800000000000000
-      internalID: -734933284776743194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_17
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ff4fa3506818c930800000000000000
-      internalID: 4163604657503948784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_18
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a35c7019d0ba1af0800000000000000
-      internalID: -424832768502115415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_19
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 847f17c8d746d1380800000000000000
-      internalID: -8998925990026414264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_20
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4459733c2ee6e500800000000000000
-      internalID: 425289088442651723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_21
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20ce5726f6c9c5950800000000000000
-      internalID: 6439193569440164866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_22
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 609470e9f116d1b90800000000000000
-      internalID: -7269547435082954490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_23
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9eaba571f1d14ebc0800000000000000
-      internalID: -3754844169947137303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_24
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1081d8f1f3bb52890800000000000000
-      internalID: -7483369326019536895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_25
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4edc980ad7991800800000000000000
-      internalID: 583664589424352845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_26
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2f95146f96cded60800000000000000
-      internalID: 7921205707495808815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_27
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d85caf882e33ade0800000000000000
-      internalID: -1323145521586743079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_28
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be59610e6c2027680800000000000000
-      internalID: -8758935272095836693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_29
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a25cf89c4479eef30800000000000000
-      internalID: 4606785790541808938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_30
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e6baf649f54933b0800000000000000
-      internalID: -5532313730307934495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_31
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 76
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9a679d5d00bea970800000000000000
-      internalID: 8768139095988202141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_32
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc1194fd32bf8f870800000000000000
-      internalID: 8716993210264129996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_33
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 418409d0b26d6ddf0800000000000000
-      internalID: -155701656698206188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_34
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84a7452f1e15f51c0800000000000000
-      internalID: -4512798270726833592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_35
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e888be8c818feffe0800000000000000
-      internalID: -1153211669226485618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_36
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49838f157479da1a0800000000000000
-      internalID: -6796609930058516332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_37
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73a9d8adbc6c868d0800000000000000
-      internalID: -2852811785091835337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_38
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eaca0805b480dd9b0800000000000000
-      internalID: -5053874087273648978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_39
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f61f1781071a8390800000000000000
-      internalID: -7815408908018706698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_40
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 901e2851fff266610800000000000000
-      internalID: 1614030289082966281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_41
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83916411f279568f0800000000000000
-      internalID: -547865551246583496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_42
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e2ec22d607154aa0800000000000000
-      internalID: -6177505995805367576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_43
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4556648cbb31ddae0800000000000000
-      internalID: -1523039401741490860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_44
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec1875dd8396d4100800000000000000
-      internalID: 93846860197233102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_45
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d1d1affb167b5c30800000000000000
-      internalID: 4349199727781335508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_46
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 734c702564d5e2250800000000000000
-      internalID: 5921773116644115511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_47
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 44
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b8412850732ca4e0800000000000000
-      internalID: -1969159971645863756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_48
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16b741f1565361850800000000000000
-      internalID: 6347319433254697825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_49
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f35926d1e8e0681a0800000000000000
-      internalID: -6807737783182781121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_50
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 394f21b626fba1460800000000000000
-      internalID: 7213288182611375251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_51
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87b74ef5e611a71e0800000000000000
-      internalID: -2199426302264181896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_52
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c70eb77275df4870800000000000000
-      internalID: 8669382495323424705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_53
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67648d2f55dcbb860800000000000000
-      internalID: 7546851369619572342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_54
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4cc47a95f38a97170800000000000000
-      internalID: 8176751588508388548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_55
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f463840881c9f4a0800000000000000
-      internalID: -6558998592352983819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_56
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74f682d0d6497ce40800000000000000
-      internalID: 5676669051416899399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_57
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca1f18e827d062260800000000000000
-      internalID: 7072355050500256172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_58
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7687d195d9eb31a80800000000000000
-      internalID: -8497238488903747481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_59
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a24fe07bb4b21d860800000000000000
-      internalID: 7552865654270784554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_60
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80543ce7727c32180800000000000000
-      internalID: -9141243846187596536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_61
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76bc468e2992a61f0800000000000000
-      internalID: -1050981852096705689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_62
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63a4bb7adf4839050800000000000000
-      internalID: 5806130569586362934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YetiIdle_63
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 663daf0a638485ea0800000000000000
-      internalID: -5883873513693326490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 20c90058868b8724cba22d7660a6e092
     internalID: 0
     vertices: []
     indices: 
@@ -1721,7 +665,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       YetiIdle_0: -4275970655651676436
       YetiIdle_1: -4746369309060703841

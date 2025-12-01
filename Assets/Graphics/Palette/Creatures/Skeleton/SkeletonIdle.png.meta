@@ -143,37 +143,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkeletonIdle_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 76
-        width: 17
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88c97977e3a831bf0800000000000000
-      internalID: -354787944733107064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SkeletonIdle_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 44
-        width: 17
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4
+        y: 45
+        width: 15
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +168,12 @@ TextureImporter:
       name: SkeletonIdle_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 44
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 38
+        y: 45
+        width: 12
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +190,12 @@ TextureImporter:
       name: SkeletonIdle_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 44
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 73
+        y: 45
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +212,12 @@ TextureImporter:
       name: SkeletonIdle_4
       rect:
         serializedVersion: 2
-        x: 105
-        y: 44
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 45
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +234,12 @@ TextureImporter:
       name: SkeletonIdle_5
       rect:
         serializedVersion: 2
-        x: 139
-        y: 44
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 45
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +256,12 @@ TextureImporter:
       name: SkeletonIdle_6
       rect:
         serializedVersion: 2
-        x: 11
-        y: 12
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 13
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +278,12 @@ TextureImporter:
       name: SkeletonIdle_7
       rect:
         serializedVersion: 2
-        x: 41
-        y: 12
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 42
+        y: 13
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +300,12 @@ TextureImporter:
       name: SkeletonIdle_8
       rect:
         serializedVersion: 2
-        x: 72
-        y: 12
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 73
+        y: 13
+        width: 10
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +322,12 @@ TextureImporter:
       name: SkeletonIdle_9
       rect:
         serializedVersion: 2
-        x: 101
-        y: 12
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 102
+        y: 13
+        width: 12
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +344,12 @@ TextureImporter:
       name: SkeletonIdle_10
       rect:
         serializedVersion: 2
-        x: 131
-        y: 12
-        width: 17
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 13
+        width: 15
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,7 +366,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6d146bdfe04dbc84c9655dccb4a3aef4
     internalID: 0
     vertices: []
     indices: 
@@ -396,7 +374,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       SkeletonIdle_0: -354787944733107064
       SkeletonIdle_1: -5596255575948371515

@@ -134,12 +134,12 @@ TextureImporter:
       name: SkeletonDie_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 12
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10
+        y: 13
+        width: 9
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: SkeletonDie_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 12
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 40
+        y: 13
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: SkeletonDie_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 12
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 71
+        y: 13
+        width: 11
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: SkeletonDie_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 12
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 101
+        y: 13
+        width: 13
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,12 +222,12 @@ TextureImporter:
       name: SkeletonDie_4
       rect:
         serializedVersion: 2
-        x: 130
-        y: 12
-        width: 17
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 13
+        width: 15
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: SkeletonDie_5
       rect:
         serializedVersion: 2
-        x: 162
-        y: 11
-        width: 17
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 163
+        y: 13
+        width: 15
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,20 +266,64 @@ TextureImporter:
       name: SkeletonDie_6
       rect:
         serializedVersion: 2
-        x: 194
-        y: 11
-        width: 70
-        height: 6
+        x: 195
+        y: 13
+        width: 14
+        height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1edc0270255bda3d0800000000000000
+      spriteID: 856daab43e7f4174e9d3671416b15f53
       internalID: -3193697196824277535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonDie_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 13
+        width: 10
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afda8faf735ad845b131669cedbbd9e
+      internalID: 2107898469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonDie_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 13
+        width: 3
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dc9064be739e745adb975ec73fabcd
+      internalID: -830163842
       vertices: []
       indices: 
       edges: []
@@ -288,7 +332,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18e69085e019cbc47a48549a7baf625f
     internalID: 0
     vertices: []
     indices: 
@@ -296,7 +340,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       SkeletonDie_0: 4433329646982277881
       SkeletonDie_1: 8189501052894445068
@@ -305,6 +351,8 @@ TextureImporter:
       SkeletonDie_4: -1166110556176365719
       SkeletonDie_5: -5127739125873105421
       SkeletonDie_6: -3193697196824277535
+      SkeletonDie_7: 2107898469
+      SkeletonDie_8: -830163842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

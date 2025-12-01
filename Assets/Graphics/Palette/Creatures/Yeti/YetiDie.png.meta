@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0fbe81784e1dc0bf2ac46a587638cb6f
+guid: 9a0ac4a906c515347ac2e3ed8d285d7c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,19 +126,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -146,12 +133,12 @@ TextureImporter:
       name: YetiDie_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 12
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11
+        y: 13
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +155,12 @@ TextureImporter:
       name: YetiDie_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 12
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 45
+        y: 13
+        width: 10
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +177,12 @@ TextureImporter:
       name: YetiDie_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 12
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 78
+        y: 13
+        width: 10
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +199,12 @@ TextureImporter:
       name: YetiDie_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 12
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 107
+        y: 13
+        width: 10
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +221,12 @@ TextureImporter:
       name: YetiDie_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 12
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 13
+        width: 10
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +243,12 @@ TextureImporter:
       name: YetiDie_5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 12
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 171
+        y: 13
+        width: 12
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +265,12 @@ TextureImporter:
       name: YetiDie_6
       rect:
         serializedVersion: 2
-        x: 201
-        y: 12
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 202
+        y: 13
+        width: 16
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +287,12 @@ TextureImporter:
       name: YetiDie_7
       rect:
         serializedVersion: 2
-        x: 232
-        y: 12
-        width: 20
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 13
+        width: 18
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +309,12 @@ TextureImporter:
       name: YetiDie_8
       rect:
         serializedVersion: 2
-        x: 263
-        y: 12
-        width: 22
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 264
+        y: 13
+        width: 20
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +331,12 @@ TextureImporter:
       name: YetiDie_9
       rect:
         serializedVersion: 2
-        x: 300
-        y: 12
-        width: 13
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 301
+        y: 13
+        width: 11
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +353,12 @@ TextureImporter:
       name: YetiDie_10
       rect:
         serializedVersion: 2
-        x: 333
-        y: 12
-        width: 105
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 334
+        y: 13
+        width: 9
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,11 +371,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: YetiDie_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 13
+        width: 8
+        height: 3
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545202aa53b9c2c4790d2273c4b7eaeb
+      internalID: 488135441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YetiDie_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 13
+        width: 4
+        height: 2
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baee5633068805a438c291e1389fbdcd
+      internalID: -795927263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YetiDie_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 13
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4f2203ccb9d1b4b937efede904aa08
+      internalID: -1916649297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2516a1a1044e0b345af4c25aafb55c8d
     internalID: 0
     vertices: []
     indices: 
@@ -396,11 +449,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       YetiDie_0: 2375522181393239763
       YetiDie_1: 2435262801495321647
       YetiDie_10: -3375077222059947131
+      YetiDie_11: 488135441
+      YetiDie_12: -795927263
+      YetiDie_13: -1916649297
       YetiDie_2: -793518428180986398
       YetiDie_3: 3273645264967635807
       YetiDie_4: -8217605406827128990

@@ -124,15 +124,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SlimeGreenDie_0
+      name: SlimeGreenDie_01
       rect:
         serializedVersion: 2
-        x: 11
-        y: 12
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 13
+        width: 8
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,15 +146,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_1
+      name: SlimeGreenDie_02
       rect:
         serializedVersion: 2
-        x: 43
-        y: 12
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 13
+        width: 11
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,15 +168,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_2
+      name: SlimeGreenDie_07
       rect:
         serializedVersion: 2
-        x: 74
-        y: 12
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 234
+        y: 13
+        width: 12
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,15 +190,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_3
+      name: SlimeGreenDie_08
       rect:
         serializedVersion: 2
-        x: 78
-        y: 17
-        width: 6
+        x: 267
+        y: 13
+        width: 10
         height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,15 +212,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_4
+      name: SlimeGreenDie_04
       rect:
         serializedVersion: 2
-        x: 105
-        y: 12
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 13
+        width: 13
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,15 +234,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_5
+      name: SlimeGreenDie_05
       rect:
         serializedVersion: 2
-        x: 110
-        y: 18
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 169
+        y: 13
+        width: 14
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,15 +256,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_6
+      name: SlimeGreenDie_00
       rect:
         serializedVersion: 2
-        x: 137
-        y: 12
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 13
+        width: 8
+        height: 5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_7
+      name: SlimeGreenDie_03
       rect:
         serializedVersion: 2
-        x: 168
-        y: 11
-        width: 48
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 13
+        width: 13
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,15 +300,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeGreenDie_8
+      name: SlimeGreenDie_06
       rect:
         serializedVersion: 2
-        x: 233
-        y: 11
-        width: 45
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 201
+        y: 13
+        width: 14
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b49ed9a7c39ebd24883860a6a374af7a
     internalID: 0
     vertices: []
     indices: 
@@ -333,17 +333,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SlimeGreenDie_0: -9085933696924353822
-      SlimeGreenDie_1: -4373550046780103595
-      SlimeGreenDie_2: 5309664850370623417
-      SlimeGreenDie_3: 5519615260549087353
-      SlimeGreenDie_4: 4168196294613357026
-      SlimeGreenDie_5: 2732951264126127762
-      SlimeGreenDie_6: -2220549915222875722
-      SlimeGreenDie_7: 4710991716625975214
-      SlimeGreenDie_8: -6885503761825073488
+      SlimeGreenDie_00: -2220549915222875722
+      SlimeGreenDie_01: -9085933696924353822
+      SlimeGreenDie_02: -4373550046780103595
+      SlimeGreenDie_03: 4710991716625975214
+      SlimeGreenDie_04: 4168196294613357026
+      SlimeGreenDie_05: 2732951264126127762
+      SlimeGreenDie_06: -6885503761825073488
+      SlimeGreenDie_07: 5309664850370623417
+      SlimeGreenDie_08: 5519615260549087353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

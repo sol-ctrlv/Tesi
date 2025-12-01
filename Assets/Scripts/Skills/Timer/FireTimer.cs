@@ -2,32 +2,30 @@ using UnityEngine;
 
 public class FireTimer : MonoBehaviour
 {
-    private float shootTimerSpeedMultiplier = 1f;
     public float cooldown;
     BasicAttackBehaviour attackBehaviour;
     [SerializeField] private Timer fireTimer;
 
-    public void UpdateShootTimerMultiplier(float newTimerMultiplier)
-    {
-        shootTimerSpeedMultiplier = newTimerMultiplier;
-    }
-
-    public void Init(float baseShootTimerSpeedMultiplier)
+    public void Init()
     {
         attackBehaviour = GetComponent<BasicAttackBehaviour>();
         fireTimer = new Timer(cooldown, false);
-        shootTimerSpeedMultiplier = baseShootTimerSpeedMultiplier;
     }
 
     private void Update()
     {
-        float counter = Time.deltaTime * shootTimerSpeedMultiplier;
+        float counter = Time.deltaTime;
         if (fireTimer.Tick(counter))
         {
-            attackBehaviour.Fire();
-            fireTimer.Set(Random.Range(cooldown * 0.2f, cooldown));
-            fireTimer.Reset();
+            OnFire();
         }
     }
 
+
+    protected virtual void OnFire()
+    {
+        attackBehaviour.Fire();
+        fireTimer.Set(Random.Range(cooldown * 0.8f, cooldown * 1.2f));
+        fireTimer.Reset();
+    }
 }

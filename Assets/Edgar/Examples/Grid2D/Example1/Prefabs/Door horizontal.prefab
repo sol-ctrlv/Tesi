@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   myCollider: {fileID: 7488709129721862826}
+  spriteRenderer: {fileID: 5807431028789089975}
 --- !u!1 &7048428644664195445
 GameObject:
   m_ObjectHideFlags: 0

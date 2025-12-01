@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 1952118502645869637}
   - component: {fileID: 8905385580062982264}
   - component: {fileID: 3906846080811776968}
+  - component: {fileID: 3511707471044395702}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -242,6 +243,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3511707471044395702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154694883025553004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee7116056f6d6c45847bb0f312a9a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimToActor
+  myActor: {fileID: 5870535304603399510}
 --- !u!1 &6963218544976182214
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,13 +380,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eab6b4b6db68a84dbd4709ae5868550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlimeEnemy
-  MaxHP: 2
+  MaxHP: 1
   CurrentHP: 0
   isAlive: 1
+  animator: {fileID: 3906846080811776968}
   gunHolder: {fileID: 8578421730782046999}
   sprite: {fileID: 8905385580062982264}
   enemyMovement: {fileID: 6466240481592759829}
   attack: {fileID: 5842594897164722873}
+  myCollider: {fileID: 6963218544976182211}
 --- !u!114 &6466240481592759829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   actorRenderer: {fileID: 8905385580062982264}
+  rb2d: {fileID: 6963218544976182210}
   targetDetection: {fileID: 2472508647139706682}
   movementSpeed: 10
   stopOnPlayerInRange: 0

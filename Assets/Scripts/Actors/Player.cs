@@ -5,6 +5,7 @@ public class Player : Actor
     static public Vector2 position => Instance ? Instance.gameObject.transform.position : Vector3.zero;
     static public Player Instance { get; private set; }
 
+    [SerializeField] AudioSource healAudioSource;
     [SerializeField] float healTimerSeconds = 10f;
 
     Timer healTimer;
@@ -39,6 +40,9 @@ public class Player : Actor
     public void Heal(float amount)
     {
         Damage(-amount);
+
+        healAudioSource.pitch = Random.Range(0.8f, 1.2f);
+        healAudioSource.Play();
 
     }
 

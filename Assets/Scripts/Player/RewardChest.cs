@@ -5,20 +5,18 @@ using UnityEngine;
 /// uno fra tre buff possibili e poi si disattiva.
 /// </summary>
 [RequireComponent(typeof(Collider2D))]
-public class RewardChest : MonoBehaviour
+public class RewardChest : MonoBehaviour, IInteractable
 {
     [Header("Interazione")]
-    [SerializeField] private KeyCode interactKey = KeyCode.X;
-    [SerializeField] private bool destroyAfterOpen = false;
+    [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource openAudioSource;
 
     [Header("Buff settings")]
     [SerializeField] private float buffDuration = 30f;
     [SerializeField] private float widerAttackMultiplier = 1.5f;
     [SerializeField] private float strongerAttackMultiplier = 2f;
 
-    private bool playerInRange = false;
     private bool opened = false;
-    private GameObject currentPlayer;
 
     private void Reset()
     {
@@ -27,41 +25,13 @@ public class RewardChest : MonoBehaviour
             col.isTrigger = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
 
-        playerInRange = true;
-        currentPlayer = other.gameObject;
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
-
-        if (other.gameObject == currentPlayer)
-        {
-            playerInRange = false;
-            currentPlayer = null;
-        }
-    }
-
-    private void Update()
-    {
-        if (!playerInRange || opened || currentPlayer == null)
-            return;
-
-        if (Input.GetKeyDown(interactKey))
-        {
-            OpenChest();
-        }
-    }
-
-    private void OpenChest()
+    private void OpenChest(GameObject currentPlayer)
     {
         opened = true;
+
+        animator.SetTrigger("Open");
+        openAudioSource.Play();
 
         var buffReceiver = currentPlayer.GetComponent<PlayerBuffReceiver>();
         if (buffReceiver != null)
@@ -74,18 +44,6 @@ public class RewardChest : MonoBehaviour
             Debug.LogWarning("[RewardChest] PlayerBuffReceiver non trovato sul player.");
         }
 
-        // TODO: animazione, suono, cambio sprite…
-
-        if (destroyAfterOpen)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            var col = GetComponent<Collider2D>();
-            if (col != null)
-                col.enabled = false;
-        }
     }
 
     private RewardBuffType GetRandomBuffType()
@@ -113,5 +71,15 @@ public class RewardChest : MonoBehaviour
                 Debug.Log("[RewardChest] Buff assegnato: Scudo (prossimo danno annullato)");
                 break;
         }
+    }
+
+    public bool Interact(GameObject interactor)
+    {
+        if (opened)
+            return false;
+
+        OpenChest(interactor);
+
+        return true;
     }
 }

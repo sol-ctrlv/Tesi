@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 
 
 
@@ -29,12 +28,20 @@ public class CameraTrigger : MonoBehaviour
             BoundingShape2D = GetComponent<BoxCollider2D>();
         }
 
-        var enemies = Physics2D.BoxCastAll(BoundingShape2D.offset, BoundingShape2D.size, 0, Vector2.zero);
+        enemiesInRoom.Clear();
+
+        var enemies = Physics2D.BoxCastAll(new Vector2(transform.position.x, transform.position.y) + BoundingShape2D.offset, BoundingShape2D.size, 0, Vector2.zero);
         for (int i = 0; i < enemies.Length; i++)
         {
+            if (enemies[i].collider.name == "TargetDetector")
+                continue;
+
             var enemy = enemies[i].transform.GetComponent<EnemyCharacter>();
             if (enemy != null)
             {
+                if (enemiesInRoom.Contains(enemy))
+                    continue;
+
                 enemiesInRoom.Add(enemy);
                 if (enemy.gameObject.activeSelf)
                     enemiesToKill++;

@@ -1,5 +1,9 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+
+
 
 
 #if UNITY_EDITOR
@@ -10,7 +14,7 @@ public class CameraTrigger : MonoBehaviour
 {
     [SerializeField] BoxCollider2D BoundingShape2D;
     [SerializeField] Tilemap wallRoomGrid;
-    [SerializeField] EnemyCharacter[] enemiesInRoom;
+    [SerializeField] List<EnemyCharacter> enemiesInRoom;
 
     [SerializeField] float cameraLensOnEnter = 6f;
 
@@ -25,14 +29,17 @@ public class CameraTrigger : MonoBehaviour
             BoundingShape2D = GetComponent<BoxCollider2D>();
         }
 
-        enemiesToKill = 0;
-
-        for (int i = 0; i < enemiesInRoom.Length; i++)
+        var enemies = Physics2D.BoxCastAll(BoundingShape2D.offset, BoundingShape2D.size, 0, Vector2.zero);
+        for (int i = 0; i < enemies.Length; i++)
         {
-            if (enemiesInRoom[i].gameObject.activeSelf)
-                enemiesToKill++;
+            var enemy = enemies[i].transform.GetComponent<EnemyCharacter>();
+            if (enemy != null)
+            {
+                enemiesInRoom.Add(enemy);
+                if (enemy.gameObject.activeSelf)
+                    enemiesToKill++;
+            }
         }
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -48,7 +55,7 @@ public class CameraTrigger : MonoBehaviour
 
                 DoorManager.SetDoorCollidable(true);
 
-                for (int i = 0; i < enemiesInRoom.Length; i++)
+                for (int i = 0; i < enemiesInRoom.Count; i++)
                 {
                     if (enemiesInRoom[i] == null)
                         continue;
@@ -87,13 +94,6 @@ public class CameraTrigger : MonoBehaviour
                 wallRoomGrid = tilemaps[i];
                 break;
             }
-        }
-
-        enemiesInRoom = transform.root.GetComponentsInChildren<EnemyCharacter>();
-
-        for (int i = 0; i < enemiesInRoom.Length; i++)
-        {
-            enemiesInRoom[i].SetAIEnabled(false);
         }
 
         BoundingShape2D = GetComponent<BoxCollider2D>();

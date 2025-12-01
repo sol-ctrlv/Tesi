@@ -13,7 +13,8 @@ namespace EmotionPCG
     {
         [Header("Prefab di contenuto di base")]
         public GameObject enemyPrefab;
-        public GameObject safeHavenPrefab;
+        public GameObject safeHealPrefab;
+        public GameObject safeStatuePrefab;
         public GameObject rewardChestPrefab;
         public GameObject competenceGatePrefab;
 
@@ -75,11 +76,11 @@ namespace EmotionPCG
                         break;
 
                     case AppraisalPatternType.SafeHaven:
-                        ApplySafeHaven(metadata, roomTransform);
+                        ApplySafeHaven(metadata, roomTransform, roomCenter);
                         break;
 
                     case AppraisalPatternType.Rewards:
-                        ApplyRewards(metadata, roomTransform);
+                        ApplyRewards(metadata, roomTransform, roomCenter);
                         break;
 
                     case AppraisalPatternType.ClearSignposting:
@@ -121,7 +122,6 @@ namespace EmotionPCG
         }
 
         #region Pattern handlers
-
         private void ApplyConflict(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             if (enemyPrefab == null)
@@ -156,27 +156,46 @@ namespace EmotionPCG
         /// <summary>
         /// Safe haven centrato nella stanza.
         /// </summary>
-        private void ApplySafeHaven(EmotionRoomMetadata metadata, Transform roomTransform)
+        /// <summary>
+        /// Safe haven come set di props: fuoco al centro + 2 statue ai lati
+        /// + (opzionale) un segnale a indicare che è un luogo sicuro.
+        /// </summary>
+        private void ApplySafeHaven(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
-            if (safeHavenPrefab == null)
-                return;
+            Vector3 center = roomCenter;
 
-            var center = roomTransform.position;
-            Instantiate(safeHavenPrefab, center, Quaternion.identity, roomTransform);
+            // 1. Fuoco da campo al centro
+            if (safeHealPrefab != null)
+            {
+                Instantiate(safeHealPrefab, center, Quaternion.identity, roomTransform);
+            }
+
+            // 2. Due statue laterali (simmetriche)
+            if (safeStatuePrefab != null)
+            {
+                float sideOffset = 1.5f; // distanza dal centro; tarala a gusto
+                Instantiate(safeStatuePrefab, center + new Vector3(-sideOffset, 0f, 0f), Quaternion.identity, roomTransform);
+                Instantiate(safeStatuePrefab, center + new Vector3(sideOffset, 0f, 0f), Quaternion.identity, roomTransform);
+            }
         }
 
+
         /// <summary>
-        /// Chest leggermente sopra il centro, così non collide con safe haven (che non coesiste sempre).
+        /// Reward: piazza una chest leggermente sopra il centro stanza.
+        /// La logica di buff è gestita dallo script sul prefab della chest.
         /// </summary>
-        private void ApplyRewards(EmotionRoomMetadata metadata, Transform roomTransform)
+        private void ApplyRewards(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             if (rewardChestPrefab == null)
                 return;
 
-            var center = roomTransform.position;
-            var pos = center + new Vector3(0f, 1.5f, 0f);
+            Vector3 center = roomCenter;
+            // piccolo offset in su per non sovrapporla ad altri elementi centrali
+            Vector3 pos = center + new Vector3(0f, 1.2f, 0f);
+
             Instantiate(rewardChestPrefab, pos, Quaternion.identity, roomTransform);
         }
+
 
         /// <summary>
         /// Cartello vicino alla porta del critical path (se marcata), altrimenti sopra il centro.

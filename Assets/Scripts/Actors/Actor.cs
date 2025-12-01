@@ -5,13 +5,13 @@ public class Actor : MonoBehaviour, IDamageable
 {
     public Action<float, float, float> OnDamage;
 
-    [SerializeField] protected float MaxHP = 100, CurrentHP;
+    [SerializeField] protected float MaxHP = 3, CurrentHP;
     [SerializeField] bool isAlive = true;
     [SerializeField] protected Animator animator;
 
     public void Damage(float amount)
     {
-        CurrentHP -= amount;
+        CurrentHP = Mathf.Clamp(CurrentHP - amount, 0, MaxHP);
         OnDamage?.Invoke(amount, CurrentHP, MaxHP);
 
         if (CurrentHP <= 0 && isAlive)

@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 1771316235279876530}
   - component: {fileID: 7373588367005351006}
   - component: {fileID: 5930249760935491261}
+  - component: {fileID: -1296711380905614327}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -241,6 +242,8 @@ MonoBehaviour:
   MaxHP: 3
   CurrentHP: 0
   isAlive: 1
+  animator: {fileID: 0}
+  healTimerSeconds: 10
 --- !u!114 &8186700852144279473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   actorRenderer: {fileID: 3986202553696381934}
+  rb2d: {fileID: 0}
   flipWithPlayer: {fileID: 112273518031217074}
   playerInput: {fileID: 1771316235279876530}
   movementSpeed: 200
@@ -319,6 +323,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34cc1d29d6ca0874b84b2f3842d5989a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Edgar.Unity.Examples::Edgar.Unity.Examples.Interactor
+--- !u!114 &-1296711380905614327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986202553696381928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3164752940a5f62b69131ce9d48179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBuffReceiver
+  baseAttackRange: 1
+  baseAttackDamage: 1
 --- !u!1 &7527047235236622277
 GameObject:
   m_ObjectHideFlags: 0

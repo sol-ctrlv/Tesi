@@ -6,16 +6,15 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb2D;
     [SerializeField] SpriteRenderer spriteRender;
-
     [SerializeField] PlayerInput playerInput;
     [SerializeField] Animator animator;
     [SerializeField] float resetAttackTime = .5f;
     [SerializeField] TargetDetection targetDetection;
     [SerializeField] float damage = 1f;
     [SerializeField] float recoilForce = 10f;
+    [SerializeField] PlayerBuffReceiver buffReceiver;
     InputAction attackAction;
-
-    bool canAttack = true;
+    bool canAttack = false;
 
     private void Start()
     {
@@ -33,6 +32,11 @@ public class PlayerAttack : MonoBehaviour
         if (!canAttack)
             return;
 
+        if (buffReceiver != null)
+            targetDetection.SetRangeMultiplier(buffReceiver.AttackRangeMultiplier);
+        else
+            targetDetection.SetRangeMultiplier(1f);
+
         StartCoroutine(BigPush(rb2D, spriteRender.flipX ? Vector2.right : Vector2.left, 1000f, .5f));
 
         canAttack = false;
@@ -40,13 +44,20 @@ public class PlayerAttack : MonoBehaviour
         animator.SetBool("IsAttacking", !canAttack);
         StartCoroutine(ResetAttack());
 
+        float damageMult = 1f;
+        if (buffReceiver != null)
+            damageMult = buffReceiver.AttackDamageMultiplier;
+
+        float finalDamage = damage * damageMult;
+
+        // 2) uso finalDamage invece di damage
         for (int i = 0; i < targetDetection.TargetsInRange.Count; i++)
         {
             IDamageable damageable = targetDetection.TargetsInRange[i].GetComponent<IDamageable>();
 
             if (damageable != null)
             {
-                damageable.Damage(damage);
+                damageable.Damage(finalDamage);
             }
         }
     }
@@ -74,4 +85,11 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Chiamato quando il player raccoglie la spada.
+    /// </summary>
+    public void UnlockAttack()
+    {
+        canAttack = true;
+    }
 }

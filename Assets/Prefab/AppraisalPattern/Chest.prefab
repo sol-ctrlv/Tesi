@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4728375815086296484}
   - component: {fileID: 164889906528471732}
   - component: {fileID: 2630314188152307848}
+  - component: {fileID: -4313817052452136809}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -188,3 +189,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4313817052452136809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641762514246170546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083f8fa29bab3873f991957dcfe8bdb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RewardChest
+  interactKey: 101
+  destroyAfterOpen: 1
+  buffDuration: 30
+  widerAttackMultiplier: 1.5
+  strongerAttackMultiplier: 2

@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class BasicAttackBehaviour : MonoBehaviour
 {
-    [SerializeField] private Animator myAnimator;
     [SerializeField] private AttackSO data;
     private TargetSelector targetSelector;
     private ProjectilesPool projectilePool;
@@ -26,7 +25,6 @@ public class BasicAttackBehaviour : MonoBehaviour
     public void Fire()
     {
         Vector2 shootDirection = targetSelector.GetShootDirection();
-        myAnimator.SetTrigger("Attack");
 
         if (shootDirection == Vector2.zero)
         {

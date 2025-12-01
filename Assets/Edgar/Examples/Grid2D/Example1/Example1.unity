@@ -151,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 774177826}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &3317071
 MonoBehaviour:
@@ -194,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &3317074
 Transform:
   m_ObjectHideFlags: 0
@@ -382,6 +382,7 @@ MonoBehaviour:
   rb2d: {fileID: 11911217}
   targetDetection: {fileID: 1826648999}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &11911217
 Rigidbody2D:
@@ -548,7 +549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1132257411}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &20761873
 MonoBehaviour:
@@ -591,6 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &20761876
 Transform:
   m_ObjectHideFlags: 0
@@ -1374,6 +1375,7 @@ MonoBehaviour:
   rb2d: {fileID: 39732364}
   targetDetection: {fileID: 1752414567}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &39732364
 Rigidbody2D:
@@ -1543,7 +1545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 942938832}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &49887193
 MonoBehaviour:
@@ -1586,6 +1587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &49887196
 Transform:
   m_ObjectHideFlags: 0
@@ -1709,6 +1711,7 @@ MonoBehaviour:
   rb2d: {fileID: 61266326}
   targetDetection: {fileID: 246521188}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &61266326
 Rigidbody2D:
@@ -2762,7 +2765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 914941601}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &82971989
 MonoBehaviour:
@@ -2805,6 +2807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &82971992
 Transform:
   m_ObjectHideFlags: 0
@@ -4567,7 +4570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1934352994}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &120258717
 MonoBehaviour:
@@ -4610,6 +4612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &120258720
 Transform:
   m_ObjectHideFlags: 0
@@ -7575,7 +7578,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.3892198
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7600,7 +7603,7 @@ Transform:
   m_GameObject: {fileID: 199893423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.27067, y: -12.098503, z: -24.198244}
+  m_LocalPosition: {x: 0.7415367, y: 26.6242, z: -12.468883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8296,6 +8299,7 @@ MonoBehaviour:
   rb2d: {fileID: 203943825}
   targetDetection: {fileID: 1954234201}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &203943825
 Rigidbody2D:
@@ -12811,6 +12815,7 @@ MonoBehaviour:
   rb2d: {fileID: 282430815}
   targetDetection: {fileID: 6799645}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &282430815
 Rigidbody2D:
@@ -13731,7 +13736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 2144112706}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &297255262
 MonoBehaviour:
@@ -13774,6 +13778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &297255265
 Transform:
   m_ObjectHideFlags: 0
@@ -16549,6 +16554,7 @@ MonoBehaviour:
   rb2d: {fileID: 370610948}
   targetDetection: {fileID: 990933239}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &370610948
 Rigidbody2D:
@@ -16846,7 +16852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 690828344}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &376187535
 MonoBehaviour:
@@ -16889,6 +16894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &376187538
 Transform:
   m_ObjectHideFlags: 0
@@ -18172,7 +18178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1546735227}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &406254216
 MonoBehaviour:
@@ -18215,6 +18220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &406254219
 Transform:
   m_ObjectHideFlags: 0
@@ -18332,7 +18338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 425734190}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &409422482
 MonoBehaviour:
@@ -18375,6 +18380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &409422485
 Transform:
   m_ObjectHideFlags: 0
@@ -19190,7 +19196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1871420459}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &417630132
 MonoBehaviour:
@@ -19233,6 +19238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &417630135
 Transform:
   m_ObjectHideFlags: 0
@@ -19997,6 +20003,81 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &439290189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439290191}
+  - component: {fileID: 439290190}
+  m_Layer: 0
+  m_Name: CinemachineCamera (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &439290190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439290189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 60
+    OrthographicSize: 6.3892198
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!4 &439290191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439290189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7415367, y: 26.6242, z: -12.468883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441538616
 GameObject:
   m_ObjectHideFlags: 0
@@ -21741,6 +21822,7 @@ MonoBehaviour:
   rb2d: {fileID: 450730838}
   targetDetection: {fileID: 83327413}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &450730838
 Rigidbody2D:
@@ -22071,6 +22153,7 @@ MonoBehaviour:
   rb2d: {fileID: 461689729}
   targetDetection: {fileID: 1184347756}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &461689729
 Rigidbody2D:
@@ -23009,7 +23092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1722779208}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &486727818
 MonoBehaviour:
@@ -23052,6 +23134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &486727821
 Transform:
   m_ObjectHideFlags: 0
@@ -23443,6 +23526,7 @@ MonoBehaviour:
   rb2d: {fileID: 490637309}
   targetDetection: {fileID: 1777913506}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &490637309
 Rigidbody2D:
@@ -26401,6 +26485,7 @@ MonoBehaviour:
   rb2d: {fileID: 499161334}
   targetDetection: {fileID: 1598640399}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &499161334
 Rigidbody2D:
@@ -29794,7 +29879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 266226438}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &612489332
 MonoBehaviour:
@@ -29837,6 +29921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &612489335
 Transform:
   m_ObjectHideFlags: 0
@@ -29978,6 +30063,7 @@ MonoBehaviour:
   rb2d: {fileID: 621013501}
   targetDetection: {fileID: 586948552}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &621013501
 Rigidbody2D:
@@ -30269,6 +30355,7 @@ MonoBehaviour:
   rb2d: {fileID: 633529710}
   targetDetection: {fileID: 291169033}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &633529710
 Rigidbody2D:
@@ -33576,6 +33663,7 @@ MonoBehaviour:
   rb2d: {fileID: 690918685}
   targetDetection: {fileID: 1248365388}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &690918685
 Rigidbody2D:
@@ -35907,7 +35995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1478061432}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &740352426
 MonoBehaviour:
@@ -35950,6 +36037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &740352429
 Transform:
   m_ObjectHideFlags: 0
@@ -36041,6 +36129,7 @@ MonoBehaviour:
   rb2d: {fileID: 743911772}
   targetDetection: {fileID: 1283043321}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &743911772
 Rigidbody2D:
@@ -51545,6 +51634,7 @@ MonoBehaviour:
   rb2d: {fileID: 812576117}
   targetDetection: {fileID: 1029659187}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &812576117
 Rigidbody2D:
@@ -52787,6 +52877,7 @@ MonoBehaviour:
   rb2d: {fileID: 830497817}
   targetDetection: {fileID: 1687967255}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &830497817
 Rigidbody2D:
@@ -52953,7 +53044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 881631531}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &841383243
 MonoBehaviour:
@@ -52996,6 +53086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &841383246
 Transform:
   m_ObjectHideFlags: 0
@@ -57864,6 +57955,7 @@ MonoBehaviour:
   rb2d: {fileID: 939127391}
   targetDetection: {fileID: 666189853}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &939127391
 Rigidbody2D:
@@ -59320,7 +59412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 2098757969}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &964135538
 MonoBehaviour:
@@ -59363,6 +59454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &964135541
 Transform:
   m_ObjectHideFlags: 0
@@ -59524,7 +59616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1334611843}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &975666760
 MonoBehaviour:
@@ -59567,6 +59658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &975666763
 Transform:
   m_ObjectHideFlags: 0
@@ -61115,6 +61207,7 @@ MonoBehaviour:
   rb2d: {fileID: 1012756095}
   targetDetection: {fileID: 1594852023}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1012756095
 Rigidbody2D:
@@ -76219,7 +76312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1235283461}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1039887455
 MonoBehaviour:
@@ -76262,6 +76354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1039887458
 Transform:
   m_ObjectHideFlags: 0
@@ -76587,7 +76680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1048473991}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1047625345
 MonoBehaviour:
@@ -76630,6 +76722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1047625348
 Transform:
   m_ObjectHideFlags: 0
@@ -76978,6 +77071,7 @@ MonoBehaviour:
   rb2d: {fileID: 1050514307}
   targetDetection: {fileID: 917669028}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1050514307
 Rigidbody2D:
@@ -77553,7 +77647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 482740841}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1061792186
 MonoBehaviour:
@@ -77596,6 +77689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1061792189
 Transform:
   m_ObjectHideFlags: 0
@@ -77643,7 +77737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 309965674}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1062588305
 MonoBehaviour:
@@ -77686,6 +77779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1062588308
 Transform:
   m_ObjectHideFlags: 0
@@ -79197,7 +79291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 2104388022}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1114342773
 MonoBehaviour:
@@ -79240,6 +79333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1114342776
 Transform:
   m_ObjectHideFlags: 0
@@ -80399,6 +80493,7 @@ MonoBehaviour:
   rb2d: {fileID: 1140142570}
   targetDetection: {fileID: 458244698}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1140142570
 Rigidbody2D:
@@ -81417,7 +81512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1320082415}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1155558751
 MonoBehaviour:
@@ -81460,6 +81554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1155558754
 Transform:
   m_ObjectHideFlags: 0
@@ -84327,6 +84422,7 @@ MonoBehaviour:
   rb2d: {fileID: 1264787573}
   targetDetection: {fileID: 247721531}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1264787573
 Rigidbody2D:
@@ -84558,7 +84654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 813849607}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1272811667
 MonoBehaviour:
@@ -84601,6 +84696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1272811670
 Transform:
   m_ObjectHideFlags: 0
@@ -85229,6 +85325,7 @@ MonoBehaviour:
   rb2d: {fileID: 1309532827}
   targetDetection: {fileID: 563351835}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1309532827
 Rigidbody2D:
@@ -85442,6 +85539,7 @@ MonoBehaviour:
   rb2d: {fileID: 1310606202}
   targetDetection: {fileID: 1184256086}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1310606202
 Rigidbody2D:
@@ -86000,7 +86098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 2055494433}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1332832032
 MonoBehaviour:
@@ -86043,6 +86140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1332832035
 Transform:
   m_ObjectHideFlags: 0
@@ -86337,7 +86435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1106222904}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1347164942
 MonoBehaviour:
@@ -86380,6 +86477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1347164945
 Transform:
   m_ObjectHideFlags: 0
@@ -86703,6 +86801,7 @@ MonoBehaviour:
   rb2d: {fileID: 1356752369}
   targetDetection: {fileID: 1839200821}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1356752369
 Rigidbody2D:
@@ -88058,7 +88157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 891682305}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1374519484
 MonoBehaviour:
@@ -88101,6 +88199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1374519487
 Transform:
   m_ObjectHideFlags: 0
@@ -88570,7 +88669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 25678451}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1395307113
 MonoBehaviour:
@@ -88613,6 +88711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1395307116
 Transform:
   m_ObjectHideFlags: 0
@@ -90805,6 +90904,7 @@ MonoBehaviour:
   rb2d: {fileID: 1420026854}
   targetDetection: {fileID: 2025608858}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1420026854
 Rigidbody2D:
@@ -91430,7 +91530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 318702121}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1429619843
 MonoBehaviour:
@@ -91473,6 +91572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1429619846
 Transform:
   m_ObjectHideFlags: 0
@@ -92199,7 +92299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1146249779}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1443790550
 MonoBehaviour:
@@ -92242,6 +92341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1443790553
 Transform:
   m_ObjectHideFlags: 0
@@ -92923,6 +93023,7 @@ MonoBehaviour:
   rb2d: {fileID: 1466345049}
   targetDetection: {fileID: 1818126025}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1466345049
 Rigidbody2D:
@@ -93368,7 +93469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 896415876}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1479698727
 MonoBehaviour:
@@ -93411,6 +93511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1479698730
 Transform:
   m_ObjectHideFlags: 0
@@ -93628,7 +93729,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 794141526}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1486171633
 MonoBehaviour:
@@ -93671,6 +93771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1486171636
 Transform:
   m_ObjectHideFlags: 0
@@ -95847,7 +95948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1929260660}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1524303549
 MonoBehaviour:
@@ -95890,6 +95990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1524303552
 Transform:
   m_ObjectHideFlags: 0
@@ -96121,6 +96222,7 @@ MonoBehaviour:
   rb2d: {fileID: 1546435080}
   targetDetection: {fileID: 1518885160}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1546435080
 Rigidbody2D:
@@ -98405,7 +98507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 2003176841}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1578295417
 MonoBehaviour:
@@ -98448,6 +98549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1578295420
 Transform:
   m_ObjectHideFlags: 0
@@ -98636,6 +98738,7 @@ MonoBehaviour:
   rb2d: {fileID: 1584633868}
   targetDetection: {fileID: 2083963865}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1584633868
 Rigidbody2D:
@@ -98949,7 +99052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1893163783}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1591168474
 MonoBehaviour:
@@ -98992,6 +99094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1591168477
 Transform:
   m_ObjectHideFlags: 0
@@ -99193,6 +99296,7 @@ MonoBehaviour:
   rb2d: {fileID: 1591571914}
   targetDetection: {fileID: 2028442765}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1591571914
 Rigidbody2D:
@@ -102066,6 +102170,7 @@ MonoBehaviour:
   rb2d: {fileID: 1672728444}
   targetDetection: {fileID: 1225896685}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1672728444
 Rigidbody2D:
@@ -102828,6 +102933,7 @@ MonoBehaviour:
   rb2d: {fileID: 1691969428}
   targetDetection: {fileID: 1347746939}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1691969428
 Rigidbody2D:
@@ -103173,7 +103279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1753813994}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1697717068
 MonoBehaviour:
@@ -103216,6 +103321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1697717071
 Transform:
   m_ObjectHideFlags: 0
@@ -103263,7 +103369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1142427150}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1704791292
 MonoBehaviour:
@@ -103306,6 +103411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1704791295
 Transform:
   m_ObjectHideFlags: 0
@@ -103397,6 +103503,7 @@ MonoBehaviour:
   rb2d: {fileID: 1708849826}
   targetDetection: {fileID: 1073897401}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1708849826
 Rigidbody2D:
@@ -105116,7 +105223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1494079089}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1742508916
 MonoBehaviour:
@@ -105159,6 +105265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1742508919
 Transform:
   m_ObjectHideFlags: 0
@@ -107662,6 +107769,7 @@ MonoBehaviour:
   rb2d: {fileID: 1796377009}
   targetDetection: {fileID: 567849152}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1796377009
 Rigidbody2D:
@@ -108453,6 +108561,7 @@ MonoBehaviour:
   rb2d: {fileID: 1803359506}
   targetDetection: {fileID: 1186705911}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1803359506
 Rigidbody2D:
@@ -108572,7 +108681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 797476752}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1804058934
 MonoBehaviour:
@@ -108615,6 +108723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1804058937
 Transform:
   m_ObjectHideFlags: 0
@@ -110000,7 +110109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 671345005}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1824634966
 MonoBehaviour:
@@ -110043,6 +110151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1824634969
 Transform:
   m_ObjectHideFlags: 0
@@ -110825,6 +110934,7 @@ MonoBehaviour:
   rb2d: {fileID: 1863949481}
   targetDetection: {fileID: 354221597}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1863949481
 Rigidbody2D:
@@ -111569,6 +111679,7 @@ MonoBehaviour:
   rb2d: {fileID: 1896085040}
   targetDetection: {fileID: 1817726665}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1896085040
 Rigidbody2D:
@@ -112270,6 +112381,7 @@ MonoBehaviour:
   rb2d: {fileID: 1902372904}
   targetDetection: {fileID: 2109873776}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &1902372904
 Rigidbody2D:
@@ -114887,7 +114999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1795383839}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1962160532
 MonoBehaviour:
@@ -114930,6 +115041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1962160535
 Transform:
   m_ObjectHideFlags: 0
@@ -115281,7 +115393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 1409313721}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &1982192868
 MonoBehaviour:
@@ -115324,6 +115435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &1982192871
 Transform:
   m_ObjectHideFlags: 0
@@ -116970,6 +117082,7 @@ MonoBehaviour:
   rb2d: {fileID: 2002223696}
   targetDetection: {fileID: 1748352983}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &2002223696
 Rigidbody2D:
@@ -118690,6 +118803,7 @@ MonoBehaviour:
   rb2d: {fileID: 2061736457}
   targetDetection: {fileID: 1748393351}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &2061736457
 Rigidbody2D:
@@ -120842,7 +120956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
-  myAnimator: {fileID: 294477318}
   data: {fileID: 11400000, guid: 3dc737479bd2ffe4e94e9857cfac332b, type: 2}
 --- !u!114 &2115986137
 MonoBehaviour:
@@ -120885,6 +120998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireTimer
   cooldown: 3
+  myAnimator: {fileID: 0}
 --- !u!4 &2115986140
 Transform:
   m_ObjectHideFlags: 0
@@ -120976,6 +121090,7 @@ MonoBehaviour:
   rb2d: {fileID: 2120014584}
   targetDetection: {fileID: 1968582563}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &2120014584
 Rigidbody2D:
@@ -121317,6 +121432,7 @@ MonoBehaviour:
   rb2d: {fileID: 2120773189}
   targetDetection: {fileID: 550521583}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &2120773189
 Rigidbody2D:
@@ -122953,6 +123069,7 @@ MonoBehaviour:
   rb2d: {fileID: 2141547156}
   targetDetection: {fileID: 1578990516}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!50 &2141547156
 Rigidbody2D:
@@ -123234,3 +123351,4 @@ SceneRoots:
   - {fileID: 1938144950}
   - {fileID: 537384067}
   - {fileID: 932936928}
+  - {fileID: 439290191}

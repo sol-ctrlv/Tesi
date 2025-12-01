@@ -5,6 +5,8 @@ public class FireTimer : MonoBehaviour
     public float cooldown;
     BasicAttackBehaviour attackBehaviour;
     [SerializeField] private Timer fireTimer;
+    [SerializeField] protected Animator myAnimator;
+    [SerializeField] protected TargetDetection targetDetection;
 
     public void Init()
     {
@@ -15,7 +17,7 @@ public class FireTimer : MonoBehaviour
     private void Update()
     {
         float counter = Time.deltaTime;
-        if (fireTimer.Tick(counter))
+        if (targetDetection.TargetsInRange.Count > 0 && fireTimer.Tick(counter))
         {
             OnFire();
         }
@@ -23,6 +25,12 @@ public class FireTimer : MonoBehaviour
 
 
     protected virtual void OnFire()
+    {
+        myAnimator.SetTrigger("Attack");
+        Fire();
+    }
+
+    protected void Fire()
     {
         attackBehaviour.Fire();
         fireTimer.Set(Random.Range(cooldown * 0.8f, cooldown * 1.2f));

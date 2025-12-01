@@ -12,6 +12,7 @@ public class Actor : MonoBehaviour, IDamageable
     public void Damage(float amount)
     {
         CurrentHP -= amount;
+        CurrentHP = Mathf.Clamp(CurrentHP, 0, MaxHP);
         OnDamage?.Invoke(amount, CurrentHP, MaxHP);
 
         if (CurrentHP <= 0 && isAlive)

@@ -102,7 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnowmanFireTimer
   cooldown: 2.5
-  animator: {fileID: 5419760992261354950}
+  myAnimator: {fileID: 5419760992261354950}
+  targetDetection: {fileID: 6868307895536060724}
 --- !u!4 &5316170000195451086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4287474210145578117, guid: 4cc991ab588ba4947b21e6c4bb879884, type: 3}

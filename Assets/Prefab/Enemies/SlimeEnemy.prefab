@@ -405,6 +405,7 @@ MonoBehaviour:
   rb2d: {fileID: 6963218544976182210}
   targetDetection: {fileID: 2472508647139706682}
   movementSpeed: 10
+  repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!114 &3091908515347440627
 MonoBehaviour:
@@ -431,6 +432,14 @@ PrefabInstance:
       propertyPath: cooldown
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1576612853857648084, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: myAnimator
+      value: 
+      objectReference: {fileID: 3906846080811776968}
+    - target: {fileID: 1576612853857648084, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      propertyPath: targetDetection
+      value: 
+      objectReference: {fileID: 2472508647139706682}
     - target: {fileID: 4287474210145578117, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

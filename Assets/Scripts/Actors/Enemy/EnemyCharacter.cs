@@ -24,8 +24,7 @@ public class EnemyCharacter : Actor
 
     void HealAfterDamage(float a, float b, float c)
     {
-        animator.SetBool("Damaged", true);
-        animator.SetBool("Damaged", false);
+
     }
 
     //IEnumerator 

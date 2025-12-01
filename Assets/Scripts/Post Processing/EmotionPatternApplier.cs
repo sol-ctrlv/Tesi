@@ -3,46 +3,40 @@ using UnityEngine;
 
 namespace EmotionPCG
 {
-    /// <summary>
-    /// Interpreta gli appraisal pattern applicati alle stanze e li traduce
-    /// in modifiche concrete al contenuto (nemici, safe haven, ricompense, ecc.).
-    /// Lavora leggendo i componenti EmotionRoomMetadata presenti nella scena
-    /// dopo che il post-processing ha assegnato i pattern.
-    /// </summary>
     public class EmotionPatternApplier : MonoBehaviour
     {
-        [Header("Prefab di contenuto di base")]
-        public GameObject enemyPrefab;
-        public GameObject safeHealPrefab;
-        public GameObject safeStatuePrefab;
-        public GameObject rewardChestPrefab;
-        public GameObject competenceGatePrefab;
+        [Header("Conflict (nemici)")]
+        [SerializeField] private GameObject enemyPrefab;
+        [SerializeField] private int baseEnemiesPerConflict = 2;
+        [SerializeField] private int extraEnemiesForFear = 1;
+        [SerializeField] private float enemySpawnRadius = 2.2f;
+        [SerializeField] private float enemyCollisionRadius = 0.5f;
+        [SerializeField] private LayerMask enemyBlockingLayers;
 
-        [Header("Prefab di segnaletica / punti di interesse")]
-        public GameObject signpostPrefab;
-        public GameObject pointOfInterestPrefab;
+        [Header("Safe Haven")]
+        [SerializeField] private GameObject safeHealPrefab;     // tile che cura alla prima collisione
+        [SerializeField] private GameObject safeStatuePrefab;   // statue laterali opzionali
 
-        [Header("Prefab estetici / ambientali")]
-        public GameObject rareObjectPrefab;
-        public GameObject symmetryPropPrefab;
-        public GameObject[] occlusionPropPrefabs;
+        [Header("Rewards")]
+        [SerializeField] private GameObject rewardChestPrefab;  // chest con buff (script sul prefab)
 
-        [Header("Parametri di intensità (grezzi, per prototipo)")]
-        public int baseEnemiesPerConflict = 2;
-        public int extraEnemiesForFear = 1;
-        public int propsPerContentDensity = 5;
+        [Header("Pointing Out / Centering / Symmetry / Appearance")]
+        [SerializeField] private GameObject pointOfInterestPrefab;
+        [SerializeField] private GameObject symmetryPropPrefab;
+        [SerializeField] private GameObject rareObjectPrefab;
 
-        [Header("Spawn nemici (controllo collisioni)")]
-        [SerializeField] private LayerMask enemyBlockingLayers;   // layer di muri + props + nemici
-        [SerializeField] private float enemySpawnCheckRadius = 0.4f;
-        [SerializeField] private int enemyMaxSpawnAttempts = 25;
-        [SerializeField] private float enemySpawnRadius = 2f;
+        [Header("Content Density / Occlusion / Competence Gate")]
+        [SerializeField] private GameObject[] occlusionPropPrefabs;
+        [SerializeField] private int propsPerContentDensity = 4;
+        [SerializeField] private GameObject audioOcclusionPrefab;
+        [SerializeField] private GameObject competenceGatePrefab;
+
+        [Header("Clear Signposting")]
+        [SerializeField] private GameObject signpostPrefab;
 
         /// <summary>
-        /// Entry point da chiamare dopo la generazione del livello + post-processing.
-        /// Può essere invocato da un altro componente manager o da un pulsante in editor.
+        /// Chiamato dal PostProcessing dopo aver scritto i metadata sulle stanze.
         /// </summary>
-        [ContextMenu("Apply patterns to all rooms in scene")]
         public void ApplyAllPatternsInScene()
         {
             var rooms = FindObjectsOfType<EmotionRoomMetadata>();
@@ -59,13 +53,14 @@ namespace EmotionPCG
                 return;
 
             var roomTransform = metadata.transform;
-            var patterns = metadata.AppliedPatterns;
-            var roomCenter = GetRoomCenter(roomTransform);
+            List<AppraisalPatternType> patterns = metadata.AppliedPatterns;
+
+            // centro calcolato con ancora "RoomCenter" se presente
+            Vector3 roomCenter = GetRoomCenter(roomTransform);
 
             bool hasSafeHaven = patterns.Contains(AppraisalPatternType.SafeHaven);
 
-            // SafeHaven agisce come stanza "a sé stante" rispetto a minacce e ostacoli:
-            // se presente, saltiamo Conflict, ContentDensity, OcclusionAudio e CompetenceGate.
+            // SafeHaven “spegne” alcuni pattern ostili
             foreach (var pattern in patterns)
             {
                 switch (pattern)
@@ -122,6 +117,10 @@ namespace EmotionPCG
         }
 
         #region Pattern handlers
+
+        /// <summary>
+        /// Nemici attorno al centro stanza, con controllo collisioni 2D.
+        /// </summary>
         private void ApplyConflict(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             if (enemyPrefab == null)
@@ -133,14 +132,12 @@ namespace EmotionPCG
 
             enemies = Mathf.Max(1, enemies);
 
-            Vector3 center = roomCenter;
-
             for (int i = 0; i < enemies; i++)
             {
-                // allarghiamo un po' il raggio di ricerca per i nemici successivi
+                // allarghiamo un po’ il raggio per i nemici successivi
                 float radiusForThisEnemy = enemySpawnRadius + i * 0.4f;
 
-                if (TryFindFreeEnemySpot(center, radiusForThisEnemy, out var spawnPos))
+                if (TryFindFreeEnemySpot(roomCenter, radiusForThisEnemy, out var spawnPos))
                 {
                     Instantiate(enemyPrefab, spawnPos, Quaternion.identity, roomTransform);
                 }
@@ -152,53 +149,47 @@ namespace EmotionPCG
             }
         }
 
-
         /// <summary>
-        /// Safe haven centrato nella stanza.
-        /// </summary>
-        /// <summary>
-        /// Safe haven come set di props: fuoco al centro + 2 statue ai lati
-        /// + (opzionale) un segnale a indicare che è un luogo sicuro.
+        /// Safe haven: tile di cura al centro + due statue laterali.
         /// </summary>
         private void ApplySafeHaven(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
-            Vector3 center = roomCenter;
-
-            // 1. Fuoco da campo al centro
+            // 1. tile di cura al centro
             if (safeHealPrefab != null)
             {
-                Instantiate(safeHealPrefab, center, Quaternion.identity, roomTransform);
+                Instantiate(safeHealPrefab, roomCenter, Quaternion.identity, roomTransform);
             }
 
-            // 2. Due statue laterali (simmetriche)
+            // 2. due statue simmetriche ai lati
             if (safeStatuePrefab != null)
             {
-                float sideOffset = 1.5f; // distanza dal centro; tarala a gusto
-                Instantiate(safeStatuePrefab, center + new Vector3(-sideOffset, 0f, 0f), Quaternion.identity, roomTransform);
-                Instantiate(safeStatuePrefab, center + new Vector3(sideOffset, 0f, 0f), Quaternion.identity, roomTransform);
+                float sideOffset = 1.5f;
+                Instantiate(safeStatuePrefab, roomCenter + new Vector3(-sideOffset, 0f, 0f),
+                    Quaternion.identity, roomTransform);
+                Instantiate(safeStatuePrefab, roomCenter + new Vector3(sideOffset, 0f, 0f),
+                    Quaternion.identity, roomTransform);
             }
         }
 
-
         /// <summary>
-        /// Reward: piazza una chest leggermente sopra il centro stanza.
-        /// La logica di buff è gestita dallo script sul prefab della chest.
+        /// Reward: chest leggermente sopra il centro stanza.
+        /// La logica di buff è nello script del prefab.
         /// </summary>
         private void ApplyRewards(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             if (rewardChestPrefab == null)
                 return;
 
-            Vector3 center = roomCenter;
             // piccolo offset in su per non sovrapporla ad altri elementi centrali
-            Vector3 pos = center + new Vector3(0f, 1.2f, 0f);
-
+            Vector3 pos = roomCenter + new Vector3(0f, 1.2f, 0f);
             Instantiate(rewardChestPrefab, pos, Quaternion.identity, roomTransform);
         }
 
-
         /// <summary>
-        /// Cartello vicino alla porta del critical path (se marcata), altrimenti sopra il centro.
+        /// Clear signposting:
+        /// – se esiste un child "CriticalPathDoorMarker", piazza il cartello vicino alla porta;
+        /// – altrimenti, fallback: cartello sopra il centro stanza.
+        /// Se la stanza è anche SafeHaven, mette un secondo cartello in basso.
         /// </summary>
         private void ApplyClearSignposting(EmotionRoomMetadata metadata, Transform roomTransform, bool isSafeHavenRoom)
         {
@@ -207,109 +198,125 @@ namespace EmotionPCG
 
             Vector3 mainPos;
 
-            Transform criticalDoorMarker = roomTransform.Find("CriticalPathDoorMarker");
-            if (criticalDoorMarker != null)
+            // 1) Caso "marker" esplicito nella stanza
+            Transform doorMarker = roomTransform.Find("CriticalPathDoorMarker");
+            if (doorMarker != null)
             {
-                // Prendiamo l'orientamento della porta per mettere il cartello di lato.
-                var forward = criticalDoorMarker.up.normalized;
-                var right = new Vector3(forward.y, -forward.x, 0f); // vettore perpendicolare nel piano XY
+                // prendiamo l’orientazione del marker per avere il cartello di lato
+                Vector3 forward = doorMarker.up.normalized;
+                Vector3 right = new Vector3(forward.y, -forward.x, 0f);
 
-                mainPos = criticalDoorMarker.position + right * 0.8f;
+                mainPos = doorMarker.position + right * 0.8f;
             }
             else
             {
+                // 2) Fallback: sopra il centro stanza
                 mainPos = roomTransform.position + new Vector3(0f, 2f, 0f);
             }
 
             Instantiate(signpostPrefab, mainPos, Quaternion.identity, roomTransform);
 
+            // cartello aggiuntivo nelle safe haven (es. "luogo sicuro")
             if (isSafeHavenRoom)
             {
-                var center = roomTransform.position;
-                var safePos = center + new Vector3(0f, -1.5f, 0f);
+                Vector3 center = roomTransform.position;
+                Vector3 safePos = center + new Vector3(0f, -1.5f, 0f);
                 Instantiate(signpostPrefab, safePos, Quaternion.identity, roomTransform);
             }
         }
 
         /// <summary>
-        /// Highlight diretto su un target marcato, oppure sopra il centro.
+        /// Evidenzia un punto di interesse (per ora: centro stanza o target marker).
         /// </summary>
         private void ApplyPointingOut(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (pointOfInterestPrefab == null)
                 return;
 
-            Transform poiMarker = roomTransform.Find("PointingOutTarget");
-            Vector3 pos;
+            // se in futuro avrai un marker specifico (es. "POIMarker"), puoi usarlo qui
+            Transform target = roomTransform.Find("POIMarker");
 
-            if (poiMarker != null)
+            Vector3 spawnPos;
+            if (target != null)
             {
-                pos = poiMarker.position + new Vector3(0f, 1.2f, 0f);
+                spawnPos = target.position;
             }
             else
             {
-                pos = roomTransform.position + new Vector3(0f, 1.2f, 0f);
+                spawnPos = roomTransform.position + new Vector3(0f, 1.5f, 0f);
             }
 
-            Instantiate(pointOfInterestPrefab, pos, Quaternion.identity, roomTransform);
+            var poi = Instantiate(pointOfInterestPrefab, spawnPos, Quaternion.identity, roomTransform);
+
+            var light = poi.GetComponentInChildren<Light>();
+            if (light != null)
+            {
+                light.intensity *= 1.5f;
+            }
         }
 
         /// <summary>
-        /// Centering: oggetto raro al centro della stanza (es. statua, reliquia).
+        /// Oggetto centrato nella stanza, usato solo se non ci sono safe haven / rewards / pointing out.
         /// </summary>
         private void ApplyCentering(EmotionRoomMetadata metadata, Transform roomTransform)
         {
-            if (rareObjectPrefab == null)
-                return;
+            var patterns = metadata.AppliedPatterns;
 
-            var center = roomTransform.position;
-            Instantiate(rareObjectPrefab, center, Quaternion.identity, roomTransform);
+            if (patterns.Contains(AppraisalPatternType.SafeHaven) ||
+                patterns.Contains(AppraisalPatternType.Rewards) ||
+                patterns.Contains(AppraisalPatternType.PointingOut))
+            {
+                // già qualcosa di importante al centro: non aggiungiamo altro
+                return;
+            }
+
+            if (pointOfInterestPrefab != null)
+            {
+                Vector3 center = roomTransform.position;
+                Instantiate(pointOfInterestPrefab, center, Quaternion.identity, roomTransform);
+            }
         }
 
         /// <summary>
-        /// Symmetry: duplica un prop marcatamente su un lato (per ora, semplice instanziazione simmetrica).
+        /// Due statue simmetriche a sinistra e destra del centro.
         /// </summary>
         private void ApplySymmetry(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (symmetryPropPrefab == null)
                 return;
 
-            var center = roomTransform.position;
-            var leftPos = center + new Vector3(-2f, 0f, 0f);
-            var rightPos = center + new Vector3(2f, 0f, 0f);
+            float distance = 2f;
+            Vector3 center = roomTransform.position;
+
+            Vector3 leftPos = center + new Vector3(-distance, 0f, 0f);
+            Vector3 rightPos = center + new Vector3(distance, 0f, 0f);
 
             Instantiate(symmetryPropPrefab, leftPos, Quaternion.identity, roomTransform);
             Instantiate(symmetryPropPrefab, rightPos, Quaternion.identity, roomTransform);
         }
 
         /// <summary>
-        /// Appearance of objects piacevoli: props decorativi attorno al centro.
+        /// Oggetti rari in diagonale rispetto al centro, per rompere la regolarità.
         /// </summary>
         private void ApplyAppOfObjects(EmotionRoomMetadata metadata, Transform roomTransform)
         {
-            if (occlusionPropPrefabs == null || occlusionPropPrefabs.Length == 0)
+            if (rareObjectPrefab == null)
                 return;
 
-            int props = Mathf.Max(1, propsPerContentDensity);
-            float radius = 2.5f;
-            var center = roomTransform.position;
+            Vector3 center = roomTransform.position;
 
-            for (int i = 0; i < props; i++)
-            {
-                float angle = (Mathf.PI * 2f * i) / props;
-                Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * radius;
+            Vector3 offset1 = new Vector3(1.5f, 1.0f, 0f);
+            Vector3 offset2 = new Vector3(-1.5f, -1.0f, 0f);
 
-                var prefab = occlusionPropPrefabs[Random.Range(0, occlusionPropPrefabs.Length)];
-                if (prefab == null)
-                    continue;
+            Vector3 pos1 = center + offset1;
+            Vector3 pos2 = center + offset2;
 
-                var pos = center + offset;
-                Instantiate(prefab, pos, Quaternion.identity, roomTransform);
-            }
+            Instantiate(rareObjectPrefab, pos1, Quaternion.identity, roomTransform);
+            Instantiate(rareObjectPrefab, pos2, Quaternion.identity, roomTransform);
         }
 
         /// <summary>
-        /// Content density: usa gli stessi occlusionPropPrefabs come riempitivo generico.
+        /// Props distribuiti su un anello vicino alle pareti per dare densità senza occupare il centro.
         /// </summary>
         private void ApplyContentDensity(EmotionRoomMetadata metadata, Transform roomTransform)
         {
@@ -318,123 +325,89 @@ namespace EmotionPCG
 
             int props = Mathf.Max(1, propsPerContentDensity);
             float radius = 3f;
-            var center = roomTransform.position;
+            Vector3 center = roomTransform.position;
 
             for (int i = 0; i < props; i++)
             {
                 float angle = (Mathf.PI * 2f * i) / props;
                 Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * radius;
+                Vector3 pos = center + offset;
 
-                var prefab = occlusionPropPrefabs[Random.Range(0, occlusionPropPrefabs.Length)];
-                if (prefab == null)
-                    continue;
-
-                var pos = center + offset;
+                GameObject prefab = occlusionPropPrefabs[Random.Range(0, occlusionPropPrefabs.Length)];
                 Instantiate(prefab, pos, Quaternion.identity, roomTransform);
             }
         }
 
         /// <summary>
-        /// Occlusion audio: props attorno al perimetro per simulare \"ostacoli\" acustici.
+        /// Elemento per l'occlusione audio (es. muro / barriera) in una zona specifica.
         /// </summary>
         private void ApplyOcclusionAudio(EmotionRoomMetadata metadata, Transform roomTransform)
         {
-            if (occlusionPropPrefabs == null || occlusionPropPrefabs.Length == 0)
+            if (audioOcclusionPrefab == null)
                 return;
 
-            int props = Mathf.Max(1, propsPerContentDensity);
-            float radius = 4f;
-            var center = roomTransform.position;
-
-            for (int i = 0; i < props; i++)
-            {
-                float angle = (Mathf.PI * 2f * i) / props;
-                Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * radius;
-
-                var prefab = occlusionPropPrefabs[Random.Range(0, occlusionPropPrefabs.Length)];
-                if (prefab == null)
-                    continue;
-
-                var pos = center + offset;
-                Instantiate(prefab, pos, Quaternion.identity, roomTransform);
-            }
+            // per ora: mettiamo un solo elemento sopra la stanza
+            Vector3 pos = roomTransform.position + new Vector3(0f, 3f, 0f);
+            Instantiate(audioOcclusionPrefab, pos, Quaternion.identity, roomTransform);
         }
 
         /// <summary>
-        /// Competence gate: oggetto (es. porta bloccata) posto verso il lato
-        /// della stanza considerato \"uscita principale\" (per ora semplice offset).
+        /// Competence gate: un ostacolo interattivo che blocca il passaggio (es. porta / barriera).
         /// </summary>
         private void ApplyCompetenceGate(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (competenceGatePrefab == null)
                 return;
 
-            var center = roomTransform.position;
-            var pos = center + new Vector3(0f, 3f, 0f);
+            // se esiste un marker, usalo; altrimenti centro
+            Transform marker = roomTransform.Find("GateMarker");
+            Vector3 pos = marker != null ? marker.position : roomTransform.position;
+
             Instantiate(competenceGatePrefab, pos, Quaternion.identity, roomTransform);
         }
 
         #endregion
 
-        #region Helper per spawn nemici
-
-        private bool TryFindFreeEnemySpot(Vector3 center, float radius, out Vector3 spawnPos)
+        #region Helpers
+        /// <summary>
+        /// Ritorna il centro logico della stanza; se esiste un child "RoomCenter", usa quello.
+        /// </summary>
+        private Vector3 GetRoomCenter(Transform roomTransform)
         {
-            int attempts = Mathf.Max(1, enemyMaxSpawnAttempts);
+            Transform centerMarker = roomTransform.Find("RoomCenter");
+            if (centerMarker != null)
+                return centerMarker.position;
 
-            for (int i = 0; i < attempts; i++)
+            return roomTransform.position;
+        }
+
+        /// <summary>
+        /// Cerca uno spot libero in un cerchio attorno al centro, evitando overlap con i layer bloccanti.
+        /// </summary>
+        private bool TryFindFreeEnemySpot(Vector3 center, float radius, out Vector3 position)
+        {
+            const int maxTries = 20;
+
+            for (int i = 0; i < maxTries; i++)
             {
-                // punto casuale dentro il cerchio di raggio 'radius'
-                Vector2 offset2D = Random.insideUnitCircle * radius;
-                Vector3 candidate = center + new Vector3(offset2D.x, offset2D.y, 0f);
+                float angle = Random.Range(0f, Mathf.PI * 2f);
+                float dist = Random.Range(0f, radius);
 
-                if (IsEnemySpotFree(candidate))
+                Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * dist;
+                Vector3 candidate = center + offset;
+
+                // check overlap con muri / props / altri nemici
+                Collider2D hit = Physics2D.OverlapCircle(candidate, enemyCollisionRadius, enemyBlockingLayers);
+                if (hit == null)
                 {
-                    spawnPos = candidate;
+                    position = candidate;
                     return true;
                 }
             }
 
-            spawnPos = center;
+            // fallback: non trovato nulla
+            position = center;
             return false;
-        }
-
-
-        private bool IsEnemySpotFree(Vector3 worldPos)
-        {
-            // Se non troviamo collider nel raggio, consideriamo lo spot libero.
-            return !Physics2D.OverlapCircle(worldPos, enemySpawnCheckRadius, enemyBlockingLayers);
-        }
-
-        #endregion
-
-        #region Helper generali
-
-        private Vector3 GetRoomCenter(Transform roomTransform)
-        {
-            // 1. Se esiste un'ancora dedicata "RoomCenter" (tag o nome), usiamo quella.
-            foreach (Transform child in roomTransform.GetComponentsInChildren<Transform>())
-            {
-                if (child == roomTransform)
-                    continue;
-
-                if (child.CompareTag("RoomCenter") || child.name == "RoomCenter")
-                    return child.position;
-            }
-
-            // 2. Fallback: calcoliamo il bounding box di tutti i Renderer
-            //    (TilemapRenderer, SpriteRenderer, ecc.) e usiamo il suo centro.
-            var renderers = roomTransform.GetComponentsInChildren<Renderer>();
-            if (renderers.Length == 0)
-                return roomTransform.position;
-
-            var bounds = renderers[0].bounds;
-            for (int i = 1; i < renderers.Length; i++)
-            {
-                bounds.Encapsulate(renderers[i].bounds);
-            }
-
-            return bounds.center;
         }
 
         #endregion

@@ -13,12 +13,14 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float damage = 1f;
     [SerializeField] float recoilForce = 10f;
     [SerializeField] PlayerBuffReceiver buffReceiver;
+    [SerializeField] bool canAttack = false;
+    [SerializeField] AudioSource attackAudioSource;
     InputAction attackAction;
-    bool canAttack = false;
 
     private void Start()
     {
         attackAction = playerInput.actions.actionMaps[0].FindAction("Attack");
+        attackAction.RemoveAllBindingOverrides();
         attackAction.performed += Attack;
     }
 
@@ -41,6 +43,8 @@ public class PlayerAttack : MonoBehaviour
 
         canAttack = false;
         playerInput.enabled = false;
+        attackAudioSource.pitch = Random.Range(0.8f, 1.2f);
+        attackAudioSource.Play();
         animator.SetBool("IsAttacking", !canAttack);
         StartCoroutine(ResetAttack());
 

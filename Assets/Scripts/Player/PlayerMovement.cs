@@ -9,7 +9,13 @@ public class PlayerMovement : ActorMovement
     [SerializeField] float movementSpeed = 5f;
     Vector2 moveInput;
 
+    [SerializeField] AudioSource walkAudioSource;
+
     InputAction movementAction;
+
+    [SerializeField] float distanceToPlaySound;
+    Vector2 lastWalkSFXPosition;
+
     private void Start()
     {
         var camera = CinemachineCore.GetVirtualCamera(0);
@@ -40,5 +46,14 @@ public class PlayerMovement : ActorMovement
     private void Update()
     {
         rb2d.linearVelocity = moveInput * movementSpeed * Time.fixedDeltaTime;
+
+        Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y);
+
+        if ((currentPosition - lastWalkSFXPosition).sqrMagnitude > distanceToPlaySound)
+        {
+            lastWalkSFXPosition = currentPosition;
+            walkAudioSource.pitch = Random.Range(0.8f, 1.2f);
+            walkAudioSource.Play();
+        }
     }
 }

@@ -314,17 +314,19 @@ namespace EmotionPCG
         }
     }
 
-    /// <summary>
-    /// Nodo del grafo di livello dopo la generazione con Edgar.
-    /// Qui non ci sono ancora dettagli sul layout interno, solo info logiche.
-    /// </summary>
     public class RoomNode
     {
         public string Id;
         public bool IsOnCriticalPath;
         public List<RoomNode> Neighbors = new List<RoomNode>();
 
-        public AppraisalProfile Appraisal; // profilo risultante dopo il post-processing
+        // NUOVO: info spaziali / ordine sul critical path
+        public Vector3 WorldPosition;
+        public int CriticalOrder = -1;
+        public bool HasNextCritical;
+        public Vector3 NextCriticalDirection;
+
+        public AppraisalProfile Appraisal;
         public List<AppraisalPatternType> AppliedPatterns = new List<AppraisalPatternType>();
 
         public RoomNode(string id)
@@ -332,8 +334,13 @@ namespace EmotionPCG
             Id = id;
             IsOnCriticalPath = false;
             Appraisal = AppraisalProfile.Neutral();
+            WorldPosition = Vector3.zero;
+            CriticalOrder = -1;
+            HasNextCritical = false;
+            NextCriticalDirection = Vector3.zero;
         }
     }
+
 
     /// <summary>
     /// Range e centro target per ciascuna emozione.

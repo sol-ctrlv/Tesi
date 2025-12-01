@@ -37,8 +37,6 @@ public class PlayerMovement : ActorMovement
         flipWithPlayer.transform.localScale = actorRenderer.flipX ? new Vector3(-1, 1, 1) : Vector3.one;
     }
 
-
-
     private void Update()
     {
         rb2d.linearVelocity = moveInput * movementSpeed * Time.fixedDeltaTime;

@@ -72,6 +72,7 @@ namespace EmotionPCG
             _roomNodeByTemplate.Clear();
 
             int index = 0;
+            int criticalOrderCounter = 0;
 
             foreach (var roomInstance in level.RoomInstances)
             {
@@ -83,6 +84,7 @@ namespace EmotionPCG
                     sourceName = roomInstance.Room.GetDisplayName();
                 }
 
+                // Fallback sul nome del prefab della RoomTemplateInstance
                 if (string.IsNullOrEmpty(sourceName) && roomInstance.RoomTemplateInstance != null)
                 {
                     sourceName = roomInstance.RoomTemplateInstance.name;
@@ -102,6 +104,18 @@ namespace EmotionPCG
                     Appraisal = AppraisalProfile.Neutral()
                 };
 
+                // Salviamo la posizione nel mondo della stanza
+                if (roomInstance.RoomTemplateInstance != null)
+                {
+                    node.WorldPosition = roomInstance.RoomTemplateInstance.transform.position;
+                }
+
+                if (isCritical)
+                {
+                    node.CriticalOrder = criticalOrderCounter;
+                    criticalOrderCounter++;
+                }
+
                 nodes.Add(node);
 
                 // Usiamo il GameObject associato alla RoomTemplateInstance come chiave stabile.
@@ -117,8 +131,36 @@ namespace EmotionPCG
                 index++;
             }
 
+            // Calcolo della direzione verso la prossima stanza sul critical path
+            var criticalNodes = new List<RoomNode>();
+            foreach (var node in nodes)
+            {
+                if (node.IsOnCriticalPath && node.CriticalOrder >= 0)
+                {
+                    criticalNodes.Add(node);
+                }
+            }
+
+            // Ordiniamo per ordine lungo il critical path
+            criticalNodes.Sort((a, b) => a.CriticalOrder.CompareTo(b.CriticalOrder));
+
+            for (int i = 0; i < criticalNodes.Count - 1; i++)
+            {
+                var current = criticalNodes[i];
+                var next = criticalNodes[i + 1];
+
+                var dir = next.WorldPosition - current.WorldPosition;
+                if (dir.sqrMagnitude > 0.0001f)
+                {
+                    dir.Normalize();
+                    current.HasNextCritical = true;
+                    current.NextCriticalDirection = dir;
+                }
+            }
+
             return nodes;
         }
+
 
         private bool IsCriticalByName(string roomName)
         {
@@ -126,10 +168,7 @@ namespace EmotionPCG
                 return false;
 
             // Convenzione: tutte le stanze il cui nome inizia con
-            // "Start", "Sword", "Room" o "End" sono considerate
-            // parte del critical path.
-            if (roomName.StartsWith("Start", StringComparison.OrdinalIgnoreCase)) return true;
-            if (roomName.StartsWith("Sword", StringComparison.OrdinalIgnoreCase)) return true;
+            // "Room" o "End" sono considerate parte del critical path.
             if (roomName.StartsWith("Room", StringComparison.OrdinalIgnoreCase)) return true;
             if (roomName.StartsWith("End", StringComparison.OrdinalIgnoreCase)) return true;
 
@@ -486,8 +525,14 @@ namespace EmotionPCG
                 metadata.Appraisal = node.Appraisal;
                 metadata.AppliedPatterns.Clear();
                 metadata.AppliedPatterns.AddRange(node.AppliedPatterns);
+
+                // Info sul critical path utili per pattern come ClearSignposting
+                metadata.IsOnCriticalPath = node.IsOnCriticalPath;
+                metadata.HasNextCritical = node.HasNextCritical;
+                metadata.NextCriticalDirection = node.NextCriticalDirection;
             }
         }
+
         #endregion
 
 #if UNITY_EDITOR
@@ -518,5 +563,11 @@ namespace EmotionPCG
         public EmotionType LevelEmotion;
         public AppraisalProfile Appraisal;
         public List<AppraisalPatternType> AppliedPatterns = new List<AppraisalPatternType>();
+
+        // NUOVO: info critical path (per ClearSignposting)
+        public bool IsOnCriticalPath;
+        public bool HasNextCritical;
+        public Vector3 NextCriticalDirection;
     }
+
 }

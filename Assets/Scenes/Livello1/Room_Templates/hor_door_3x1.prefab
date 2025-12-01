@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 2085359818064589492}
   - component: {fileID: 8581083457588182014}
   - component: {fileID: 3788280406513348993}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1375066569829968771}
   - component: {fileID: 4589814029531778485}
   - component: {fileID: 416889436546896754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 696749582672204344}
   - component: {fileID: 3963304926127689550}
   - component: {fileID: 2399811936404642814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collideable
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -37,6 +37,16 @@ namespace EmotionPCG
             // 4) Scrittura dei risultati sulle room template instance di Edgar
             ApplyMetadataToUnityRooms(level);
 
+            var applier = FindObjectOfType<EmotionPatternApplier>();
+            if (applier != null)
+            {
+                applier.ApplyAllPatternsInScene();
+            }
+            else
+            {
+                Debug.LogWarning("[EmotionPCG] No EmotionPatternApplier found in scene – patterns will not spawn any content.");
+            }
+
 #if UNITY_EDITOR
             // 5) Log di debug (facile da citare in tesi)
             LogSummaryStats(roomNodes, emotionTarget, weights);
@@ -157,7 +167,7 @@ namespace EmotionPCG
                 case EmotionType.Wonder:
                     Set(AppraisalPatternType.Centering, 2);
                     Set(AppraisalPatternType.Symmetry, 2);
-                    Set(AppraisalPatternType.AppearancePleasant, 2);
+                    Set(AppraisalPatternType.AppearanceOfObjects, 2);
                     Set(AppraisalPatternType.PointingOut, 2);
                     Set(AppraisalPatternType.SafeHaven, 1);
                     Set(AppraisalPatternType.Rewards, 1);
@@ -174,7 +184,7 @@ namespace EmotionPCG
                     Set(AppraisalPatternType.Symmetry, 1);
                     Set(AppraisalPatternType.SafeHaven, 1);
                     Set(AppraisalPatternType.Rewards, 1);
-                    Set(AppraisalPatternType.AppearancePleasant, 1);
+                    Set(AppraisalPatternType.AppearanceOfObjects, 1);
                     Set(AppraisalPatternType.CompetenceGate, 1);
                     break;
 
@@ -186,7 +196,7 @@ namespace EmotionPCG
                     Set(AppraisalPatternType.PointingOut, 2);
                     Set(AppraisalPatternType.Centering, 1);
                     Set(AppraisalPatternType.Symmetry, 1);
-                    Set(AppraisalPatternType.AppearancePleasant, 1);
+                    Set(AppraisalPatternType.AppearanceOfObjects, 1);
                     Set(AppraisalPatternType.Conflict, 1);
                     break;
             }

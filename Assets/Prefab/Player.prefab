@@ -565,7 +565,6 @@ GameObject:
   - component: {fileID: 8186700852144279473}
   - component: {fileID: 1771316235279876530}
   - component: {fileID: 7373588367005351006}
-  - component: {fileID: -1296711380905614327}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -781,7 +780,7 @@ MonoBehaviour:
   rb2d: {fileID: 3986202553696381932}
   flipWithPlayer: {fileID: 112273518031217074}
   playerInput: {fileID: 1771316235279876530}
-  movementSpeed: 200
+  movementSpeed: 150
   walkAudioSource: {fileID: 8851491787992137142}
   distanceToPlaySound: 1
 --- !u!114 &1771316235279876530
@@ -831,26 +830,11 @@ MonoBehaviour:
   playerInput: {fileID: 1771316235279876530}
   animator: {fileID: 9218607632674708119}
   resetAttackTime: 0.5
-  targetDetection: {fileID: 9081909021198511953}
+  MyTargetDetection: {fileID: 9081909021198511953}
   damage: 1
   recoilForce: 10
-  buffReceiver: {fileID: -1296711380905614327}
-  canAttack: 0
+  canAttack: 1
   attackAudioSource: {fileID: 760210697175680108}
---- !u!114 &-1296711380905614327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3986202553696381928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3164752940a5f62b69131ce9d48179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerBuffReceiver
-  baseAttackRange: 1
-  baseAttackDamage: 1
 --- !u!1 &4800360838180320000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1073,7 @@ Transform:
   m_GameObject: {fileID: 6358886260513268728}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5939298, y: -0.35124016, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1127,7 +1111,7 @@ Transform:
   m_GameObject: {fileID: 7421631039911355585}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54175997, y: 0.49479103, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1145,7 +1129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6de1817b0b9da6746a9f2995816b80af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor
-  interactRadius: 10.9
+  interactRadius: 3
   playerInput: {fileID: 1771316235279876530}
   sphereColor: {r: 0, g: 1, b: 1, a: 0.34}
   interactAudioSource: {fileID: 760210697175680108}
@@ -1256,8 +1240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TargetDetection
   TargetTag: Enemy
   TargetsInRange: []
-  detectionCollider: {fileID: 0}
-  baseRadius: 1.5
+  rangeCollider2D: {fileID: 4002548844814670468}
 --- !u!1 &8401412448736211925
 GameObject:
   m_ObjectHideFlags: 0

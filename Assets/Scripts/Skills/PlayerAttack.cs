@@ -9,13 +9,14 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] PlayerInput playerInput;
     [SerializeField] Animator animator;
     [SerializeField] float resetAttackTime = .5f;
-    [SerializeField] TargetDetection targetDetection;
+    public TargetDetection MyTargetDetection;
     [SerializeField] float damage = 1f;
     [SerializeField] float recoilForce = 10f;
-    [SerializeField] PlayerBuffReceiver buffReceiver;
     [SerializeField] bool canAttack = false;
     [SerializeField] AudioSource attackAudioSource;
     InputAction attackAction;
+
+    public float DamageMultiplier { get; set; } = 1f;
 
     private void Start()
     {
@@ -34,11 +35,6 @@ public class PlayerAttack : MonoBehaviour
         if (!canAttack)
             return;
 
-        if (buffReceiver != null)
-            targetDetection.SetRangeMultiplier(buffReceiver.AttackRangeMultiplier);
-        else
-            targetDetection.SetRangeMultiplier(1f);
-
         StartCoroutine(BigPush(rb2D, spriteRender.flipX ? Vector2.right : Vector2.left, 1000f, .5f));
 
         canAttack = false;
@@ -48,16 +44,12 @@ public class PlayerAttack : MonoBehaviour
         animator.SetBool("IsAttacking", !canAttack);
         StartCoroutine(ResetAttack());
 
-        float damageMult = 1f;
-        if (buffReceiver != null)
-            damageMult = buffReceiver.AttackDamageMultiplier;
-
-        float finalDamage = damage * damageMult;
+        float finalDamage = damage * DamageMultiplier;
 
         // 2) uso finalDamage invece di damage
-        for (int i = 0; i < targetDetection.TargetsInRange.Count; i++)
+        for (int i = MyTargetDetection.TargetsInRange.Count; i > 0; i--)
         {
-            IDamageable damageable = targetDetection.TargetsInRange[i].GetComponent<IDamageable>();
+            IDamageable damageable = MyTargetDetection.TargetsInRange[i - 1].GetComponent<IDamageable>();
 
             if (damageable != null)
             {

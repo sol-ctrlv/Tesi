@@ -8,21 +8,20 @@ public class TargetDetection : MonoBehaviour
     public List<GameObject> TargetsInRange = new List<GameObject>();
 
     [Header("Range base")]
-    [SerializeField] private CircleCollider2D detectionCollider;
-    [SerializeField] private float baseRadius = 1.5f;
+    [SerializeField] private BoxCollider2D rangeCollider2D;
 
     public float RangeMultiplier { get; private set; } = 1f;
 
     /// <summary>
     /// Chiamalo dal player per applicare il buff al range.
     /// </summary>
-    public void SetRangeMultiplier(float multiplier)
+    public void AddRangeMultiplier(float multiplier)
     {
         RangeMultiplier = multiplier;
 
-        if (detectionCollider != null)
+        if (rangeCollider2D != null)
         {
-            detectionCollider.radius = baseRadius * RangeMultiplier;
+            rangeCollider2D.size *= RangeMultiplier;
         }
     }
 

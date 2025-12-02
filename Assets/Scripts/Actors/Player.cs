@@ -58,4 +58,10 @@ public class Player : Actor
             }
         }
     }
+
+    public void AddMaxHealth()
+    {
+        MaxHP += 1;
+        Heal(420f);
+    }
 }

@@ -206,8 +206,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next level
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
-  m_sharedMaterial: {fileID: 8583098791545087677, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
+  m_sharedMaterial: {fileID: -8499492704147826528, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 39.58
-  m_fontStyle: 32
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -342,8 +342,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Compile the form pls
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
-  m_sharedMaterial: {fileID: 8583098791545087677, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
+  m_sharedMaterial: {fileID: -8499492704147826528, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -513,7 +513,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.5330188, g: 0.77879834, b: 1, a: 1}
     m_PressedColor: {r: 0.06132078, g: 0.5582686, b: 1, a: 1}
     m_SelectedColor: {r: 0.2663314, g: 0.64814544, b: 0.990566, a: 1}
-    m_DisabledColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5019608}
+    m_DisabledColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -863,8 +863,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
-  m_sharedMaterial: {fileID: 8583098791545087677, guid: bc75788ce2fc4594daee1523fa993336, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
+  m_sharedMaterial: {fileID: -8499492704147826528, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 39.58
-  m_fontStyle: 32
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Ladder : MonoBehaviour, IInteractable
@@ -25,7 +24,7 @@ public class Ladder : MonoBehaviour, IInteractable
     private void ChangeScene()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(NextLevel);
+        MainMenuManager.PlayNextLevel();
     }
 
 }

@@ -338,8 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TargetDetection
   TargetTag: Player
   TargetsInRange: []
-  detectionCollider: {fileID: 0}
-  baseRadius: 1.5
+  rangeCollider2D: {fileID: 0}
 --- !u!58 &8810234217966344457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -400,6 +399,7 @@ GameObject:
   - component: {fileID: 1952118502645869637}
   - component: {fileID: 8905385580062982264}
   - component: {fileID: 3906846080811776968}
+  - component: {fileID: 3905145789744145875}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -502,6 +502,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3905145789744145875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5154694883025553004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e8d3394aadf6a4ca80eed848b296e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowmanAnimToActor
+  snowmanFireTimer: {fileID: 8263321777922430647}
 --- !u!1 &6963218544976182214
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,10 +884,14 @@ PrefabInstance:
       propertyPath: myAnimator
       value: 
       objectReference: {fileID: 3906846080811776968}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1576612853857648084, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8263321777922430647}
   m_SourcePrefab: {fileID: 100100000, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
 --- !u!4 &1896007972287322327 stripped
 Transform:
@@ -886,9 +903,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8132026748026869483, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
   m_PrefabInstance: {fileID: 2436396990257345618}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8064970911853446040}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ae3baf51b225646871603d4d8b1463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicAttackBehaviour
+--- !u!1 &8064970911853446040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5630443426374531018, guid: e2eb7655343ca3d48885a27b3f5ae0a0, type: 3}
+  m_PrefabInstance: {fileID: 2436396990257345618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8263321777922430647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064970911853446040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a8f7af2e24fd44891d521ec07fef53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowmanFireTimer
+  cooldown: 3
+  myAnimator: {fileID: 3906846080811776968}
+  targetDetection: {fileID: 2472508647139706682}
+  snowBallThrowAudioSource: {fileID: 1692074682784614981}

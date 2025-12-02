@@ -1,17 +1,23 @@
 using System.Collections.Generic;
+using Edgar.Legacy.Core.MapLayouts;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace EmotionPCG
 {
     public class EmotionPatternApplier : MonoBehaviour
     {
         [Header("Conflict (nemici)")]
-        [SerializeField] private GameObject enemyPrefab;
+        [SerializeField] private GameObject[] enemyPrefabs;
         [SerializeField] private int baseEnemiesPerConflict = 2;
         [SerializeField] private int extraEnemiesForFear = 1;
         [SerializeField] private float enemySpawnRadius = 2.2f;
         [SerializeField] private float enemyCollisionRadius = 0.5f;
         [SerializeField] private LayerMask enemyBlockingLayers;
+
+        [Header("Spawn area")]
+        [SerializeField] private string cameraTriggerName = "CameraTrigger"; // nome del child con il BoxCollider2D
+        [SerializeField] private float spawnMarginFromBounds = 0.5f;         // margine interno per non attaccarsi ai muri
 
         [Header("Safe Haven")]
         [SerializeField] private GameObject safeHealPrefab;     // tile che cura alla prima collisione
@@ -22,6 +28,7 @@ namespace EmotionPCG
 
         [Header("Pointing Out / Centering / Symmetry / Appearance")]
         [SerializeField] private GameObject pointOfInterestPrefab;
+        [SerializeField] private float pointingOutOffsetY = 0.5f;
         [SerializeField] private GameObject symmetryPropPrefab;
         [SerializeField] private GameObject rareObjectPrefab;
 
@@ -33,6 +40,8 @@ namespace EmotionPCG
 
         [Header("Clear Signposting")]
         [SerializeField] private GameObject signpostPrefab;
+        [SerializeField] private float signpostDistanceFromCenter = 1f;
+        [SerializeField] private bool arrowUsesUpAsForward = true;
 
         /// <summary>
         /// Chiamato dal PostProcessing dopo aver scritto i metadata sulle stanze.
@@ -79,15 +88,15 @@ namespace EmotionPCG
                         break;
 
                     case AppraisalPatternType.ClearSignposting:
-                        ApplyClearSignposting(metadata, roomTransform, hasSafeHaven);
+                        ApplyClearSignposting(metadata, roomTransform, roomCenter, hasSafeHaven);
                         break;
 
                     case AppraisalPatternType.PointingOut:
-                        ApplyPointingOut(metadata, roomTransform);
+                        ApplyPointingOut(metadata, roomTransform, roomCenter);
                         break;
 
                     case AppraisalPatternType.Centering:
-                        ApplyCentering(metadata, roomTransform);
+                        ApplyCentering(metadata, roomTransform, roomCenter);
                         break;
 
                     case AppraisalPatternType.Symmetry:
@@ -117,14 +126,9 @@ namespace EmotionPCG
         }
 
         #region Pattern handlers
-
-        /// <summary>
-        /// Nemici attorno al centro stanza, con controllo collisioni 2D.
-        /// </summary>
         private void ApplyConflict(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
-            if (enemyPrefab == null)
-                return;
+            if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
 
             int enemies = baseEnemiesPerConflict;
             if (metadata.LevelEmotion == EmotionType.Fear)
@@ -132,22 +136,30 @@ namespace EmotionPCG
 
             enemies = Mathf.Max(1, enemies);
 
+            // prendiamo il BoxCollider2D del camera trigger
+            if (!TryGetCameraBox(roomTransform, out var cameraBox))
+            {
+                Debug.LogWarning(
+                    $"[EmotionPatternApplier] Nessun camera box trovato in '{roomTransform.name}'. Nemici NON spawnati (fallback rimosso).");
+                return;
+            }
+
             for (int i = 0; i < enemies; i++)
             {
-                // allarghiamo un po’ il raggio per i nemici successivi
-                float radiusForThisEnemy = enemySpawnRadius + i * 0.4f;
-
-                if (TryFindFreeEnemySpot(roomCenter, radiusForThisEnemy, out var spawnPos))
-                {
-                    Instantiate(enemyPrefab, spawnPos, Quaternion.identity, roomTransform);
-                }
-                else
+                if (!TryFindFreeEnemySpotInCameraBox(cameraBox, out var spawnPos))
                 {
                     Debug.LogWarning(
                         $"[EmotionPatternApplier] Nessuno spot libero per nemico {i + 1}/{enemies} in '{roomTransform.name}'.");
+                    continue;
                 }
+
+                var prefab = ChooseEnemyPrefab(metadata, i);
+                if (prefab == null) continue;
+                Instantiate(prefab, spawnPos, Quaternion.identity, roomTransform);
             }
         }
+
+
 
         /// <summary>
         /// Safe haven: tile di cura al centro + due statue laterali.
@@ -185,80 +197,80 @@ namespace EmotionPCG
             Instantiate(rewardChestPrefab, pos, Quaternion.identity, roomTransform);
         }
 
-        /// <summary>
-        /// Clear signposting:
-        /// – se esiste un child "CriticalPathDoorMarker", piazza il cartello vicino alla porta;
-        /// – altrimenti, fallback: cartello sopra il centro stanza.
-        /// Se la stanza è anche SafeHaven, mette un secondo cartello in basso.
-        /// </summary>
-        private void ApplyClearSignposting(EmotionRoomMetadata metadata, Transform roomTransform, bool isSafeHavenRoom)
+        private void ApplyClearSignposting(
+            EmotionRoomMetadata metadata,
+            Transform roomTransform,
+            Vector3 roomCenter,
+            bool isSafeHavenRoom)
         {
             if (signpostPrefab == null)
                 return;
 
-            Vector3 mainPos;
+            // 1) Direzione verso la prossima stanza sul critical path
+            Vector3 dir = Vector3.up;
 
-            // 1) Caso "marker" esplicito nella stanza
-            Transform doorMarker = roomTransform.Find("CriticalPathDoorMarker");
-            if (doorMarker != null)
+            if (metadata.HasNextCritical && metadata.NextCriticalDirection.sqrMagnitude > 0.0001f)
             {
-                // prendiamo l’orientazione del marker per avere il cartello di lato
-                Vector3 forward = doorMarker.up.normalized;
-                Vector3 right = new Vector3(forward.y, -forward.x, 0f);
-
-                mainPos = doorMarker.position + right * 0.8f;
-            }
-            else
-            {
-                // 2) Fallback: sopra il centro stanza
-                mainPos = roomTransform.position + new Vector3(0f, 2f, 0f);
+                dir = metadata.NextCriticalDirection.normalized;
             }
 
-            Instantiate(signpostPrefab, mainPos, Quaternion.identity, roomTransform);
+            // 2) Posizione del cartello: spostato dal centro nella direzione scelta
+            Vector3 mainPos = roomCenter + dir * signpostDistanceFromCenter;
 
-            // cartello aggiuntivo nelle safe haven (es. "luogo sicuro")
+            // 3) Rotazione: mappa l'asse locale della freccia (up o right) alla direzione
+            Vector3 localForwardAxis = arrowUsesUpAsForward ? Vector3.up : Vector3.right;
+            Quaternion mainRot = Quaternion.FromToRotation(localForwardAxis, dir);
+
+            var sign = Instantiate(signpostPrefab, mainPos, mainRot, roomTransform);
+
+            // 4) Cartello extra per safe haven (ad esempio fisso verso il centro)
             if (isSafeHavenRoom)
             {
-                Vector3 center = roomTransform.position;
-                Vector3 safePos = center + new Vector3(0f, -1.5f, 0f);
-                Instantiate(signpostPrefab, safePos, Quaternion.identity, roomTransform);
+                Vector3 safeDir = -dir; // ad esempio freccia che ributta verso il centro / sicurezza
+                Vector3 safePos = roomCenter + safeDir * (signpostDistanceFromCenter * 0.7f);
+
+                Quaternion safeRot = Quaternion.FromToRotation(localForwardAxis, safeDir);
+                var safeSign = Instantiate(signpostPrefab, safePos, safeRot, roomTransform);
+                // ConfigurePatternInstance(safeSign.transform);
             }
         }
 
-        /// <summary>
-        /// Evidenzia un punto di interesse (per ora: centro stanza o target marker).
-        /// </summary>
-        private void ApplyPointingOut(EmotionRoomMetadata metadata, Transform roomTransform)
+
+        private void ApplyPointingOut(
+            EmotionRoomMetadata metadata,
+            Transform roomTransform,
+            Vector3 roomCenter)
         {
             if (pointOfInterestPrefab == null)
                 return;
 
-            // se in futuro avrai un marker specifico (es. "POIMarker"), puoi usarlo qui
-            Transform target = roomTransform.Find("POIMarker");
+            // 1. Decidiamo dove puntare
+            // Se in futuro vuoi un marker esplicito, puoi aggiungere un child "PointingOutTarget" nel prefab stanza.
+            Transform marker = roomTransform.Find("PointingOutTarget");
 
-            Vector3 spawnPos;
-            if (target != null)
+            Vector3 targetPos;
+            if (marker != null)
             {
-                spawnPos = target.position;
+                targetPos = marker.position;
             }
             else
             {
-                spawnPos = roomTransform.position + new Vector3(0f, 1.5f, 0f);
+                // fallback: sopra il centro stanza
+                targetPos = roomCenter;
             }
 
-            var poi = Instantiate(pointOfInterestPrefab, spawnPos, Quaternion.identity, roomTransform);
+            targetPos += new Vector3(0f, pointingOutOffsetY, 0f);
 
-            var light = poi.GetComponentInChildren<Light>();
-            if (light != null)
-            {
-                light.intensity *= 1.5f;
-            }
+            // 2. Istanziamo il marker di Pointing Out (sprite + luce)
+            Instantiate(pointOfInterestPrefab, targetPos, Quaternion.identity, roomTransform);
+
         }
+
 
         /// <summary>
         /// Oggetto centrato nella stanza, usato solo se non ci sono safe haven / rewards / pointing out.
         /// </summary>
-        private void ApplyCentering(EmotionRoomMetadata metadata, Transform roomTransform)
+        private void ApplyCentering(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             var patterns = metadata.AppliedPatterns;
 
@@ -272,8 +284,7 @@ namespace EmotionPCG
 
             if (pointOfInterestPrefab != null)
             {
-                Vector3 center = roomTransform.position;
-                Instantiate(pointOfInterestPrefab, center, Quaternion.identity, roomTransform);
+                Instantiate(pointOfInterestPrefab, roomCenter, Quaternion.identity, roomTransform);
             }
         }
 
@@ -380,36 +391,88 @@ namespace EmotionPCG
 
             return roomTransform.position;
         }
-
-        /// <summary>
-        /// Cerca uno spot libero in un cerchio attorno al centro, evitando overlap con i layer bloccanti.
-        /// </summary>
-        private bool TryFindFreeEnemySpot(Vector3 center, float radius, out Vector3 position)
+        private bool TryGetCameraBox(Transform roomTransform, out BoxCollider2D box)
         {
-            const int maxTries = 20;
+            box = null;
+
+            // 1. Cerca SOLO un child con quel nome
+            if (!string.IsNullOrEmpty(cameraTriggerName))
+            {
+                var t = roomTransform.Find(cameraTriggerName);
+                if (t == null)
+                {
+                    Debug.LogWarning(
+                        $"[EmotionPatternApplier] Child '{cameraTriggerName}' non trovato in '{roomTransform.name}'.");
+                    return false;
+                }
+
+                box = t.GetComponent<BoxCollider2D>();
+                if (box == null)
+                {
+                    Debug.LogWarning(
+                        $"[EmotionPatternApplier] Child '{cameraTriggerName}' in '{roomTransform.name}' non ha un BoxCollider2D.");
+                    return false;
+                }
+
+                return true;
+            }
+
+            // (se vuoi proprio un fallback, puoi cercare il primo BoxCollider2D trigger, ma visto il casino, io per ora lo eviterei)
+            return false;
+        }
+
+        private bool TryFindFreeEnemySpotInCameraBox(BoxCollider2D box, out Vector3 position)
+        {
+            const int maxTries = 30;
+
+            // dimensioni locali della box (in local space)
+            Vector2 halfSize = box.size * 0.5f;
+
+            float minX = -halfSize.x + spawnMarginFromBounds;
+            float maxX = halfSize.x - spawnMarginFromBounds;
+            float minY = -halfSize.y + spawnMarginFromBounds;
+            float maxY = halfSize.y - spawnMarginFromBounds;
+
+            // sicurezza se margine esagerato
+            if (minX > maxX) (minX, maxX) = (maxX, minX);
+            if (minY > maxY) (minY, maxY) = (maxY, minY);
+
+            Vector2 offset = box.offset; // il centro locale del collider
 
             for (int i = 0; i < maxTries; i++)
             {
-                float angle = Random.Range(0f, Mathf.PI * 2f);
-                float dist = Random.Range(0f, radius);
+                float localX = Random.Range(minX, maxX) + offset.x;
+                float localY = Random.Range(minY, maxY) + offset.y;
 
-                Vector3 offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * dist;
-                Vector3 candidate = center + offset;
+                Vector3 localPoint = new Vector3(localX, localY, 0f);
+                // trasformiamo da local (child del trigger) a world
+                Vector3 worldPoint = box.transform.TransformPoint(localPoint);
 
                 // check overlap con muri / props / altri nemici
-                Collider2D hit = Physics2D.OverlapCircle(candidate, enemyCollisionRadius, enemyBlockingLayers);
-                if (hit == null)
+                bool blocked = Physics2D.OverlapCircle(worldPoint, enemySpawnRadius, enemyBlockingLayers);
+                if (!blocked)
                 {
-                    position = candidate;
+                    position = worldPoint;
                     return true;
                 }
             }
 
-            // fallback: non trovato nulla
-            position = center;
+            // fallback: centro della box
+            position = box.transform.TransformPoint(box.offset);
             return false;
         }
 
-        #endregion
+
+
+        private GameObject ChooseEnemyPrefab(EmotionRoomMetadata metadata, int enemyIndex)
+        {
+            if (enemyPrefabs == null || enemyPrefabs.Length == 0)
+                return null;
+
+            int idx = Random.Range(0, enemyPrefabs.Length);
+            return enemyPrefabs[idx];
+
+            #endregion
+        }
     }
 }

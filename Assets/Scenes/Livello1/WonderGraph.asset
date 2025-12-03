@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Room
-  Position: {x: 592, y: 16}
+  Position: {x: 560, y: -32}
   Name: Optional
   IndividualRoomTemplates: []
   RoomTemplateSets: []
@@ -120,20 +120,6 @@ MonoBehaviour:
   Name: Room
   IndividualRoomTemplates: []
   RoomTemplateSets: []
---- !u!114 &-2230929157372381267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f692f83df7c1b5468af64edd22287dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Connection
-  From: {fileID: 3160746859571114296}
-  To: {fileID: -5549359398475713726}
 --- !u!114 &-2171031294431353431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +137,20 @@ MonoBehaviour:
   IndividualRoomTemplates:
   - {fileID: 7060084515048207865, guid: 34f06b1e23a714d0c81f31f784c757bf, type: 3}
   RoomTemplateSets: []
+--- !u!114 &-1196344571767655767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f692f83df7c1b5468af64edd22287dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Connection
+  From: {fileID: -5766741703914556144}
+  To: {fileID: -5549359398475713726}
 --- !u!114 &-953401403135862708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
   - {fileID: 2507634852251446148}
   - {fileID: -5015440863762577438}
   - {fileID: -6025856405808554587}
-  - {fileID: -2230929157372381267}
   - {fileID: 239027294855503821}
+  - {fileID: -1196344571767655767}
   CorridorIndividualRoomTemplates:
   - {fileID: 3643066620603610986, guid: dc9b04f19bf7a127aa9df7d8070ab33a, type: 3}
   - {fileID: 6773608080264384877, guid: d3d037e113d639622b0767ad6453796e, type: 3}
@@ -212,7 +212,7 @@ MonoBehaviour:
   - {fileID: -5549359398475713726}
   - {fileID: 3160746859571114296}
   EditorData:
-    PanOffset: {x: -33.555412, y: 258.278}
+    PanOffset: {x: -30.13105, y: 349.87952}
     Zoom: 1.1681007
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection

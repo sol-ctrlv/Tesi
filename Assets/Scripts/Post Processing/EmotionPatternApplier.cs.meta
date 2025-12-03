@@ -4,14 +4,15 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - enemyPrefab: {fileID: 6963218544976182214, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
-  - safeHavenPrefab: {fileID: 2841498930171138437, guid: ce5ee874145c654c9bc3c070fbd85e32, type: 3}
-  - rewardChestPrefab: {fileID: 3641762514246170546, guid: 027004902c6ed75c9b33c7b05b7fb94e, type: 3}
-  - competenceGatePrefab: {instanceID: 0}
-  - signpostPrefab: {fileID: 7569256559726631599, guid: 6d4f6a8603dc9fbfd9d6f10fa050aa0d, type: 3}
-  - pointOfInterestPrefab: {fileID: 6815166414147732669, guid: 1ee396a3d858f02f983ce1be619230b1, type: 3}
-  - rareObjectPrefab: {instanceID: 0}
+  - safeHealPrefab: {instanceID: 0}
+  - safeStatuePrefab: {instanceID: 0}
+  - rewardChestPrefab: {instanceID: 0}
+  - pointOfInterestPrefab: {instanceID: 0}
   - symmetryPropPrefab: {instanceID: 0}
+  - rareObjectPrefab: {instanceID: 0}
+  - audioOcclusionPrefab: {instanceID: 0}
+  - competenceGatePrefab: {instanceID: 0}
+  - signpostPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

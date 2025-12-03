@@ -53,14 +53,15 @@ namespace EmotionPCG
 #endif
         }
 
-        [Header("Target emotion for this level")]
+        [Header("Emozione target del livello")]
         public EmotionType TargetEmotion = EmotionType.Wonder;
 
-        [Header("Algorithm settings")]
+        [Header("Impostazioni algoritmo")]
         [Range(1, 4)]
-        public int MaxPatternsPerRoom = 2;
+        public int MaxPatternsPerRoom = 3;
+        [SerializeField] private int referenceMaxPatternsPerRoom = 2;
 
-        [Tooltip("Max optimization steps (safety guard).")]
+        [Tooltip("Step massimi di ottimizzazione")]
         public int MaxIterations = 50;
 
         private readonly Dictionary<GameObject, RoomNode> _roomNodeByTemplate = new Dictionary<GameObject, RoomNode>();
@@ -88,11 +89,6 @@ namespace EmotionPCG
                 if (string.IsNullOrEmpty(sourceName) && roomInstance.RoomTemplateInstance != null)
                 {
                     sourceName = roomInstance.RoomTemplateInstance.name;
-                }
-
-                if (string.IsNullOrEmpty(sourceName))
-                {
-                    sourceName = $"Room_{index}";
                 }
 
                 bool isCritical = IsCriticalByName(sourceName);
@@ -200,7 +196,7 @@ namespace EmotionPCG
                     budget[pattern] = count;
             }
 
-            // 1) Budget "desiderato" per emozione (in termini assoluti)
+            // 1) Budget "desiderato" per emozione
             switch (emotion)
             {
                 case EmotionType.Wonder:
@@ -238,6 +234,21 @@ namespace EmotionPCG
                     Set(AppraisalPatternType.AppearanceOfObjects, 1);
                     Set(AppraisalPatternType.Conflict, 1);
                     break;
+            }
+
+            if (referenceMaxPatternsPerRoom > 0 &&
+                MaxPatternsPerRoom > 0 &&
+                MaxPatternsPerRoom != referenceMaxPatternsPerRoom)
+            {
+                float factor = (float)MaxPatternsPerRoom / referenceMaxPatternsPerRoom;
+
+                // moltiplichiamo tutti i budget per questo fattore
+                var keys = new List<AppraisalPatternType>(budget.Keys);
+                foreach (var k in keys)
+                {
+                    int scaled = Mathf.RoundToInt(budget[k] * factor);
+                    budget[k] = Mathf.Max(0, scaled);
+                }
             }
 
             // 2) Capienza massima teorica: stanze × pattern per stanza
@@ -347,6 +358,10 @@ namespace EmotionPCG
                         if (node.AppliedPatterns.Contains(pattern))
                             continue;
 
+                        // Regole di design per stanza/pattern
+                        if (!IsPatternAllowedInRoom(node, pattern))
+                            continue;
+
                         var delta = AppraisalPatternLibrary.GetDelta(pattern);
 
                         // Profilo "ipotetico" della stanza con questo pattern in più
@@ -385,6 +400,32 @@ namespace EmotionPCG
                 currentAverage = bestAvgProfile;
                 currentDistance = bestNewDistance;
             }
+        }
+
+        /// <summary>
+        /// Verifica se un certo pattern è ammesso in questa stanza.
+        /// Qui mettiamo le regole "di design": ad esempio niente Rewards / ClearSignposting
+        /// nella stanza finale del critical path.
+        /// </summary>
+        private bool IsPatternAllowedInRoom(RoomNode node, AppraisalPatternType pattern)
+        {
+            // Stanza di fine = sul critical path ma senza successivo nodo critico
+            bool isEndRoom = node.IsOnCriticalPath && !node.HasNextCritical;
+
+            if (isEndRoom)
+            {
+                // Niente ricompense né segnaletica nella stanza finale
+                if (pattern == AppraisalPatternType.Rewards ||
+                    pattern == AppraisalPatternType.ClearSignposting)
+                {
+                    return false;
+                }
+            }
+
+            // Qui in futuro puoi aggiungere altre incompatibilità "hard"
+            // (es. vietare competenze in SafeHaven, ecc.)
+
+            return true;
         }
 
         private AppraisalProfile ComputeAverageProfile(List<RoomNode> nodes)
@@ -501,7 +542,7 @@ namespace EmotionPCG
         }
         #endregion
 
-        #region Apply metadata back to Unity
+        #region Apply metadata to Unity
         private void ApplyMetadataToUnityRooms(DungeonGeneratorLevelGrid2D level)
         {
             foreach (var roomInstance in level.RoomInstances)

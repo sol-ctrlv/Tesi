@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3013293332571328489}
   - component: {fileID: 628924264236559078}
   - component: {fileID: 214368639497528316}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: content_density_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,5 +135,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5, y: 1.125}
+  m_Size: {x: 1.25, y: 1}
   m_EdgeRadius: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Actor
 {
@@ -19,6 +20,11 @@ public class Player : Actor
         healTimer = new Timer(healTimerSeconds, true, false);
 
         OnDamage += HealAfterDamage;
+    }
+
+    protected override void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void OnDestroy()

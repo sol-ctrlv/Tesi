@@ -258,7 +258,7 @@ PrefabInstance:
     - target: {fileID: 3905145789744145875, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: snowmanFireTimer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9042993816527943386}
     - target: {fileID: 3906846080811776968, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Controller
       value: 
@@ -332,8 +332,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3664170705775330652, guid: 652a51bd2cf7c9145bf1319ff5a28f93, type: 3}
     m_RemovedComponents:
-    - {fileID: 3511707471044395702, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
-    - {fileID: 3905145789744145875, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 8064970911853446040, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
     m_AddedGameObjects:
@@ -343,34 +342,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2354413710705745340, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9212497235764443469}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5154694883025553004, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5617166957527477174}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
 --- !u!4 &724394797622191385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8578421730782046999, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
   m_PrefabInstance: {fileID: 9007546871704981006}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4217651324477180002 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5154694883025553004, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
-  m_PrefabInstance: {fileID: 9007546871704981006}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5617166957527477174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4217651324477180002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e8d3394aadf6a4ca80eed848b296e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SnowmanAnimToActor
-  snowmanFireTimer: {fileID: 9042993816527943386}
 --- !u!95 &5419760992261354950 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3906846080811776968, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}

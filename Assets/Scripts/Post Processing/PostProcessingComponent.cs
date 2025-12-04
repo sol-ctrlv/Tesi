@@ -26,15 +26,29 @@ namespace EmotionPCG
                 return;
             }
 
-            // 2) Recupero target e pesi per l’emozione scelta
+            // 2) Conteggio stanze dove si applicano i pattern
+            int patternRoomCount = 0;
+            foreach (var node in roomNodes)
+            {
+                if (IsPatternRoom(node))
+                    patternRoomCount++;
+            }
+
+            // Se per qualche motivo non ne troviamo nessuna, usiamo roomNodes.Count per non rompere tutto
+            if (patternRoomCount == 0)
+                patternRoomCount = roomNodes.Count;
+
+            // 3) Recupero target e pesi per l’emozione scelta
             var emotionTarget = GetEmotionTarget(TargetEmotion);
             var weights = EmotionWeights.Get(TargetEmotion);
 
-            // 3) Ottimizzazione greedy dei pattern
-            var patternBudget = CreatePatternBudget(TargetEmotion, roomNodes.Count);
+            // 4) Ottimizzazione greedy dei pattern
+            var patternBudget = CreatePatternBudget(TargetEmotion, patternRoomCount);
             RunGreedyOptimization(roomNodes, emotionTarget.Center, weights, patternBudget);
 
-            // 4) Scrittura dei risultati sulle room template instance di Edgar
+            FillOptional(roomNodes, patternBudget);
+
+            // 5) Scrittura dei risultati sulle room template instance di Edgar
             ApplyMetadataToUnityRooms(level);
 
             var applier = FindObjectOfType<EmotionPatternApplier>();
@@ -48,7 +62,7 @@ namespace EmotionPCG
             }
 
 #if UNITY_EDITOR
-            // 5) Log di debug (facile da citare in tesi)
+            // 6) Log di debug (facile da citare in tesi)
             LogSummaryStats(roomNodes, emotionTarget, weights);
 #endif
         }
@@ -57,8 +71,7 @@ namespace EmotionPCG
         public EmotionType TargetEmotion = EmotionType.Wonder;
 
         [Header("Impostazioni algoritmo")]
-        [Range(1, 4)]
-        public int MaxPatternsPerRoom = 3;
+        [SerializeField] public int MaxPatternsPerRoom = 3;
         [SerializeField] private int referenceMaxPatternsPerRoom = 2;
 
         [Tooltip("Step massimi di ottimizzazione")]
@@ -342,6 +355,9 @@ namespace EmotionPCG
                 {
                     var node = nodes[roomIndex];
 
+                    if (!IsPatternRoom(node))
+                        continue;
+
                     // Limite di pattern per stanza
                     if (node.AppliedPatterns.Count >= MaxPatternsPerRoom)
                         continue;
@@ -401,6 +417,22 @@ namespace EmotionPCG
                 currentDistance = bestNewDistance;
             }
         }
+
+        private bool IsPatternRoom(RoomNode node)
+        {
+            var name = node.Id;
+            if (string.IsNullOrEmpty(name))
+                return false;
+
+            // Controllo se la stanza appartiene a quelle a cui applicare i pattern
+            if (name.StartsWith("Room", StringComparison.OrdinalIgnoreCase)) return true;
+            if (name.StartsWith("End", StringComparison.OrdinalIgnoreCase)) return true;
+            if (name.StartsWith("Deadend", StringComparison.OrdinalIgnoreCase)) return true;
+            if (name.StartsWith("Optional", StringComparison.OrdinalIgnoreCase)) return true;
+
+            return false;
+        }
+
 
         /// <summary>
         /// Verifica se un certo pattern è ammesso in questa stanza.
@@ -540,6 +572,97 @@ namespace EmotionPCG
 
             return count > 0 ? sum / count : AppraisalProfile.Neutral();
         }
+
+        private void FillOptional(
+    List<RoomNode> nodes,
+    Dictionary<AppraisalPatternType, int> patternBudget)
+        {
+            if (patternBudget == null || patternBudget.Count == 0)
+                return;
+
+            // Stanze candidate: Optional + Deadend
+            var targetRooms = new List<RoomNode>();
+            foreach (var node in nodes)
+            {
+                if (IsOptional(node))
+                    targetRooms.Add(node);
+            }
+
+            if (targetRooms.Count == 0)
+                return;
+
+            // Pattern "riempitivi": evitiamo quelli troppo strutturali
+            var fillablePatterns = new List<AppraisalPatternType>();
+            foreach (var kvp in patternBudget)
+            {
+                var p = kvp.Key;
+
+                if (p == AppraisalPatternType.ClearSignposting)
+                    continue;
+
+                fillablePatterns.Add(p);
+            }
+
+            if (fillablePatterns.Count == 0)
+                return;
+
+            // Loop semplice: giriamo finché riusciamo a piazzare qualcosa
+            bool placedSomething = true;
+            int safety = 0;
+
+            while (placedSomething && safety < 1000)
+            {
+                placedSomething = false;
+                safety++;
+
+                foreach (var node in targetRooms)
+                {
+                    if (node.AppliedPatterns.Count >= MaxPatternsPerRoom)
+                        continue;
+
+                    // Pattern ancora disponibili, non già applicati, e ammessi in questa stanza
+                    var localCandidates = new List<AppraisalPatternType>();
+                    foreach (var p in fillablePatterns)
+                    {
+                        if (!patternBudget.TryGetValue(p, out int remaining) || remaining <= 0)
+                            continue;
+
+                        if (node.AppliedPatterns.Contains(p))
+                            continue;
+
+                        if (!IsPatternAllowedInRoom(node, p))
+                            continue;
+
+                        localCandidates.Add(p);
+                    }
+
+                    if (localCandidates.Count == 0)
+                        continue;
+
+                    var chosen = localCandidates[UnityEngine.Random.Range(0, localCandidates.Count)];
+
+                    node.AppliedPatterns.Add(chosen);
+                    var delta = AppraisalPatternLibrary.GetDelta(chosen);
+                    node.Appraisal.Add(delta);
+
+                    patternBudget[chosen]--;
+                    placedSomething = true;
+                }
+            }
+        }
+
+        private static bool IsOptional(RoomNode node)
+        {
+            var baseName = node.Id;
+            if (string.IsNullOrEmpty(baseName))
+                return false;
+
+            if (baseName.StartsWith("Optional", StringComparison.OrdinalIgnoreCase)) return true;
+            if (baseName.StartsWith("Deadend", StringComparison.OrdinalIgnoreCase)) return true;
+
+            return false;
+        }
+
         #endregion
 
         #region Apply metadata to Unity
@@ -569,8 +692,17 @@ namespace EmotionPCG
 
                 // Info sul critical path utili per pattern come ClearSignposting
                 metadata.IsOnCriticalPath = node.IsOnCriticalPath;
-                metadata.HasNextCritical = node.HasNextCritical;
-                metadata.NextCriticalDirection = node.NextCriticalDirection;
+
+                if (roomInstance.Room.GetDisplayName().StartsWith("End", StringComparison.OrdinalIgnoreCase))
+                {
+                    metadata.HasNextCritical = false;
+                    metadata.NextCriticalDirection = Vector3.zero;
+                }
+                else
+                {
+                    metadata.HasNextCritical = node.HasNextCritical;
+                    metadata.NextCriticalDirection = node.NextCriticalDirection;
+                }
             }
         }
 
@@ -605,7 +737,6 @@ namespace EmotionPCG
         public AppraisalProfile Appraisal;
         public List<AppraisalPatternType> AppliedPatterns = new List<AppraisalPatternType>();
 
-        // NUOVO: info critical path (per ClearSignposting)
         public bool IsOnCriticalPath;
         public bool HasNextCritical;
         public Vector3 NextCriticalDirection;

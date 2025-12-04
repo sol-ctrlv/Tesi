@@ -182,7 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Room
   Position: {x: 800, y: 688}
   Name: Start
-  IndividualRoomTemplates: []
+  IndividualRoomTemplates:
+  - {fileID: 7060084515048207865, guid: 34f06b1e23a714d0c81f31f784c757bf, type: 3}
   RoomTemplateSets: []
 --- !u!114 &-400504436381145337
 MonoBehaviour:
@@ -222,9 +223,14 @@ MonoBehaviour:
   - {fileID: -6436938118731409349}
   - {fileID: -5947538958918524410}
   - {fileID: 776370695078928083}
-  CorridorIndividualRoomTemplates: []
+  CorridorIndividualRoomTemplates:
+  - {fileID: 3643066620603610986, guid: dc9b04f19bf7a127aa9df7d8070ab33a, type: 3}
+  - {fileID: 6773608080264384877, guid: d3d037e113d639622b0767ad6453796e, type: 3}
   CorridorRoomTemplateSets: []
-  DefaultIndividualRoomTemplates: []
+  DefaultIndividualRoomTemplates:
+  - {fileID: 8457191283047983973, guid: 50e4839485ced44e394b6a348d3d865c, type: 3}
+  - {fileID: 8895775582948005501, guid: 44d0be9bba233b8898cd88919af28ac7, type: 3}
+  - {fileID: 8523017413467375430, guid: e60d91ae58c05455583f5b5f5c6a8468, type: 3}
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: -827593402665366795}

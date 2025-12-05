@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Actor
 {
@@ -6,9 +7,9 @@ public class Player : Actor
     static public Player Instance { get; private set; }
 
     [SerializeField] AudioSource healAudioSource;
-    [SerializeField] float healTimerSeconds = 10f;
 
-    Timer healTimer;
+    //[SerializeField] float healTimerSeconds = 10f;
+    //Timer healTimer;
 
     private void Awake()
     {
@@ -16,20 +17,25 @@ public class Player : Actor
         Init(MaxHP);
 
         CameraManager.SetCameraPosition(transform.position);
-        healTimer = new Timer(healTimerSeconds, true, false);
+        //healTimer = new Timer(healTimerSeconds, true, false);
 
-        OnDamage += HealAfterDamage;
+        //OnDamage += HealAfterDamage;
     }
 
-    private void OnDestroy()
+    protected override void Die()
     {
-        OnDamage -= HealAfterDamage;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void HealAfterDamage(float a, float b, float c)
-    {
-        healTimer.SetShouldTick(true);
-    }
+    //private void OnDestroy()
+    //{
+    //    OnDamage -= HealAfterDamage;
+    //}
+
+    //void HealAfterDamage(float a, float b, float c)
+    //{
+    //    healTimer.SetShouldTick(true);
+    //}
 
     [ContextMenu("Test Damage")]
     private void TestDamage()
@@ -46,18 +52,18 @@ public class Player : Actor
 
     }
 
-    private void Update()
-    {
-        if (healTimer.Tick(Time.deltaTime))
-        {
-            Heal(1);
+    //private void Update()
+    //{
+    //    if (healTimer.Tick(Time.deltaTime))
+    //    {
+    //        Heal(1);
 
-            if (CurrentHP == MaxHP)
-            {
-                healTimer.SetShouldTick(false);
-            }
-        }
-    }
+    //        if (CurrentHP == MaxHP)
+    //        {
+    //            healTimer.SetShouldTick(false);
+    //        }
+    //    }
+    //}
 
     public void AddMaxHealth()
     {

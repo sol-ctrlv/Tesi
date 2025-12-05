@@ -46,6 +46,9 @@ public class PlayerAttack : MonoBehaviour
 
         float finalDamage = damage * DamageMultiplier;
 
+        if (MyTargetDetection.TargetsInRange.Count > 0)
+            Player.Instance.Heal(1f);
+
         // 2) uso finalDamage invece di damage
         for (int i = MyTargetDetection.TargetsInRange.Count; i > 0; i--)
         {

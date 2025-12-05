@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: e21ff9bc2720e8ddb8645648e0a8dc34
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ghostClip: {fileID: 8300000, guid: 72ff5d12d965ccaaa9689b1f74da4a5a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -148,6 +148,8 @@ MonoBehaviour:
   - {fileID: 8457191283047983973, guid: 50e4839485ced44e394b6a348d3d865c, type: 3}
   - {fileID: 8895775582948005501, guid: 44d0be9bba233b8898cd88919af28ac7, type: 3}
   - {fileID: 8523017413467375430, guid: e60d91ae58c05455583f5b5f5c6a8468, type: 3}
+  - {fileID: 4542934194430107389, guid: 0e283c6a4269938b1b26fba4bed12389, type: 3}
+  - {fileID: 686846891702232936, guid: f72213aeed7737c0daca77ecd002ab5e, type: 3}
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: 2087361128306449724}

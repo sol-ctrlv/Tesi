@@ -195,12 +195,8 @@ MonoBehaviour:
   - {fileID: 8457191283047983973, guid: 50e4839485ced44e394b6a348d3d865c, type: 3}
   - {fileID: 8895775582948005501, guid: 44d0be9bba233b8898cd88919af28ac7, type: 3}
   - {fileID: 8523017413467375430, guid: e60d91ae58c05455583f5b5f5c6a8468, type: 3}
-  - {fileID: 8457191283047983973, guid: 3a9404462f78c62e9929d81be1716cee, type: 3}
-  - {fileID: 8895775582948005501, guid: bd39d2e865e44d474afae2cfdec47b26, type: 3}
-  - {fileID: 8523017413467375430, guid: ed017d5ba7d5d97708b8c903929add34, type: 3}
-  - {fileID: 8457191283047983973, guid: 4b3f2cf7b61380e7297fbe2f0a8c6d5d, type: 3}
-  - {fileID: 8895775582948005501, guid: adc9370d311a79bf1853a9dbd094e187, type: 3}
-  - {fileID: 8523017413467375430, guid: 49028644d4a97ef8e9ee41a666d9bba6, type: 3}
+  - {fileID: 4542934194430107389, guid: 0e283c6a4269938b1b26fba4bed12389, type: 3}
+  - {fileID: 686846891702232936, guid: f72213aeed7737c0daca77ecd002ab5e, type: 3}
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: -2171031294431353431}
@@ -212,8 +208,8 @@ MonoBehaviour:
   - {fileID: -5549359398475713726}
   - {fileID: 3160746859571114296}
   EditorData:
-    PanOffset: {x: -30.13105, y: 349.87952}
-    Zoom: 1.1681007
+    PanOffset: {x: 235.82776, y: 435.63623}
+    Zoom: 0.94616157
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
 --- !u!114 &239027294855503821

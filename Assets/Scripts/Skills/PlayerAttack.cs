@@ -81,9 +81,6 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Chiamato quando il player raccoglie la spada.
-    /// </summary>
     public void UnlockAttack()
     {
         canAttack = true;

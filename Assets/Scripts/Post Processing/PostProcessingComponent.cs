@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 using Edgar.Unity;
 
 namespace EmotionPCG
@@ -45,7 +46,6 @@ namespace EmotionPCG
             // 4) Ottimizzazione greedy dei pattern
             var patternBudget = CreatePatternBudget(TargetEmotion, patternRoomCount);
             RunGreedyOptimization(roomNodes, emotionTarget.Center, weights, patternBudget);
-
             FillOptional(roomNodes, patternBudget);
 
             // 5) Scrittura dei risultati sulle room template instance di Edgar
@@ -277,28 +277,29 @@ namespace EmotionPCG
             if (totalDesired <= maxUsable)
                 return budget;
 
-            // 3) Rescaling proporzionale: manteniamo le proporzioni
-            // fra pattern, ma riduciamo i conteggi per rispettare maxUsable.
+            return RescaleBudget(budget, maxUsable, emotion);
+        }
+
+        private static Dictionary<AppraisalPatternType, int> RescaleBudget(
+            Dictionary<AppraisalPatternType, int> budget,
+            int maxUsable,
+            EmotionType emotion)
+        {
             var scaledBudget = new Dictionary<AppraisalPatternType, int>(budget.Count);
             var patternRemainders = new List<KeyValuePair<AppraisalPatternType, float>>(budget.Count);
 
-            // Fattore di scala: quanto devo "schiacciare" il budget desiderato
-            // per farlo rientrare nella capienza massima consentita.
-            float scalingFactor = (float)maxUsable / totalDesired;
+            float scalingFactor = (float)maxUsable / Mathf.Max(1, SumBudget(budget));
 
 #if UNITY_EDITOR
-            Debug.Log($"[EmotionPCG] Scaling pattern budget for {emotion}: totalDesired={totalDesired}, maxUsable={maxUsable}, factor={scalingFactor:F2}");
+            Debug.Log($"[EmotionPCG] Scaling pattern budget for {emotion}: totalDesired={SumBudget(budget)}, maxUsable={maxUsable}, factor={scalingFactor:F2}");
 #endif
 
             int totalScaledCount = 0;
 
             foreach (var patternEntry in budget)
             {
-                // Valore teorico dopo la scalatura (es. 2.7, 1.3, ...)
                 float scaledExact = patternEntry.Value * scalingFactor;
-                // Parte intera dei pattern che assegniamo subito
                 int scaledFloorCount = Mathf.FloorToInt(scaledExact);
-                // Parte frazionaria che useremo per distribuire gli slot residui
                 float fractionalRemainder = scaledExact - scaledFloorCount;
 
                 if (scaledFloorCount < 0)
@@ -313,8 +314,6 @@ namespace EmotionPCG
             int remainingSlots = maxUsable - totalScaledCount;
             if (remainingSlots > 0)
             {
-                // Ordina per remainder decrescente: chi ha "perso" di più nella floor
-                // riceve per primo gli slot residui.
                 patternRemainders.Sort((a, b) => b.Value.CompareTo(a.Value));
 
                 int remainderIndex = 0;
@@ -327,7 +326,21 @@ namespace EmotionPCG
                 }
             }
 
+            int finalTotal = SumBudget(scaledBudget);
+            Assert.IsTrue(finalTotal <= maxUsable, $"Scaled budget exceeds maxUsable: {finalTotal} > {maxUsable}");
+
             return scaledBudget;
+        }
+
+        private static int SumBudget(Dictionary<AppraisalPatternType, int> budget)
+        {
+            int total = 0;
+            foreach (var kvp in budget)
+            {
+                total += kvp.Value;
+            }
+
+            return total;
         }
 
         private void RunGreedyOptimization(
@@ -339,8 +352,28 @@ namespace EmotionPCG
             if (nodes.Count == 0)
                 return;
 
-            var currentAverage = ComputeAverageProfile(nodes);
+            var sumCritical = new AppraisalProfile();
+            var sumAll = new AppraisalProfile();
+            int countCritical = 0;
+            int countAll = nodes.Count;
+
+            for (int i = 0; i < nodes.Count; i++)
+            {
+                var p = nodes[i].Appraisal;
+
+                sumAll += p;
+
+                if (nodes[i].IsOnCriticalPath)
+                {
+                    sumCritical += p;
+                    countCritical++;
+                }
+            }
+
+            bool hasCritical = countCritical > 0;
+            var currentAverage = hasCritical ? sumCritical / countCritical : sumAll / Mathf.Max(1, countAll);
             var currentDistance = AppraisalMath.WeightedSquaredDistance(currentAverage, targetCenter, weights);
+            var lastSafeHavenIndex = new HashSet<int>();
 
             for (int iteration = 0; iteration < MaxIterations; iteration++)
             {
@@ -370,6 +403,16 @@ namespace EmotionPCG
                         if (remaining <= 0)
                             continue;
 
+                        if (pattern == AppraisalPatternType.SafeHaven && node.IsOnCriticalPath
+                        && node.CriticalOrder >= 0)
+                        {
+                            int order = node.CriticalOrder;
+                            if (lastSafeHavenIndex.Contains(order - 1) || lastSafeHavenIndex.Contains(order + 1))
+                            {
+                                continue;
+                            }
+                        }
+
                         // Evita di applicare lo stesso pattern due volte alla stessa stanza
                         if (node.AppliedPatterns.Contains(pattern))
                             continue;
@@ -384,8 +427,23 @@ namespace EmotionPCG
                         var candidateProfile = node.Appraisal;
                         candidateProfile.Add(delta);
 
-                        // Media ipotetica del livello con la stanza modificata
-                        var candidateAvg = ComputeAverageProfileWithCandidate(nodes, roomIndex, candidateProfile);
+                        AppraisalProfile candidateAvg;
+
+                        if (hasCritical)
+                        {
+                            if (node.IsOnCriticalPath)
+                            {
+                                candidateAvg = ComputeAverageFromSum(sumCritical, countCritical, node.Appraisal, candidateProfile);
+                            }
+                            else
+                            {
+                                candidateAvg = currentAverage;
+                            }
+                        }
+                        else
+                        {
+                            candidateAvg = ComputeAverageFromSum(sumAll, countAll, node.Appraisal, candidateProfile);
+                        }
 
                         float newDistance = AppraisalMath.WeightedSquaredDistance(candidateAvg, targetCenter, weights);
                         float improvement = currentDistance - newDistance;
@@ -406,16 +464,77 @@ namespace EmotionPCG
                 if (bestImprovement <= 0f || bestRoomIndex < 0)
                     break;
 
-                // Commit della scelta migliore trovata in questa iterazione
                 var bestNode = nodes[bestRoomIndex];
+                var oldProfile = bestNode.Appraisal;
+
                 bestNode.Appraisal = bestRoomProfile;
                 bestNode.AppliedPatterns.Add(bestPattern);
 
-                // Aggiorna budget e distanza corrente
                 patternBudget[bestPattern]--;
+
+                if (hasCritical)
+                {
+                    if (bestNode.IsOnCriticalPath)
+                    {
+                        UpdateSum(ref sumCritical, oldProfile, bestRoomProfile);
+                    }
+                }
+                else
+                {
+                    UpdateSum(ref sumAll, oldProfile, bestRoomProfile);
+                }
+
+                // SE abbiamo messo SafeHaven su un nodo critico,
+                // registriamo il suo ordine critico per le iterazioni successive
+                if (bestPattern == AppraisalPatternType.SafeHaven &&
+                    bestNode.IsOnCriticalPath &&
+                    bestNode.CriticalOrder >= 0)
+                {
+                    lastSafeHavenIndex.Add(bestNode.CriticalOrder);
+                }
+
                 currentAverage = bestAvgProfile;
                 currentDistance = bestNewDistance;
             }
+        }
+
+        private static AppraisalProfile ComputeAverageFromSum(
+            AppraisalProfile baseSum,
+            int count,
+            AppraisalProfile oldValue,
+            AppraisalProfile newValue)
+        {
+            if (count <= 0)
+                return AppraisalProfile.Neutral();
+
+            var result = new AppraisalProfile
+            {
+                Novelty = (baseSum.Novelty - oldValue.Novelty + newValue.Novelty) / count,
+                Pleasantness = (baseSum.Pleasantness - oldValue.Pleasantness + newValue.Pleasantness) / count,
+                GoalConduciveness = (baseSum.GoalConduciveness - oldValue.GoalConduciveness + newValue.GoalConduciveness) / count,
+                Urgency = (baseSum.Urgency - oldValue.Urgency + newValue.Urgency) / count,
+                Certainty = (baseSum.Certainty - oldValue.Certainty + newValue.Certainty) / count,
+                NegOutcomeProb = (baseSum.NegOutcomeProb - oldValue.NegOutcomeProb + newValue.NegOutcomeProb) / count,
+                Controllability = (baseSum.Controllability - oldValue.Controllability + newValue.Controllability) / count,
+                Power = (baseSum.Power - oldValue.Power + newValue.Power) / count,
+                Adjustability = (baseSum.Adjustability - oldValue.Adjustability + newValue.Adjustability) / count,
+                agency = baseSum.agency
+            };
+
+            return result;
+        }
+
+        private static void UpdateSum(ref AppraisalProfile sum, AppraisalProfile oldValue, AppraisalProfile newValue)
+        {
+            sum.Novelty += newValue.Novelty - oldValue.Novelty;
+            sum.Pleasantness += newValue.Pleasantness - oldValue.Pleasantness;
+            sum.GoalConduciveness += newValue.GoalConduciveness - oldValue.GoalConduciveness;
+            sum.Urgency += newValue.Urgency - oldValue.Urgency;
+            sum.Certainty += newValue.Certainty - oldValue.Certainty;
+            sum.NegOutcomeProb += newValue.NegOutcomeProb - oldValue.NegOutcomeProb;
+            sum.Controllability += newValue.Controllability - oldValue.Controllability;
+            sum.Power += newValue.Power - oldValue.Power;
+            sum.Adjustability += newValue.Adjustability - oldValue.Adjustability;
         }
 
         private bool IsPatternRoom(RoomNode node)
@@ -441,10 +560,7 @@ namespace EmotionPCG
         /// </summary>
         private bool IsPatternAllowedInRoom(RoomNode node, AppraisalPatternType pattern)
         {
-            // Stanza di fine = sul critical path ma senza successivo nodo critico
-            bool isEndRoom = node.IsOnCriticalPath && !node.HasNextCritical;
-
-            if (isEndRoom)
+            if (node.Id.StartsWith("End", StringComparison.OrdinalIgnoreCase))
             {
                 // Niente ricompense né segnaletica nella stanza finale
                 if (pattern == AppraisalPatternType.Rewards ||
@@ -453,9 +569,6 @@ namespace EmotionPCG
                     return false;
                 }
             }
-
-            // Qui in futuro puoi aggiungere altre incompatibilità "hard"
-            // (es. vietare competenze in SafeHaven, ecc.)
 
             return true;
         }
@@ -474,16 +587,7 @@ namespace EmotionPCG
 
                 var p = node.Appraisal;
 
-                sum.Novelty += p.Novelty;
-                sum.Pleasantness += p.Pleasantness;
-                sum.GoalConduciveness += p.GoalConduciveness;
-                sum.Urgency += p.Urgency;
-                sum.Certainty += p.Certainty;
-                sum.NegOutcomeProb += p.NegOutcomeProb;
-                sum.Controllability += p.Controllability;
-                sum.Power += p.Power;
-                sum.Adjustability += p.Adjustability;
-
+                sum += p;
                 count++;
             }
 
@@ -501,73 +605,7 @@ namespace EmotionPCG
             {
                 var p = nodes[i].Appraisal;
 
-                sum.Novelty += p.Novelty;
-                sum.Pleasantness += p.Pleasantness;
-                sum.GoalConduciveness += p.GoalConduciveness;
-                sum.Urgency += p.Urgency;
-                sum.Certainty += p.Certainty;
-                sum.NegOutcomeProb += p.NegOutcomeProb;
-                sum.Controllability += p.Controllability;
-                sum.Power += p.Power;
-                sum.Adjustability += p.Adjustability;
-            }
-
-            return count > 0 ? sum / count : AppraisalProfile.Neutral();
-        }
-
-        private AppraisalProfile ComputeAverageProfileWithCandidate(
-            List<RoomNode> nodes,
-            int candidateIndex,
-            AppraisalProfile candidateProfile)
-        {
-            var sum = new AppraisalProfile();
-            int count = 0;
-
-            // Media calcolata solo sulle stanze del critical path
-            for (int i = 0; i < nodes.Count; i++)
-            {
-                var node = nodes[i];
-                if (!node.IsOnCriticalPath)
-                    continue;
-
-                var p = (i == candidateIndex) ? candidateProfile : node.Appraisal;
-
-                sum.Novelty += p.Novelty;
-                sum.Pleasantness += p.Pleasantness;
-                sum.GoalConduciveness += p.GoalConduciveness;
-                sum.Urgency += p.Urgency;
-                sum.Certainty += p.Certainty;
-                sum.NegOutcomeProb += p.NegOutcomeProb;
-                sum.Controllability += p.Controllability;
-                sum.Power += p.Power;
-                sum.Adjustability += p.Adjustability;
-
-                count++;
-            }
-
-            if (count > 0)
-            {
-                return sum / count;
-            }
-
-            // Fallback di sicurezza: se nessuna stanza è marcata come critical,
-            // consideriamo tutte le stanze.
-            sum = new AppraisalProfile();
-            count = nodes.Count;
-
-            for (int i = 0; i < nodes.Count; i++)
-            {
-                var p = (i == candidateIndex) ? candidateProfile : nodes[i].Appraisal;
-
-                sum.Novelty += p.Novelty;
-                sum.Pleasantness += p.Pleasantness;
-                sum.GoalConduciveness += p.GoalConduciveness;
-                sum.Urgency += p.Urgency;
-                sum.Certainty += p.Certainty;
-                sum.NegOutcomeProb += p.NegOutcomeProb;
-                sum.Controllability += p.Controllability;
-                sum.Power += p.Power;
-                sum.Adjustability += p.Adjustability;
+                sum += p;
             }
 
             return count > 0 ? sum / count : AppraisalProfile.Neutral();
@@ -685,6 +723,18 @@ namespace EmotionPCG
                     metadata = go.AddComponent<EmotionRoomMetadata>();
                 }
 
+                string roomName = null;
+                if (roomInstance.Room != null)
+                {
+                    roomName = roomInstance.Room.GetDisplayName();
+                }
+
+                if (string.IsNullOrEmpty(roomName))
+                {
+                    roomName = go.name;
+                }
+
+                metadata.RoomName = roomName;
                 metadata.LevelEmotion = TargetEmotion;
                 metadata.Appraisal = node.Appraisal;
                 metadata.AppliedPatterns.Clear();
@@ -693,7 +743,9 @@ namespace EmotionPCG
                 // Info sul critical path utili per pattern come ClearSignposting
                 metadata.IsOnCriticalPath = node.IsOnCriticalPath;
 
-                if (roomInstance.Room.GetDisplayName().StartsWith("End", StringComparison.OrdinalIgnoreCase))
+                bool isEndRoom = !string.IsNullOrEmpty(roomName) && roomName.StartsWith("End", StringComparison.OrdinalIgnoreCase);
+
+                if (isEndRoom)
                 {
                     metadata.HasNextCritical = false;
                     metadata.NextCriticalDirection = Vector3.zero;
@@ -733,6 +785,7 @@ namespace EmotionPCG
     [DisallowMultipleComponent]
     public class EmotionRoomMetadata : MonoBehaviour
     {
+        public String RoomName;
         public EmotionType LevelEmotion;
         public AppraisalProfile Appraisal;
         public List<AppraisalPatternType> AppliedPatterns = new List<AppraisalPatternType>();

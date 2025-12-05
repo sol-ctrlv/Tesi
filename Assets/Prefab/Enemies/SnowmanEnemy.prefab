@@ -263,6 +263,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: f23863b1a0b942c42b35f2d39782e6d1, type: 2}
+    - target: {fileID: 5127915400013175831, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5870535304603399510, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: attack
       value: 
@@ -325,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810234217966344457, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Radius
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8905385580062982264, guid: 98818c87e9d3b9e458f610c752a23f93, type: 3}
       propertyPath: m_Sprite

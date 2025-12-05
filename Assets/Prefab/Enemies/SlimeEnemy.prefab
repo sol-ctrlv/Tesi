@@ -667,7 +667,7 @@ MonoBehaviour:
   actorRenderer: {fileID: 8905385580062982264}
   rb2d: {fileID: 6963218544976182210}
   targetDetection: {fileID: 2472508647139706682}
-  movementSpeed: 10
+  movementSpeed: 25
   repelForce: 8
   stopOnPlayerInRange: 0
 --- !u!114 &3091908515347440627

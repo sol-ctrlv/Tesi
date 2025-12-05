@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Edgar.Legacy.Core.MapLayouts;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -17,12 +16,12 @@ namespace EmotionPCG
         [SerializeField] private LayerMask enemyBlockingLayers;
 
         [Header("Spawn area")]
-        [SerializeField] private string cameraTriggerName = "CameraTrigger"; // nome del child con il BoxCollider2D
-        [SerializeField] private float spawnMarginFromBounds = 0.5f;         // margine interno per non attaccarsi ai muri
+        [SerializeField] private string cameraTriggerName = "CameraTrigger";
+        [SerializeField] private float spawnMarginFromBounds = 0.5f;
 
         [Header("Safe Haven")]
-        [SerializeField] private GameObject safeHealPrefab;     // tile che cura alla prima collisione
-        [SerializeField] private GameObject safeStatuePrefab;   // statue laterali opzionali
+        [SerializeField] private GameObject safeHealPrefab;
+        [SerializeField] private GameObject safeStatuePrefab;
 
         [Header("Clear Signposting")]
         [SerializeField] private GameObject signpostPrefab;
@@ -30,41 +29,46 @@ namespace EmotionPCG
         [SerializeField] private bool arrowUsesUpAsForward = true;
 
         [Header("Rewards")]
-        [SerializeField] private GameObject rewardChestPrefab;  // chest con buff (script sul prefab)
-        [SerializeField] private float rewardDistanceFromCenter = 1.5f; // distanza fissa dal centro
+        [SerializeField] private GameObject rewardChestPrefab;
+        [SerializeField] private float rewardDistanceFromCenter = 1.5f;
 
         [Header("Centering")]
         [SerializeField] private GameObject centeringPrefab;
 
         [Header("Pointing Out")]
-        [SerializeField] private GameObject pointingOutLightPrefab;  // luce + sfarfallio per Pointing Out
+        [SerializeField] private GameObject pointingOutLightPrefab;
         [SerializeField] private float pointingOutOffsetY = 0.5f;
 
         [Header("Symmetry")]
-        [SerializeField] private GameObject[] symmetryPropPrefabs;   // array di oggetti "simmetrici"
-        [SerializeField] private float symmetryOffsetFromCenter = 2f; // offset fisso a sinistra/destra del centro
+        [SerializeField] private GameObject[] symmetryPropPrefabs;
+        [SerializeField] private float symmetryOffsetFromCenter = 2f;
 
         [Header("Appearance")]
-        [SerializeField] private GameObject appearanceStatuePrefab;     // statua per Appearance (angoli)
-        [SerializeField] private GameObject[] appearanceBannerPrefabs;  // stendardi per Appearance (bordo alto)
-        [SerializeField] private float appearanceCornerMargin = 1f;     // margine dagli angoli per le statue
-        [SerializeField] private float appearanceBannerMargin = 0.5f;   // margine dai bordi per gli stendardi
+        [SerializeField] private GameObject appearanceStatuePrefab;
+        [SerializeField] private GameObject[] appearanceBannerPrefabs;
+        [SerializeField] private float appearanceCornerMargin = 1f;
+        [SerializeField] private float appearanceBannerMargin = 0.5f;
         [SerializeField] private float bannerWallOffsetY = 0.5f;
-        [SerializeField] private float minBannerSpacing = 1f;           // distanza minima tra stendardi
-        [SerializeField] private float bannerWallCheckRadius = 0.2f;    // raggio per controllare il muro
-        [SerializeField] private LayerMask wallLayerMask;               // layer dei muri (tilemap muro, ecc.)
-        [SerializeField] private int minBanners = 2;                    // numero minimo di stendardi
-        [SerializeField] private int maxBanners = 5;                    // numero massimo di stendardi
+        [SerializeField] private float minBannerSpacing = 1f;
+        [SerializeField] private float bannerWallCheckRadius = 0.2f;
+        [SerializeField] private LayerMask wallLayerMask;
+        [SerializeField] private int minBanners = 2;
+        [SerializeField] private int maxBanners = 5;
 
-        [Header("Content Density / Physical Occlusion")]
+        [Header("Content Density")]
         [SerializeField] private GameObject[] contentDensityPrefabs;
         [SerializeField] private int propsPerContentDensity = 4;
+        [SerializeField] private float contentMinSpacing = 0.9f;
+        [SerializeField] private int contentMaxAttemptsPerProp = 10;
 
-        [Header("Audio Occlusion")]
-        [SerializeField] private GameObject audioOcclusionPrefab;
+        [Header("Occlusion")]
+        [SerializeField] private AudioClip audioOcclusionPrefab;
         [SerializeField, Range(0f, 1f)] private float occlusionLightRemovalRatio = 0.4f;
         [SerializeField] private int occlusionMinLightsToKeep = 1;
-        [SerializeField] private float occlusionAudioOutsideOffset = 1.0f;
+        [SerializeField] private float occlusionMinDelay = 2f;
+        [SerializeField] private float occlusionMaxDelay = 5f;
+        [SerializeField] private float occlusionVolume = 0.5f;
+
 
         [Header("Competence Gate")]
         [SerializeField] private GameObject competenceGatePrefab;
@@ -74,7 +78,6 @@ namespace EmotionPCG
         [SerializeField] private GameObject fearLightPrefab;
         [SerializeField] private GameObject joyLightPrefab;
 
-        // range di luci per stanza per ogni emozione
         [SerializeField] private int wonderMinLights = 2;
         [SerializeField] private int wonderMaxLights = 3;
 
@@ -88,9 +91,6 @@ namespace EmotionPCG
         [SerializeField] private GameObject endLevelStairsPrefab;
         [SerializeField] private Vector3 endLevelStairsOffset = Vector3.zero;
 
-        /// <summary>
-        /// Chiamato dal PostProcessing dopo aver scritto i metadata sulle stanze.
-        /// </summary>
         public void ApplyAllPatternsInScene()
         {
             var rooms = FindObjectsOfType<EmotionRoomMetadata>();
@@ -106,11 +106,6 @@ namespace EmotionPCG
             PlaceEndLevelStairs();
         }
 
-        /// <summary>
-        /// Decide se applicare luci + pattern a questa stanza in base al nome.
-        /// Valide: Room*, Optional*, End*, Deadend*.
-        /// Corridoi, stanze speciali, ecc. vengono ignorate.
-        /// </summary>
         private bool ShouldApplyPatternsToRoom(EmotionRoomMetadata room)
         {
             if (room == null)
@@ -120,7 +115,6 @@ namespace EmotionPCG
             if (string.IsNullOrEmpty(name))
                 return false;
 
-            // accettiamo prefissi, così Room_1, Optional_2, End_0, Deadend_3 funzionano
             if (name.StartsWith("room", StringComparison.OrdinalIgnoreCase)) return true;
             if (name.StartsWith("optional", StringComparison.OrdinalIgnoreCase)) return true;
             if (name.StartsWith("end", StringComparison.OrdinalIgnoreCase)) return true;
@@ -137,13 +131,11 @@ namespace EmotionPCG
             var roomTransform = metadata.transform;
             List<AppraisalPatternType> patterns = metadata.AppliedPatterns;
 
-
-            Vector3 roomCenter = GetRoomCenter(roomTransform);  // centro calcolato con ancora "RoomCenter" se presente
-            ApplyBaseLighting(metadata, roomTransform);         // luci di base in base all'emozione
+            Vector3 roomCenter = GetRoomCenter(roomTransform);
+            ApplyBaseLighting(metadata, roomTransform);
 
             bool hasSafeHaven = patterns.Contains(AppraisalPatternType.SafeHaven);
 
-            // SafeHaven “spegne” alcuni pattern ostili
             foreach (var pattern in patterns)
             {
                 switch (pattern)
@@ -188,7 +180,7 @@ namespace EmotionPCG
 
                     case AppraisalPatternType.OcclusionAudio:
                         if (!hasSafeHaven)
-                            ApplyOcclusionAudio(metadata, roomTransform);
+                            ApplyOcclusion(metadata, roomTransform);
                         break;
 
                     case AppraisalPatternType.CompetenceGate:
@@ -199,7 +191,6 @@ namespace EmotionPCG
             }
         }
 
-        #region Pattern handlers
         private void ApplyConflict(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
@@ -210,7 +201,6 @@ namespace EmotionPCG
 
             enemies = Mathf.Max(1, enemies);
 
-            // prendiamo il BoxCollider2D del camera trigger
             if (!TryGetCameraBox(roomTransform, out var cameraBox))
             {
                 Debug.LogWarning(
@@ -233,18 +223,13 @@ namespace EmotionPCG
             }
         }
 
-        /// <summary>
-        /// Safe haven: tile di cura al centro + due statue laterali.
-        /// </summary>
         private void ApplySafeHaven(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
-            // 1. tile di cura al centro
             if (safeHealPrefab != null)
             {
                 Instantiate(safeHealPrefab, roomCenter, Quaternion.identity, roomTransform);
             }
 
-            // 2. due statue simmetriche ai lati
             if (safeStatuePrefab != null)
             {
                 float sideOffset = 1.5f;
@@ -255,17 +240,11 @@ namespace EmotionPCG
             }
         }
 
-        /// <summary>
-        /// Reward: chest posizionata a distanza fissa dal centro stanza,
-        /// lungo una delle 4 direzioni cardinali (up/right/down/left) scelta a caso.
-        /// La logica di buff è nello script del prefab.
-        /// </summary>
         private void ApplyRewards(EmotionRoomMetadata metadata, Transform roomTransform, Vector3 roomCenter)
         {
             if (rewardChestPrefab == null)
                 return;
 
-            // 4 direzioni perpendicolari, rispetto al centro stanza
             Vector3[] directions =
             {
                 Vector3.up,
@@ -277,18 +256,11 @@ namespace EmotionPCG
             int index = UnityEngine.Random.Range(0, directions.Length);
             Vector3 dir = directions[index];
 
-            // posizione finale: centro + direzione * distanza fissa
             Vector3 chestPos = roomCenter + dir * rewardDistanceFromCenter;
 
             Instantiate(rewardChestPrefab, chestPos, Quaternion.identity, roomTransform);
         }
 
-
-        /// <summary>
-        /// Clear signposting: cartello (freccia) che indica la direzione della prossima stanza
-        /// sul critical path. Nelle stanze SafeHaven lo mettiamo due tile sopra il centro,
-        /// così non collide con la healing tile.
-        /// </summary>
         private void ApplyClearSignposting(
             EmotionRoomMetadata metadata,
             Transform roomTransform,
@@ -298,7 +270,6 @@ namespace EmotionPCG
             if (signpostPrefab == null)
                 return;
 
-            // 1) Direzione verso la prossima stanza sul critical path
             Vector3 dir = Vector3.up;
 
             if (metadata.HasNextCritical && metadata.NextCriticalDirection.sqrMagnitude > 0.0001f)
@@ -306,30 +277,23 @@ namespace EmotionPCG
                 dir = metadata.NextCriticalDirection.normalized;
             }
 
-            // 2) Posizione del cartello
             Vector3 mainPos;
             if (isSafeHavenRoom)
             {
-                // nelle SafeHaven lo spostiamo verticalmente rispetto al centro/healing tile
                 float safeOffsetTiles = 2f;
                 mainPos = roomCenter + new Vector3(0f, safeOffsetTiles, 0f);
             }
             else
             {
-                // nelle altre stanze resta spostato lungo la direzione del critical path
                 mainPos = roomCenter + dir * signpostDistanceFromCenter;
             }
 
-            // 3) Rotazione: mappa l'asse locale della freccia (up o right) alla direzione
             Vector3 localForwardAxis = arrowUsesUpAsForward ? Vector3.up : Vector3.right;
             Quaternion mainRot = Quaternion.FromToRotation(localForwardAxis, dir);
 
             Instantiate(signpostPrefab, mainPos, mainRot, roomTransform);
         }
 
-
-        /// Pointing Out: evidenzia un punto di interesse con una luce 2D (e sfarfallio),
-        /// posizionata direttamente sull'oggetto da "puntare".
         private void ApplyPointingOut(
             Transform roomTransform,
             Vector3 roomCenter)
@@ -337,7 +301,6 @@ namespace EmotionPCG
             if (pointingOutLightPrefab == null)
                 return;
 
-            // 1. Decidiamo l'oggetto/transform da evidenziare
             Transform target = roomTransform.Find("PointingOutTarget");
 
             Vector3 targetPos;
@@ -346,25 +309,17 @@ namespace EmotionPCG
             if (target != null)
             {
                 targetPos = target.position;
-                parent = target; // la luce segue direttamente l'oggetto puntato
+                parent = target;
             }
             else
             {
-                // fallback: centro stanza leggermente spostato in Y
                 targetPos = roomCenter + new Vector3(0f, pointingOutOffsetY, 0f);
                 parent = roomTransform;
             }
 
-            // 2. Istanziamo solo la luce (con eventuale script di sfarfallio) come child del target
             Instantiate(pointingOutLightPrefab, targetPos, Quaternion.identity, parent);
         }
 
-
-        /// <summary>
-        /// Centering: se al centro c'è già qualcosa di importante (SafeHaven/Rewards/PointingOut)
-        /// aggiunge solo una luce di PointingOut sul centro; altrimenti istanzia la runa
-        /// come punto di interesse centrale.
-        /// </summary>
         private void ApplyCentering(
             EmotionRoomMetadata metadata,
             Transform roomTransform,
@@ -377,14 +332,12 @@ namespace EmotionPCG
                 patterns.Contains(AppraisalPatternType.Rewards) ||
                 patterns.Contains(AppraisalPatternType.PointingOut);
 
-            // proviamo a usare l’anchor RoomCenter se esiste
             Transform centerAnchor = roomTransform.Find("RoomCenter");
             Vector3 pos = centerAnchor != null ? centerAnchor.position : roomCenter;
             Transform parentForLight = centerAnchor != null ? centerAnchor : roomTransform;
 
             if (hasImportantCenter)
             {
-                // caso 1: c'è già qualcosa di importante al centro → solo luce
                 if (pointingOutLightPrefab == null)
                     return;
 
@@ -392,7 +345,6 @@ namespace EmotionPCG
             }
             else
             {
-                // caso 2: niente di importante → runa al centro
                 if (centeringPrefab == null)
                     return;
 
@@ -400,11 +352,6 @@ namespace EmotionPCG
             }
         }
 
-
-        /// <summary>
-        /// Symmetry: istanzia due props scelti da un array, speculari rispetto al centro stanza,
-        /// con un offset fisso a sinistra e destra.
-        /// </summary>
         private void ApplySymmetry(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (symmetryPropPrefabs == null || symmetryPropPrefabs.Length == 0)
@@ -413,13 +360,11 @@ namespace EmotionPCG
             Vector3 center = GetRoomCenter(roomTransform);
             float offset = symmetryOffsetFromCenter;
 
-            // scegliamo un prefab dall'array e lo replichiamo a sinistra e destra
             var prefab = symmetryPropPrefabs[UnityEngine.Random.Range(0, symmetryPropPrefabs.Length)];
 
             Instantiate(prefab, center + new Vector3(-offset, 0f, 0f), Quaternion.identity, roomTransform);
             Instantiate(prefab, center + new Vector3(offset, 0f, 0f), Quaternion.identity, roomTransform);
         }
-
 
         private void ApplyAppOfObjects(EmotionRoomMetadata metadata, Transform roomTransform)
         {
@@ -429,7 +374,6 @@ namespace EmotionPCG
             if (!hasStatues && !hasBanners)
                 return;
 
-            // Se non riusciamo a usare il camera trigger, fallback al comportamento semplice
             if (!TryGetCameraBox(roomTransform, out var box))
             {
                 if (appearanceStatuePrefab != null)
@@ -442,7 +386,6 @@ namespace EmotionPCG
                 return;
             }
 
-            // Scegliamo quale modalità usare
             if (hasStatues && hasBanners)
             {
                 if (UnityEngine.Random.value < 0.5f)
@@ -450,12 +393,16 @@ namespace EmotionPCG
                 else
                     SpawnAppearanceBanners(box, roomTransform);
             }
-            else if (appearanceStatuePrefab != null)
+            else if (hasStatues)
             {
                 Vector3 centerFallback = GetRoomCenter(roomTransform);
                 Vector2 randomOffset = UnityEngine.Random.insideUnitCircle * 1.5f;
                 Vector3 pos = centerFallback + new Vector3(randomOffset.x, randomOffset.y, 0f);
                 Instantiate(appearanceStatuePrefab, pos, Quaternion.identity, roomTransform);
+            }
+            else if (hasBanners)
+            {
+                SpawnAppearanceBanners(box, roomTransform);
             }
         }
 
@@ -470,13 +417,11 @@ namespace EmotionPCG
             Vector2 offset = box.offset;
             float m = appearanceCornerMargin;
 
-            // quattro angoli locali (con offset)
             Vector3 topLeft = new Vector3(-halfSize.x + m + offset.x, halfSize.y - m + offset.y, 0f);
             Vector3 topRight = new Vector3(halfSize.x - m + offset.x, halfSize.y - m + offset.y, 0f);
             Vector3 bottomLeft = new Vector3(-halfSize.x + m + offset.x, -halfSize.y + m + offset.y, 0f);
             Vector3 bottomRight = new Vector3(halfSize.x - m + offset.x, -halfSize.y + m + offset.y, 0f);
 
-            // scegliamo casualmente una delle due diagonali: (TL, BR) oppure (TR, BL)
             Vector3 localA, localB;
             if (UnityEngine.Random.value < 0.5f)
             {
@@ -508,14 +453,12 @@ namespace EmotionPCG
             float maxX = halfSize.x - appearanceBannerMargin + offset.x;
             if (minX > maxX) (minX, maxX) = (maxX, minX);
 
-            // bordo alto del camera trigger + offset verso il muro
             float topY = halfSize.y - appearanceBannerMargin + offset.y + bannerWallOffsetY;
 
             int min = Mathf.Max(1, minBanners);
             int max = Mathf.Max(min, maxBanners);
             int targetCount = UnityEngine.Random.Range(min, max + 1);
 
-            // teniamo traccia degli X (in spazio locale) già usati per applicare lo spacing
             List<float> usedLocalXs = new List<float>();
 
             int placed = 0;
@@ -526,10 +469,8 @@ namespace EmotionPCG
             {
                 attempts++;
 
-                // 1. scegliamo una X casuale nel range
                 float x = UnityEngine.Random.Range(minX, maxX);
 
-                // 2. controllo spacing: non troppo vicino ad altri banner
                 bool tooClose = false;
                 foreach (var usedX in usedLocalXs)
                 {
@@ -541,24 +482,20 @@ namespace EmotionPCG
                 }
 
                 if (tooClose)
-                    continue; // riprova con un'altra X
+                    continue;
 
-                // 3. calcoliamo posizione locale e mondo
                 Vector3 local = new Vector3(x, topY, 0f);
                 Vector3 world = box.transform.TransformPoint(local);
 
-                // 4. controllo muro: vicino a questo punto deve esserci un collider di muro
                 if (wallLayerMask.value != 0)
                 {
                     var hit = Physics2D.OverlapCircle(world, bannerWallCheckRadius, wallLayerMask);
                     if (hit == null)
                     {
-                        // nessun muro in zona -> probabilmente porta/buco, scartiamo
                         continue;
                     }
                 }
 
-                // se siamo qui, la posizione è buona: distanziata e con muro dietro
                 usedLocalXs.Add(x);
 
                 var prefab = appearanceBannerPrefabs[UnityEngine.Random.Range(0, appearanceBannerPrefabs.Length)];
@@ -568,102 +505,129 @@ namespace EmotionPCG
             }
         }
 
-
-        /// Content Density: aggiunge props ambientali nella stanza, scegliendo
-        /// casualmente il numero di elementi (5..propsPerContentDensity) e
-        /// posizionandoli all'interno del CameraTrigger, se presente.
         private void ApplyContentDensity(EmotionRoomMetadata metadata, Transform roomTransform)
         {
             if (contentDensityPrefabs == null || contentDensityPrefabs.Length == 0)
                 return;
 
-            // Numero di props casuale tra 5 e propsPerContentDensity (incluso)
-            int maxProps = Mathf.Max(5, propsPerContentDensity);
-            int totalProps = UnityEngine.Random.Range(5, maxProps + 1);
+            int props = Mathf.Max(1, propsPerContentDensity);
 
-
-            if (TryGetCameraBox(roomTransform, out var box))
+            if (!TryGetCameraBox(roomTransform, out var box))
             {
-                Vector2 halfSize = box.size * 0.5f;
-                Vector2 offset = box.offset;
+                Vector3 center = GetRoomCenter(roomTransform);
+                List<Vector3> placed = new List<Vector3>();
 
-                float minX = -halfSize.x + spawnMarginFromBounds + offset.x;
-                float maxX = halfSize.x - spawnMarginFromBounds + offset.x;
-                float minY = -halfSize.y + spawnMarginFromBounds + offset.y;
-                float maxY = halfSize.y - spawnMarginFromBounds + offset.y;
-
-                for (int i = 0; i < totalProps; i++)
+                for (int i = 0; i < props; i++)
                 {
-                    var prefab = contentDensityPrefabs[UnityEngine.Random.Range(0, contentDensityPrefabs.Length)];
+                    bool placedThis = false;
 
-                    float localX = UnityEngine.Random.Range(minX, maxX);
-                    float localY = UnityEngine.Random.Range(minY, maxY);
+                    for (int attempt = 0; attempt < contentMaxAttemptsPerProp && !placedThis; attempt++)
+                    {
+                        Vector2 offset = UnityEngine.Random.insideUnitCircle * 2.0f;
+                        Vector3 candidate = center + new Vector3(offset.x, offset.y, 0f);
+
+                        if (IsTooCloseToExisting(candidate, placed, contentMinSpacing))
+                            continue;
+
+                        var prefab = contentDensityPrefabs[UnityEngine.Random.Range(0, contentDensityPrefabs.Length)];
+                        if (prefab == null)
+                            break;
+
+                        Instantiate(prefab, candidate, Quaternion.identity, roomTransform);
+                        placed.Add(candidate);
+                        placedThis = true;
+                    }
+                }
+
+                return;
+            }
+
+            Vector2 halfSize = box.size * 0.5f;
+
+            float minX = -halfSize.x + spawnMarginFromBounds;
+            float maxX = halfSize.x - spawnMarginFromBounds;
+            float minY = -halfSize.y + spawnMarginFromBounds;
+            float maxY = halfSize.y - spawnMarginFromBounds;
+
+            if (minX > maxX) (minX, maxX) = (maxX, minX);
+            if (minY > maxY) (minY, maxY) = (maxY, minY);
+
+            Vector2 offsetCenter = box.offset;
+
+            List<Vector3> placedWorldPositions = new List<Vector3>();
+
+            for (int i = 0; i < props; i++)
+            {
+                bool placedThis = false;
+
+                for (int attempt = 0; attempt < contentMaxAttemptsPerProp && !placedThis; attempt++)
+                {
+                    float localX = UnityEngine.Random.Range(minX, maxX) + offsetCenter.x;
+                    float localY = UnityEngine.Random.Range(minY, maxY) + offsetCenter.y;
 
                     Vector3 localPoint = new Vector3(localX, localY, 0f);
                     Vector3 worldPoint = box.transform.TransformPoint(localPoint);
 
+                    if (IsTooCloseToExisting(worldPoint, placedWorldPositions, contentMinSpacing))
+                        continue;
+
+                    var prefab = contentDensityPrefabs[UnityEngine.Random.Range(0, contentDensityPrefabs.Length)];
+                    if (prefab == null)
+                        break;
+
                     Instantiate(prefab, worldPoint, Quaternion.identity, roomTransform);
+                    placedWorldPositions.Add(worldPoint);
+                    placedThis = true;
                 }
             }
-
         }
 
-        /// <summary>
-        /// Occlusion Audio: rende la stanza un po' più buia rimuovendo alcune luci di base
-        /// e istanzia un prefab audio "inquietante" appena fuori dal bordo alto della stanza.
-        /// </summary>
-        private void ApplyOcclusionAudio(EmotionRoomMetadata metadata, Transform roomTransform)
+        private bool IsTooCloseToExisting(Vector3 candidate, List<Vector3> existing, float minDistance)
         {
-            // 1) Rende la stanza leggermente più buia spegnendo una parte delle luci 2D
+            float sqMin = minDistance * minDistance;
+
+            for (int i = 0; i < existing.Count; i++)
+            {
+                if ((candidate - existing[i]).sqrMagnitude < sqMin)
+                    return true;
+            }
+
+            return false;
+        }
+
+        private void ApplyOcclusion(EmotionRoomMetadata metadata, Transform roomTransform)
+        {
             ReduceLightsForOcclusion(roomTransform);
 
-            // 2) Istanzia un audio "fuori" dalla stanza, se il prefab è assegnato
             if (audioOcclusionPrefab == null)
                 return;
 
-            // Se c'è un CameraTrigger, usiamo il suo BoxCollider2D per mettere l'audio appena oltre il bordo
-            if (TryGetCameraBox(roomTransform, out var box))
+            // prendiamo il CameraTrigger della stanza
+            if (!TryGetCameraBox(roomTransform, out var box))
             {
-                Vector2 halfSize = box.size * 0.5f;
-                Vector2 offset = box.offset;
-
-                // punto casuale lungo il bordo superiore
-                float minX = -halfSize.x + spawnMarginFromBounds + offset.x;
-                float maxX = halfSize.x - spawnMarginFromBounds + offset.x;
-                if (minX > maxX) (minX, maxX) = (maxX, minX);
-
-                float xLocal = UnityEngine.Random.Range(minX, maxX);
-                float yLocal = halfSize.y + occlusionAudioOutsideOffset + offset.y;
-
-                Vector3 localPos = new Vector3(xLocal, yLocal, 0f);
-                Vector3 worldPos = box.transform.TransformPoint(localPos);
-
-                Instantiate(audioOcclusionPrefab, worldPos, Quaternion.identity, roomTransform);
+                Debug.LogWarning(
+                    $"[EmotionPatternApplier] Nessun camera box trovato in '{roomTransform.name}' per OcclusionAudio.");
+                return;
             }
-            else
+
+            // aggiungiamo/riusiamo il componente SOLO su questa stanza
+            var ghostAudio = box.GetComponent<RoomGhostAudio>();
+            if (ghostAudio == null)
             {
-                // Fallback: sopra il centro stanza
-                Vector3 center = GetRoomCenter(roomTransform);
-                Vector3 pos = center + new Vector3(0f, 1.5f + occlusionAudioOutsideOffset, 0f);
-
-                Instantiate(audioOcclusionPrefab, pos, Quaternion.identity, roomTransform);
+                ghostAudio = box.gameObject.AddComponent<RoomGhostAudio>();
             }
+
+            ghostAudio.Initialize(audioOcclusionPrefab, occlusionMinDelay, occlusionMaxDelay, occlusionVolume);
         }
 
-        /// <summary>
-        /// Spegne (disabilita) una parte delle luci 2D della stanza per rendere
-        /// l'ambiente più buio quando viene applicato OcclusionAudio.
-        /// </summary>
         private void ReduceLightsForOcclusion(Transform roomTransform)
         {
-            // Recupera tutte le Light2D nella gerarchia della stanza
             var lights = roomTransform.GetComponentsInChildren<Light2D>();
             if (lights == null || lights.Length == 0)
                 return;
 
             int total = lights.Length;
 
-            // Calcola quante luci spegnere in base al ratio, ma tenendo almeno un certo numero di luci accese
             int maxToRemoveByRatio = Mathf.FloorToInt(total * occlusionLightRemovalRatio);
             int minKeep = Mathf.Clamp(occlusionMinLightsToKeep, 0, total);
             int maxRemovable = Mathf.Max(0, total - minKeep);
@@ -682,54 +646,36 @@ namespace EmotionPCG
 
                 if (l != null)
                 {
-                    // invece di distruggere la luce, la disabilitiamo per non rompere eventuali riferimenti
                     l.enabled = false;
                 }
             }
         }
 
-        /// <summary>
-        /// Competence Gate: stanza che include un piccolo conflict + un nemico speciale
-        /// (competenceGatePrefab) che funge da "test di competenza".
-        /// Se la stanza ha già un Conflict tra i pattern, non richiamiamo ApplyConflict
-        /// per evitare un raddoppio dei nemici.
-        /// </summary>
         private void ApplyCompetenceGate(EmotionRoomMetadata metadata, Transform roomTransform)
         {
-            // 1) Se non c'è un prefab speciale, non ha senso applicare il pattern
             if (competenceGatePrefab == null)
                 return;
 
-            // 2) Se la stanza NON ha già un Conflict tra i pattern, creiamo un normale conflict
             var patterns = metadata.AppliedPatterns;
             if (!patterns.Contains(AppraisalPatternType.Conflict))
             {
                 ApplyConflict(metadata, roomTransform);
             }
 
-            // 3) Spawn del nemico speciale di competenza, usando la stessa logica di spawn dei nemici
             Vector3 spawnPos;
 
             if (TryGetCameraBox(roomTransform, out var box)
                 && TryFindFreeEnemySpotInCameraBox(box, out spawnPos))
             {
-                // posizione valida trovata dentro il CameraTrigger
             }
             else
             {
-                // fallback: centro stanza
                 spawnPos = GetRoomCenter(roomTransform);
             }
 
             Instantiate(competenceGatePrefab, spawnPos, Quaternion.identity, roomTransform);
         }
 
-        #endregion
-
-        #region Helpers
-        /// <summary>
-        /// Ritorna il centro logico della stanza; se esiste un child "RoomCenter", usa quello.
-        /// </summary>
         private Vector3 GetRoomCenter(Transform roomTransform)
         {
             Transform centerMarker = roomTransform.Find("RoomCenter");
@@ -739,14 +685,8 @@ namespace EmotionPCG
             return roomTransform.position;
         }
 
-        /// <summary>
-        /// Crea le luci "di base" nella stanza, in funzione dell'emozione del livello.
-        /// Usa il CameraTrigger come area di spawn, con distribuzione stratificata
-        /// per evitare grumi.
-        /// </summary>
         private void ApplyBaseLighting(EmotionRoomMetadata metadata, Transform roomTransform)
         {
-            // 1) Scegliamo prefab e range in base all'emozione del livello
             GameObject lightPrefab = null;
             int minLights = 0;
             int maxLights = 0;
@@ -782,7 +722,6 @@ namespace EmotionPCG
             if (lightsToSpawn <= 0)
                 return;
 
-            // 2) Se abbiamo un CameraTrigger, usiamo il BoxCollider2D come area
             if (TryGetCameraBox(roomTransform, out var box))
             {
                 Vector2 halfSize = box.size * 0.5f;
@@ -799,14 +738,12 @@ namespace EmotionPCG
                 float width = maxX - minX;
                 float height = maxY - minY;
 
-                // 2.1) Costruiamo una griglia 'quasi quadrata' in base al numero di luci
                 int cols = Mathf.CeilToInt(Mathf.Sqrt(lightsToSpawn));
                 int rows = Mathf.CeilToInt((float)lightsToSpawn / cols);
 
                 float cellWidth = width / cols;
                 float cellHeight = height / rows;
 
-                // 2.2) Generiamo una lista di celle candidate con una posizione jitterata dentro
                 List<Vector2> candidateLocalPositions = new List<Vector2>();
 
                 for (int r = 0; r < rows; r++)
@@ -816,7 +753,6 @@ namespace EmotionPCG
                         float cellMinX = minX + c * cellWidth;
                         float cellMinY = minY + r * cellHeight;
 
-                        // jitter interno alla cella (non mettiamo la luce esattamente al centro)
                         float x = UnityEngine.Random.Range(cellMinX + cellWidth * 0.2f,
                                                cellMinX + cellWidth * 0.8f);
                         float y = UnityEngine.Random.Range(cellMinY + cellHeight * 0.2f,
@@ -826,7 +762,6 @@ namespace EmotionPCG
                     }
                 }
 
-                // 2.3) Peschiamo a caso tra le celle candidate finché abbiamo piazzato tutte le luci
                 int placed = 0;
                 int attempts = 0;
                 int maxAttempts = candidateLocalPositions.Count * 2;
@@ -848,7 +783,6 @@ namespace EmotionPCG
             }
             else
             {
-                // 3) Fallback: intorno al centro stanza, un po' sparpagliate
                 Vector3 center = GetRoomCenter(roomTransform);
 
                 for (int i = 0; i < lightsToSpawn; i++)
@@ -871,28 +805,48 @@ namespace EmotionPCG
 
             var rooms = FindObjectsOfType<EmotionRoomMetadata>();
 
+            EmotionRoomMetadata targetRoom = null;
+
             foreach (var room in rooms)
             {
-                if (room.IsOnCriticalPath && !room.HasNextCritical)
+                if (IsEndRoom(room))
                 {
-                    Transform roomTransform = room.transform;
-
-                    // Usa lo stesso centro che stai già usando per gli altri pattern
-                    Vector3 center = GetRoomCenter(roomTransform);
-
-                    // Offset configurabile da Inspector
-                    Vector3 spawnPos = center + endLevelStairsOffset;
-
-                    Instantiate(endLevelStairsPrefab, spawnPos, Quaternion.identity, roomTransform);
+                    targetRoom = room;
+                    break;
                 }
             }
+
+            if (targetRoom == null)
+                return;
+
+            Transform roomTransform = targetRoom.transform;
+
+            Vector3 center = GetRoomCenter(roomTransform);
+
+            Vector3 spawnPos = center + endLevelStairsOffset;
+
+            Instantiate(endLevelStairsPrefab, spawnPos, Quaternion.identity, roomTransform);
+        }
+
+        private bool IsEndRoom(EmotionRoomMetadata room)
+        {
+            if (room == null)
+                return false;
+
+            string name = room.RoomName;
+            if (string.IsNullOrEmpty(name))
+                name = room.gameObject.name;
+
+            if (!string.IsNullOrEmpty(name) && name.StartsWith("end", StringComparison.OrdinalIgnoreCase))
+                return true;
+
+            return false;
         }
 
         private bool TryGetCameraBox(Transform roomTransform, out BoxCollider2D box)
         {
             box = null;
 
-            // 1. Cerca SOLO un child con quel nome
             if (!string.IsNullOrEmpty(cameraTriggerName))
             {
                 var t = roomTransform.Find(cameraTriggerName);
@@ -914,15 +868,28 @@ namespace EmotionPCG
                 return true;
             }
 
-            // (se vuoi proprio un fallback, puoi cercare il primo BoxCollider2D trigger, ma visto il casino, io per ora lo eviterei)
             return false;
         }
 
         private bool TryFindFreeEnemySpotInCameraBox(BoxCollider2D box, out Vector3 position)
         {
-            const int maxTries = 30;
+            var freeSpots = ComputeFreeEnemySpots(box);
 
-            // dimensioni locali della box (in local space)
+            if (freeSpots == null || freeSpots.Count == 0)
+            {
+                position = box.transform.TransformPoint(box.offset);
+                return false;
+            }
+
+            int idx = UnityEngine.Random.Range(0, freeSpots.Count);
+            position = freeSpots[idx];
+            return true;
+        }
+
+        private List<Vector3> ComputeFreeEnemySpots(BoxCollider2D box)
+        {
+            var result = new List<Vector3>();
+
             Vector2 halfSize = box.size * 0.5f;
 
             float minX = -halfSize.x + spawnMarginFromBounds;
@@ -930,33 +897,32 @@ namespace EmotionPCG
             float minY = -halfSize.y + spawnMarginFromBounds;
             float maxY = halfSize.y - spawnMarginFromBounds;
 
-            // sicurezza se margine esagerato
             if (minX > maxX) (minX, maxX) = (maxX, minX);
             if (minY > maxY) (minY, maxY) = (maxY, minY);
 
-            Vector2 offset = box.offset; // il centro locale del collider
+            Vector2 offset = box.offset;
 
-            for (int i = 0; i < maxTries; i++)
+            float step = Mathf.Max(enemyCollisionRadius * 1.5f, 0.5f);
+
+            for (float x = minX; x <= maxX; x += step)
             {
-                float localX = UnityEngine.Random.Range(minX, maxX) + offset.x;
-                float localY = UnityEngine.Random.Range(minY, maxY) + offset.y;
-
-                Vector3 localPoint = new Vector3(localX, localY, 0f);
-                // trasformiamo da local (child del trigger) a world
-                Vector3 worldPoint = box.transform.TransformPoint(localPoint);
-
-                // check overlap con muri / props / altri nemici
-                bool blocked = Physics2D.OverlapCircle(worldPoint, enemySpawnRadius, enemyBlockingLayers);
-                if (!blocked)
+                for (float y = minY; y <= maxY; y += step)
                 {
-                    position = worldPoint;
-                    return true;
+                    float localX = x + offset.x;
+                    float localY = y + offset.y;
+
+                    Vector3 localPoint = new Vector3(localX, localY, 0f);
+                    Vector3 worldPoint = box.transform.TransformPoint(localPoint);
+
+                    bool blocked = Physics2D.OverlapCircle(worldPoint, enemyCollisionRadius, enemyBlockingLayers);
+                    if (!blocked)
+                    {
+                        result.Add(worldPoint);
+                    }
                 }
             }
 
-            // fallback: centro della box
-            position = box.transform.TransformPoint(box.offset);
-            return false;
+            return result;
         }
 
         private GameObject ChooseEnemyPrefab(EmotionRoomMetadata metadata)
@@ -967,7 +933,5 @@ namespace EmotionPCG
             int idx = UnityEngine.Random.Range(0, enemyPrefabs.Length);
             return enemyPrefabs[idx];
         }
-
-        #endregion
     }
 }

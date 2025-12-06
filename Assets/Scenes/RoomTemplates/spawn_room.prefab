@@ -2415,6 +2415,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2204641570056076872}
     m_Modifications:
+    - target: {fileID: 2587745872463943869, guid: 049421d47d1b8604d952c195d55a8ded, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2934911203826442305, guid: 049421d47d1b8604d952c195d55a8ded, type: 3}
       propertyPath: m_Name
       value: Torch (2)
@@ -2621,6 +2625,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2204641570056076872}
     m_Modifications:
+    - target: {fileID: 2587745872463943869, guid: 049421d47d1b8604d952c195d55a8ded, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2934911203826442305, guid: 049421d47d1b8604d952c195d55a8ded, type: 3}
       propertyPath: m_Name
       value: Torch (3)

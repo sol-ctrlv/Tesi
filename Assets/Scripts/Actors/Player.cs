@@ -7,6 +7,10 @@ public class Player : Actor
     static public Player Instance { get; private set; }
 
     [SerializeField] AudioSource healAudioSource;
+    [SerializeField] float healCooldownSeconds = 15f;
+    float nextAllowedHealTime = 0f;
+    public bool IsHealOnCooldown => Time.time < nextAllowedHealTime;
+
 
     //[SerializeField] float healTimerSeconds = 10f;
     //Timer healTimer;
@@ -43,14 +47,32 @@ public class Player : Actor
         Damage(1f);
     }
 
-    public void Heal(float amount)
+    public void Heal(float amount, bool bypassCooldown = false)
     {
+        // niente heal se amount non è positivo
+        if (amount <= 0f)
+            return;
+
+        // se non vogliamo bypassare e siamo ancora in cooldown, esci
+        if (!bypassCooldown && Time.time < nextAllowedHealTime)
+            return;
+
+        // applichiamo la cura (Damage negativo = heal)
         Damage(-amount);
 
-        healAudioSource.pitch = Random.Range(0.8f, 1.2f);
-        healAudioSource.Play();
+        if (healAudioSource != null)
+        {
+            healAudioSource.pitch = Random.Range(0.8f, 1.2f);
+            healAudioSource.Play();
+        }
 
+        // se questa è una heal “normale” (es. life-steal), fa partire il cooldown
+        if (!bypassCooldown)
+        {
+            nextAllowedHealTime = Time.time + healCooldownSeconds;
+        }
     }
+
 
     //private void Update()
     //{
@@ -68,6 +90,6 @@ public class Player : Actor
     public void AddMaxHealth()
     {
         MaxHP += 1;
-        Heal(420f);
+        Heal(420f, true);
     }
 }

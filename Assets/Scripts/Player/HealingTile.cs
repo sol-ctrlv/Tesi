@@ -40,7 +40,7 @@ public class HealingTile : MonoBehaviour
         }
 
         // applica la cura
-        health.Heal(healAmount);
+        health.Heal(healAmount, true);
 
         used = true;
 

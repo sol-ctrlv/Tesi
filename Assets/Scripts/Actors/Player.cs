@@ -53,6 +53,9 @@ public class Player : Actor
         if (amount <= 0f)
             return;
 
+        if (CurrentHP >= MaxHP)
+            return;
+
         // se non vogliamo bypassare e siamo ancora in cooldown, esci
         if (!bypassCooldown && Time.time < nextAllowedHealTime)
             return;

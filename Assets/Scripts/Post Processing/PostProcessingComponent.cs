@@ -564,7 +564,8 @@ namespace EmotionPCG
             {
                 // Niente ricompense né segnaletica nella stanza finale
                 if (pattern == AppraisalPatternType.Rewards ||
-                    pattern == AppraisalPatternType.ClearSignposting)
+                    pattern == AppraisalPatternType.ClearSignposting ||
+                    pattern == AppraisalPatternType.SafeHaven)
                 {
                     return false;
                 }

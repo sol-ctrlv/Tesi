@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class Ladder : MonoBehaviour, IInteractable
 {
-    [SerializeField] string NextLevel;
     [SerializeField] GameObject EndGameUI;
     [SerializeField] Button NextLvlBtn;
 
@@ -12,7 +11,12 @@ public class Ladder : MonoBehaviour, IInteractable
         EndGameUI.SetActive(true);
         NextLvlBtn.interactable = false;
         NextLvlBtn.onClick.AddListener(ChangeScene);
+
         Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         return true;
     }
 
@@ -24,6 +28,10 @@ public class Ladder : MonoBehaviour, IInteractable
     private void ChangeScene()
     {
         Time.timeScale = 1f;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         MainMenuManager.PlayNextLevel();
     }
 

@@ -208,8 +208,8 @@ MonoBehaviour:
   - {fileID: -5549359398475713726}
   - {fileID: 3160746859571114296}
   EditorData:
-    PanOffset: {x: 235.82776, y: 435.63623}
-    Zoom: 0.94616157
+    PanOffset: {x: -218.39345, y: 160.55382}
+    Zoom: 1.5780929
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
 --- !u!114 &239027294855503821
@@ -269,7 +269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Room
   Position: {x: 720, y: 288}
-  Name: Sword
-  IndividualRoomTemplates:
-  - {fileID: 3881807513628739917, guid: 3b3732e53ee3088b0a00ea0b1398fa10, type: 3}
+  Name: Room
+  IndividualRoomTemplates: []
   RoomTemplateSets: []

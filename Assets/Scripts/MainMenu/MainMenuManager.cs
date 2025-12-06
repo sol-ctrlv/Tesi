@@ -6,21 +6,27 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public static int[] levelsToPlay;
-    public static int currentLevelIndex = -1;
+    public static int currentLevelIndex = 0;
 
     private AudioSource _myAudioSource;
 
     private void Start()
     {
         _myAudioSource = GetComponent<AudioSource>();
+        levelsToPlay = GetRandomScenes();
     }
 
     public static void PlayNextLevel()
     {
         currentLevelIndex++;
+        if (currentLevelIndex == 3)
+        {
+            Application.OpenURL("https://forms.gle/VmJStR8b4iT1S4RA9");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
         SceneManager.LoadScene(levelsToPlay[currentLevelIndex]);
     }
-
 
     private void ResumeTime()
     {
@@ -30,18 +36,7 @@ public class MainMenuManager : MonoBehaviour
     public void StartGame()
     {
         _myAudioSource.Play();
-
-        if (Time.timeScale > 0f)
-        {
-            StartCoroutine(WaitOneSecondAndStartGame());
-        }
-        else
-        {
-            ResumeTime();
-            levelsToPlay = GetRandom123();
-            PlayNextLevel();
-        }
-
+        StartCoroutine(WaitOneSecondAndStartGame());
     }
 
     public void QuitGame()
@@ -92,7 +87,7 @@ public class MainMenuManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         Cursor.lockState = CursorLockMode.Locked;
         ResumeTime();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelsToPlay[currentLevelIndex]);
     }
 
     IEnumerator WaitOneSecondAndMainMenu()
@@ -100,33 +95,26 @@ public class MainMenuManager : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         Cursor.lockState = CursorLockMode.None;
         ResumeTime();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
-    IEnumerator WaitOneSecondAndIntroScene()
+    int[] GetRandomScenes()
     {
-        yield return new WaitForSeconds(2.0f);
-        ResumeTime();
-        SceneManager.LoadScene(2);
-    }
+        // 2, 3, 4 devono essere randomizzati
+        // 5 deve rimanere sempre per ultimo
+        int[] result = { 2, 3, 4, 5 };
 
-
-    int[] GetRandom123()
-    {
-        int[] arr = { 1, 2, 3 };
-        for (int i = 0; i < arr.Length; i++)
+        // Fisher–Yates solo sui primi 3 elementi (indici 0..2)
+        for (int i = 0; i < 3; i++)
         {
-            int r = UnityEngine.Random.Range(i, arr.Length);
-            int temp = arr[i];
-            arr[i] = arr[r];
-            arr[r] = temp;
+            int r = UnityEngine.Random.Range(i, 3); // max è escluso, quindi [i, 2]
+            int temp = result[i];
+            result[i] = result[r];
+            result[r] = temp;
         }
 
-        int[] result = new int[4];
-        arr.CopyTo(result, 0);
-        result[3] = 4;
-
-        return arr;
+        // result[3] è sempre 5, mai toccato
+        return result;
     }
 
 }

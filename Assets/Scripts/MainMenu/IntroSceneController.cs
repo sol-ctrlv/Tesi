@@ -9,21 +9,12 @@ public class IntroSceneController : MonoBehaviour
     [SerializeField] private string nextSceneName = "MainMenu";
     private void Start()
     {
-        StartCoroutine(RunIntro());
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
-    private IEnumerator RunIntro()
+    public void OnNextClick()
     {
-        float t = 0f;
-
-        // Aspetta holdTime oppure uno skip
-        while (t < holdTime)
-        {
-            t += Time.deltaTime;
-            yield return null;
-        }
-
-        // Carica direttamente il menu principale
         SceneManager.LoadScene(nextSceneName);
     }
 }

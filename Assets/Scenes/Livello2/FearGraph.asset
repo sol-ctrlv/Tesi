@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Edgar.Unity::Edgar.Unity.Room
-  Position: {x: 480, y: 368}
+  Position: {x: 512, y: 368}
   Name: Optional
   IndividualRoomTemplates: []
   RoomTemplateSets: []

@@ -1,11 +1,27 @@
 // Modello dati principale per il post-processing emozionale sui livelli generati con Edgar in Unity
+//
+// Obiettivo del file
+//  - Centralizzare la rappresentazione “astratta” dello stato emotivo desiderato (target) e osservato (profilo)
+//    tramite dimensioni di appraisal ispirate alla Appraisal Theory.
+//  - Fornire un vocabolario di pattern (design pattern) che, applicati alle stanze, producono delta numerici
+//    nello spazio di appraisal.
+//  - Offrire utilities “neutre” (pesi, distanza, clamp) usate dagli algoritmi di post-processing/ottimizzazione.
+//
+// Note di design (importanti per interpretare i numeri)
+//  - Le dimensioni sono normalizzate: alcune in [0,1], altre in [-1,1] (vedi commenti campo-per-campo).
+//    Questo consente calcoli semplici, ma rende cruciale il ruolo dei pesi nella funzione distanza.
+//  - I delta dei pattern sono euristici: non sono “verità psicologiche”, ma manopole di tuning da validare
+//    con playtest e dati sperimentali.
+//  - L’attributo Agency è categoriale: qui viene gestito come label discreta e NON entra nel calcolo della
+//    distanza continua (vedi AppraisalMath). Se in futuro vuoi farlo “pesare”, aggiungi una penalità dedicata.
+//
+//
 // Questo file definisce:
 //  - I tipi di emozione usati dal sistema
 //  - Lo spazio di appraisal (dimensioni in stile Scherer)
 //  - I pattern di appraisal (design pattern) e i loro delta numerici
 //  - Le regioni target nello spazio di appraisal per ciascuna emozione
 //  - I pesi usati per calcolare la distanza da un target
-
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,9 +32,9 @@ namespace EmotionPCG
     /// </summary>
     public enum EmotionType
     {
-        Wonder,
-        Fear,
-        Joy
+        Wonder, // meraviglia/sorpresa: alta novità e valenza tendenzialmente positiva
+        Fear, // paura/tensione: minaccia percepita, urgenza e aspettativa di esiti negativi
+        Relaxation, // calma/sicurezza: bassa urgenza e bassa minaccia, alta controllabilità
     }
 
     /// <summary>
@@ -26,10 +42,10 @@ namespace EmotionPCG
     /// </summary>
     public enum Agency
     {
-        Self,
-        Other,
-        Env,
-        Neutral
+        Self, // l’evento è percepito come causato/controllato dal giocatore
+        Other, // l’evento è attribuito a un altro agente (nemici/NPC)
+        Env, // l’evento è attribuito all’ambiente/sistema (spazio, atmosfera, hazard)
+        Neutral, // non specificato (default); non sovrascrive l’agency corrente
     }
 
     /// <summary>
@@ -149,8 +165,7 @@ namespace EmotionPCG
                 Controllability = a.Controllability / scalar,
                 Power = a.Power / scalar,
                 Adjustability = a.Adjustability / scalar,
-                // L'agency non viene scalata: manteniamo il valore categoriale
-                agency = a.agency
+                agency = a.agency   // L'agency non viene scalata: manteniamo il valore categoriale
             };
         }
     }
@@ -161,24 +176,24 @@ namespace EmotionPCG
     /// </summary>
     public enum AppraisalPatternType
     {
-        Centering,
-        Symmetry,
-        AppearanceOfObjects,
-        PointingOut,
-        Conflict,
-        ContentDensity,
-        OcclusionAudio,
-        Rewards,
-        CompetenceGate,
-        ClearSignposting,
-        SafeHaven
+        Centering, // ri-centra il player: focus e controllo (es. stanze più leggibili/centrate)
+        Symmetry, // ordine visivo: aumenta certezza e leggibilità (simmetria, composizione pulita)
+        AppearanceOfObjects, // introduce novità (nuovi oggetti/landmark) senza aumentare minaccia
+        PointingOut, // guida percettiva (linee di vista/landmark) → più certezza, meno rischio percepito
+        Conflict, // pressione diretta (combat/minaccia) → più urgenza e probabilità di esito negativo
+        ContentDensity, // densità di contenuti → più stimoli e urgenza, possibile overload
+        OcclusionAudio, // occlusione/ambiguità sonora → incertezza e tensione
+        Rewards, // ricompense → valenza positiva e goal conduciveness
+        CompetenceGate, // gate di competenza → sfida ‘fair’, aumenta potere/controllo percepito
+        ClearSignposting, // segnaletica chiara → aumenta certezza, riduce rischio di errore
+        SafeHaven, // zona sicura → abbassa urgenza/minaccia, aumenta controllabilità
     }
 
     /// <summary>
     /// Libreria dei delta di appraisal associati ai pattern.
     ///
     /// I valori numerici sono euristiche costruite a partire dagli intervalli
-    /// di appraisal definiti per Wonder/Fear/Joy e ispirate al linguaggio di pattern
+    /// di appraisal definiti per Wonder/Fear/Relaxation e ispirate al linguaggio di pattern
     /// di "Wonderful Design". Sono pensati come punto di partenza per la calibrazione
     /// negli esperimenti, non come costanti psicologicamente validate.
     /// </summary>
@@ -420,21 +435,21 @@ namespace EmotionPCG
     /// </summary>
     public struct EmotionTarget
     {
-        public EmotionType Emotion;    // etichetta (Wonder/Fear/Joy)
+        public EmotionType Emotion;    // etichetta (Wonder/Fear/Relaxation)
         public AppraisalProfile Min;   // limite inferiore dell'intervallo desiderato
         public AppraisalProfile Max;   // limite superiore dell'intervallo desiderato
         public AppraisalProfile Center; // punto medio (usato come target dell'ottimizzazione)
     }
 
     /// <summary>
-    /// Intervalli target predefiniti per Wonder, Fear e Joy.
+    /// Intervalli target predefiniti per Wonder, Fear e Relaxation.
     /// I valori sono tarati a mano per approssimare la fenomenologia desiderata.
     /// </summary>
     public static class EmotionTargets
     {
         public static readonly EmotionTarget Wonder;
         public static readonly EmotionTarget Fear;
-        public static readonly EmotionTarget Joy;
+        public static readonly EmotionTarget Relaxation;
 
         /// <summary>
         /// Helper che costruisce un EmotionTarget e ne calcola il centro come (min + max)/2.
@@ -531,7 +546,7 @@ namespace EmotionPCG
             Fear = CreateTarget(EmotionType.Fear, fearMin, fearMax);
 
             // Intervalli per JOY: valenza molto positiva, buona conducibilità al goal e buon controllo.
-            var joyMin = new AppraisalProfile
+            var relaxMin = new AppraisalProfile
             {
                 Novelty = 0.5f,
                 Pleasantness = 0.6f,
@@ -545,7 +560,7 @@ namespace EmotionPCG
                 agency = Agency.Neutral
             };
 
-            var joyMax = new AppraisalProfile
+            var relaxMax = new AppraisalProfile
             {
                 Novelty = 0.8f,
                 Pleasantness = 1.0f,
@@ -559,7 +574,7 @@ namespace EmotionPCG
                 agency = Agency.Neutral
             };
 
-            Joy = CreateTarget(EmotionType.Joy, joyMin, joyMax);
+            Relaxation = CreateTarget(EmotionType.Relaxation, relaxMin, relaxMax);
         }
     }
 
@@ -629,8 +644,8 @@ namespace EmotionPCG
             Adjustability = 0.7f
         };
 
-        // Joy enfatizza piacevolezza, conducibilità al goal e senso di controllo/potere.
-        public static readonly AppraisalWeights Joy = new AppraisalWeights
+        // Relaxation enfatizza piacevolezza, conducibilità al goal e senso di controllo/potere.
+        public static readonly AppraisalWeights Relaxation = new AppraisalWeights
         {
             Novelty = 0.8f,
             Pleasantness = 1.5f,
@@ -652,7 +667,7 @@ namespace EmotionPCG
             {
                 case EmotionType.Wonder: return Wonder;
                 case EmotionType.Fear: return Fear;
-                case EmotionType.Joy: return Joy;
+                case EmotionType.Relaxation: return Relaxation;
                 default: return AppraisalWeights.Ones;
             }
         }
@@ -669,6 +684,9 @@ namespace EmotionPCG
         /// </summary>
         public static float WeightedSquaredDistance(AppraisalProfile profile, AppraisalProfile target, AppraisalWeights w)
         {
+            // NOTE: Agency è volutamente esclusa da questa metrica (è categoriale).
+            // Se vuoi farla incidere, aggiungi una penalità discreta separata.
+
             float distance = 0f;
 
             // Ogni dimensione contribuisce con weight * (value - target)^2 alla distanza totale.

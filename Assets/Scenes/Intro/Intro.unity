@@ -214,6 +214,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -869,7 +870,7 @@ MonoBehaviour:
     tre livelli uno dopo l\u2019altro. Alla fine di ciascun livello si aprir\xE0
     automaticamente il browser con un breve questionario anonimo: ti chiedo di compilarlo
     con calma e poi tornare al gioco.\n\nPer avere risultati pi\xF9 affidabili ti
-    consigliamo di giocare in un ambiente il pi\xF9 possibile tranquillo, senza distrazioni,
+    consiglio di giocare in un ambiente il pi\xF9 possibile tranquillo, senza distrazioni,
     e con l\u2019audio attivo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 896e61461a4d57d4e9cad215e5f4b708, type: 2}
@@ -908,6 +909,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
